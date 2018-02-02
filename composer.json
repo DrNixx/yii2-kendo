@@ -1,8 +1,9 @@
 {
     "name": "drnixx/yii2-kendo",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "PHP wrappers for KendoUI components",
     "type": "library",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.6.0"
     },
