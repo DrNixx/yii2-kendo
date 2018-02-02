@@ -1,6 +1,6 @@
 {
     "name": "drnixx/yii2-kendo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "PHP wrappers for KendoUI components",
     "type": "library",
     "require": {
@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "yii2-kendo\\": "src/"
+            "yii2\\kendo\\": "src/"
         }
     },
      "config": {
