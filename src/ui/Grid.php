@@ -6,7 +6,7 @@ use yii2\kendo\Template;
 
 class Grid extends Widget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'Grid';
     }

@@ -7,7 +7,7 @@ use yii2\kendo\JavaScriptFunction;
 
 class Splitter extends Widget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'Splitter';
     }

@@ -3,9 +3,9 @@ namespace yii2\kendo\ui;
 
 use yii2\kendo\JavaScriptFunction;
 
-class ColorPalette extends Widget
+class ColorPalette extends InputWidget
 {
-    public function name()
+    public function kendoName()
     {
         return 'ColorPalette';
     }

@@ -4,6 +4,17 @@ namespace yii2\kendo\data;
 use yii2\kendo\JavaScriptFunction;
 use yii2\kendo\SerializableObject;
 
+/**
+ * Class DataSourceTransportCreate
+ *
+ * @property boolean $cache
+ * @property string $contentType
+ * @property string|JavaScriptFunction $data
+ * @property string $dataType
+ * @property string $type
+ * @property string|JavaScriptFunction $url
+ * @property boolean $withCredentials
+ */
 class DataSourceTransportCreate extends SerializableObject
 {
     /**
@@ -12,12 +23,10 @@ class DataSourceTransportCreate extends SerializableObject
      * Refer to the jQuery.ajax documentation for further info.
      *
      * @param boolean $value
-     *
-     * @return $this
      */
-    public function cache($value)
+    public function setCache($value)
     {
-        return $this->setProperty('cache', $value);
+        $this->setProperty('cache', $value);
     }
 
     /**
@@ -26,25 +35,21 @@ class DataSourceTransportCreate extends SerializableObject
      * Refer to the jQuery.ajax documentation for further info.
      *
      * @param string $value
-     *
-     * @return $this
      */
-    public function contentType($value)
+    public function setContentType($value)
     {
-        return $this->setProperty('contentType', $value);
+        $this->setProperty('contentType', $value);
     }
 
     /**
      * Data to be send to the server.
      * Refer to the jQuery.ajax documentation for further info.
      *
-     * @param |string|\Kendo\JavaScriptFunction $value
-     *
-     * @return $this
+     * @param string|JavaScriptFunction $value
      */
-    public function data($value)
+    public function setData($value)
     {
-        return $this->setProperty('data', $value);
+        $this->setProperty('data', $value);
     }
 
     /**
@@ -53,12 +58,10 @@ class DataSourceTransportCreate extends SerializableObject
      * Refer to the jQuery.ajax documentation for further info.
      *
      * @param string $value
-     *
-     * @return $this
      */
-    public function dataType($value)
+    public function setDataType($value)
     {
-        return $this->setProperty('dataType', $value);
+        $this->setProperty('dataType', $value);
     }
 
     /**
@@ -66,22 +69,18 @@ class DataSourceTransportCreate extends SerializableObject
      * Refer to the jQuery.ajax documentation for further info.
      *
      * @param string $value
-     *
-     * @return $this
      */
-    public function type($value)
+    public function setType($value)
     {
-        return $this->setProperty('type', $value);
+        $this->setProperty('type', $value);
     }
 
     /**
      * The remote url to call when creating a new record.
      *
      * @param string|JavaScriptFunction $value
-     *
-     * @return $this
      */
-    public function url($value)
+    public function setUrl($value)
     {
         if (is_array($value)) {
             foreach ($value as $key => $val) {
@@ -90,16 +89,14 @@ class DataSourceTransportCreate extends SerializableObject
             }
         }
 
-        return $this->setProperty('url', $value);
+        $this->setProperty('url', $value);
     }
 
     /**
      * @param bool $flag
-     *
-     * @return $this
      */
-    public function withCredentials($flag)
+    public function setWithCredentials($flag)
     {
-        return $this->setProperty('xhrFields', ["withCredentials" => $flag]);
+        $this->setProperty('xhrFields', ["withCredentials" => $flag]);
     }
 }

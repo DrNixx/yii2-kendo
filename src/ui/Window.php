@@ -5,10 +5,11 @@ namespace yii2\kendo\ui;
 use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 
-class Window extends Widget {
+class Window extends Widget
+{
     protected $ignore = array('content');
 
-    protected function name() {
+    protected function kendoName() {
         return 'Window';
     }
 

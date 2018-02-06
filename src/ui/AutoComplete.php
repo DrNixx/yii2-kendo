@@ -5,9 +5,9 @@ use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 use yii2\kendo\Template;
 
-class AutoComplete extends Widget
+class AutoComplete extends InputWidget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'AutoComplete';
     }

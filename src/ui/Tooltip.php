@@ -4,8 +4,9 @@ namespace yii2\kendo\ui;
 
 use yii2\kendo\JavaScriptFunction;
 
-class Tooltip extends Widget {
-    public function name() {
+class Tooltip extends Widget
+{
+    public function kendoName() {
         return 'Tooltip';
     }
 
@@ -13,27 +14,11 @@ class Tooltip extends Widget {
         //tooltip does not render content
     }
 
-    public function script($executeOnDomReady = true) {
-        $script = array();
+    protected function getScript() {
+        $name = $this->kendoName();
+        $json = $this->toJSON();
 
-        if ($executeOnDomReady) {
-            $script[] = 'jQuery(function(){';
-        }
-
-        //Tooltip should have a selector instead of id
-        $script[] = 'jQuery("';
-        $script[] = $this->id;
-        $script[] = '").kendo';
-        $script[] = $this->name();
-        $script[] = '(';
-        $script[] = $this->toJSON();
-        $script[] = ');';
-
-        if ($executeOnDomReady) {
-            $script[] = '});';
-        }
-
-        return implode($script);
+        return "jQuery('{$this->options['id']}').kendo{$name}({$json});";
     }
 
 

@@ -6,7 +6,7 @@ use yii2\kendo\UI\Widget;
 
 class Chart extends Widget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'Chart';
     }

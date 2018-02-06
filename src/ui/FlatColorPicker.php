@@ -4,8 +4,9 @@ namespace yii2\kendo\ui;
 
 use yii2\kendo\JavaScriptFunction;
 
-class FlatColorPicker extends Widget {
-    public function name() {
+class FlatColorPicker extends InputWidget
+{
+    public function kendoName() {
         return 'FlatColorPicker';
     }
 

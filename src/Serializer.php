@@ -91,7 +91,7 @@ class Serializer
         if ($value instanceof \DateTime) {
             $this->serializeDate($out, $value);
         } elseif ($value instanceof Serializable) {
-            $this->serializeAssociativeArray($out, $value->properties());
+            $this->serializeAssociativeArray($out, $value->getProperties());
         } elseif ($value instanceof JavaScriptFunction) {
             $out[] = $value->value();
         } elseif (is_array($value)) {

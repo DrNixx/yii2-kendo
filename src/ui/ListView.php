@@ -7,7 +7,7 @@ use yii2\kendo\Template;
 
 class ListView extends Widget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'ListView';
     }

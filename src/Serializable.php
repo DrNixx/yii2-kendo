@@ -3,5 +3,7 @@ namespace yii2\kendo;
 
 interface Serializable
 {
-    public function properties();
+    public function getProperties();
+
+    public function toJSON();
 }

@@ -5,8 +5,9 @@ namespace yii2\kendo\ui;
 use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 
-class TimePicker extends Widget {
-    protected function name() {
+class TimePicker extends InputWidget
+{
+    protected function kendoName() {
         return 'TimePicker';
     }
 

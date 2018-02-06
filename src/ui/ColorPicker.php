@@ -5,9 +5,9 @@ namespace yii2\kendo\ui;
 use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 
-class ColorPicker extends Widget
+class ColorPicker extends InputWidget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'ColorPicker';
     }

@@ -3,9 +3,9 @@ namespace yii2\kendo\ui;
 
 use yii2\kendo\JavaScriptFunction;
 
-class Calendar extends Widget
+class Calendar extends InputWidget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'Calendar';
     }

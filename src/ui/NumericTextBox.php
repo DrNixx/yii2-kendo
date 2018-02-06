@@ -4,9 +4,9 @@ namespace yii2\kendo\ui;
 use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 
-class NumericTextBox extends Widget
+class NumericTextBox extends InputWidget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'NumericTextBox';
     }

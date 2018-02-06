@@ -12,7 +12,7 @@ class TabStrip extends Widget
     /**
      * @return string
      */
-    protected function name()
+    protected function kendoName()
     {
         return 'TabStrip';
     }

@@ -3,15 +3,13 @@ namespace yii2\kendo;
 
 class Template extends JavaScriptFunction
 {
-    private $value;
-
-    public function __construct($value)
+    public function __construct($value, $config = [])
     {
-        $this->value = $value;
+        parent::__construct($value, $config);
     }
 
     public function value()
     {
-        return "kendo.template($('#".$this->value."').html())";
+        return "kendo.template(jQuery('#".parent::value()."').html())";
     }
 }

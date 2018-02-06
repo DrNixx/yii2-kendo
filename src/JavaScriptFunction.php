@@ -1,13 +1,16 @@
 <?php
 namespace yii2\kendo;
 
-class JavaScriptFunction
+use yii\base\BaseObject;
+
+class JavaScriptFunction extends BaseObject
 {
     private $value;
 
-    public function __construct($value)
+    public function __construct($value, $config = [])
     {
         $this->value = $value;
+        parent::__construct($config);
     }
 
     public function value()

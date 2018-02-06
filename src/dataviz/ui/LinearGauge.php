@@ -5,7 +5,7 @@ namespace yii2\kendo\dataviz\ui;
 use yii2\kendo\UI\Widget;
 
 class LinearGauge extends Widget {
-    protected function name() {
+    protected function kendoName() {
         return 'LinearGauge';
     }
 

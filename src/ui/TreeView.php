@@ -12,7 +12,7 @@ class TreeView extends Widget
     /**
      * @return string
      */
-    protected function name()
+    protected function kendoName()
     {
         return 'TreeView';
     }

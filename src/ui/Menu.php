@@ -8,7 +8,7 @@ use yii2\kendo\JavaScriptFunction;
 class Menu extends Widget {
     protected $ignore = array('items');
 
-    protected function name() {
+    protected function kendoName() {
         return 'Menu';
     }
 

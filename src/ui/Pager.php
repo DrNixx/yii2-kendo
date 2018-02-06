@@ -6,7 +6,7 @@ use yii2\kendo\JavaScriptFunction;
 use yii2\kendo\Template;
 
 class Pager extends Widget {
-    protected function name() {
+    protected function kendoName() {
         return 'Pager';
     }
 

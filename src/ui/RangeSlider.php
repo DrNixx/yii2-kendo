@@ -5,8 +5,9 @@ namespace yii2\kendo\ui;
 use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 
-class RangeSlider extends Widget {
-    protected function name() {
+class RangeSlider extends InputWidget
+{
+    protected function kendoName() {
         return 'RangeSlider';
     }
 

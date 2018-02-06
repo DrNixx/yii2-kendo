@@ -16,7 +16,7 @@ class Sparkline extends Widget {
         return new Element('span', true);
     }
 
-    public function name() {
+    public function kendoName() {
         return 'Sparkline';
     }
 

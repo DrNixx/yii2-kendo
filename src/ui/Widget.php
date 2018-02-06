@@ -1,14 +1,18 @@
 <?php
 namespace yii2\kendo\ui;
 
+use yii\base\Widget as YiiWidget;
+use yii\web\View;
 use yii2\kendo\Html\Element;
-use yii2\kendo\SerializableObject;
+use yii2\kendo\Serializable;
+use yii2\kendo\SerializableTrait;
+use yii2\kendo\Serializer;
 
-abstract class Widget extends SerializableObject
+abstract class Widget extends YiiWidget implements Serializable
 {
-    protected $id;
+    use SerializableTrait;
 
-    private $attributes = array();
+    public $options = [];
 
     private $isClientTemplate = false;
 
@@ -27,22 +31,74 @@ abstract class Widget extends SerializableObject
         }
     }
 
-    public function __construct($id)
+    public function __construct($config = [])
     {
-        $this->id = $id;
+        parent::__construct();
+    }
+
+    public function init()
+    {
+        $this->initIdentifiers();
+        parent::init();
+    }
+
+    public function run()
+    {
+        $this->registerJavascript();
+        $this->registerAssets();
+
+        return $this->html();
     }
 
     public function attr($key, $value = null)
     {
         if (is_array($key)) {
             foreach ($key as $k => $v) {
-                $this->attributes[$k] = $v;
+                $this->options[$k] = $v;
             }
         } else {
-            $this->attributes[$key] = $value;
+            $this->options[$key] = $value;
         }
 
         return $this;
+    }
+
+    public function html()
+    {
+        $element = $this->createElement();
+        $this->assignAttributes($element);
+        return $element->outerHtml();
+    }
+
+    public function toJSON()
+    {
+        $serializer = new Serializer();
+        return $serializer->serialize($this);
+    }
+
+    public function renderInTemplate()
+    {
+        $output = [];
+
+        $this->isClientTemplate = true;
+
+        $output[] = $this->html();
+        $output[] = '<script>';
+        $output[] = $this->getScript();
+        $output[] = '</script>';
+
+        $this->isClientTemplate = false;
+
+        return str_replace('</script>', '<\\/script>', implode($output));
+    }
+
+    abstract protected function kendoName();
+
+    protected function initIdentifiers()
+    {
+        if (!isset($this->options['id'])) {
+            $this->options['id'] = $this->getId();
+        }
     }
 
     protected function createElement()
@@ -50,80 +106,41 @@ abstract class Widget extends SerializableObject
         return new Element('div');
     }
 
-    protected function addAttributes(Element $element)
+    /**
+     * @param Element $element
+     */
+    protected function assignAttributes(Element $element)
     {
-        $element->attr('id', $this->id);
-
         if ($element->tagName() == 'textarea' || $element->tagName() == 'input') {
-            $element->attr('name', $this->id);
+            $this->options['name'] = $this->options['id'];
         }
 
-        foreach ($this->attributes as $key => $value) {
+        foreach ($this->options as $key => $value) {
             $element->attr($key, $value);
         }
     }
 
-    public function html()
+    protected function getScript()
     {
-        $element = $this->createElement();
+        $prefix = $this->isClientTemplate ? '\#' : '#';
+        $selector = $this->escapeSelector($this->options['id']);
+        $name = $this->kendoName();
+        $json = $this->toJSON();
 
-        $this->addAttributes($element);
-
-        return $element->outerHtml();
+        return "jQuery('{$prefix}{$selector}').kendo{$name}({$json});";
     }
 
-    abstract protected function name();
-
-    public function render()
+    protected function registerJavascript($position = View::POS_READY)
     {
-        $output = array();
-
-        $output[] = $this->html();
-        $output[] = '<script>';
-        $output[] = $this->script();
-        $output[] = '</script>';
-
-        return implode($output);
+        $this->view->registerJs($this->getScript(), $position);
     }
 
-    public function renderInTemplate()
+    protected function registerAssets()
     {
-        $this->isClientTemplate = true;
-
-        $output = $this->render();
-
-        $this->isClientTemplate = false;
-
-        return str_replace('</script>', '<\\/script>', $output);
     }
 
     private function escapeSelector($value)
     {
         return preg_replace('/([\[\]])/', "\\\\\\\\\\1", $value);
-    }
-
-    public function script($executeOnDomReady = true)
-    {
-        $script = array();
-
-        if ($executeOnDomReady) {
-            $script[] = 'jQuery(function(){';
-        }
-
-        $prefix = $this->isClientTemplate ? '\#' : '#';
-
-        $script[] = 'jQuery("'.$prefix;
-        $script[] = $this->escapeSelector($this->id);
-        $script[] = '").kendo';
-        $script[] = $this->name();
-        $script[] = '(';
-        $script[] = $this->toJSON();
-        $script[] = ');';
-
-        if ($executeOnDomReady) {
-            $script[] = '});';
-        }
-
-        return implode($script);
     }
 }

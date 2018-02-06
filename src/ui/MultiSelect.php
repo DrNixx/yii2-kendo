@@ -5,9 +5,9 @@ use yii2\kendo\Html\Element;
 use yii2\kendo\JavaScriptFunction;
 use yii2\kendo\Template;
 
-class MultiSelect extends Widget
+class MultiSelect extends InputWidget
 {
-    public function name()
+    public function kendoName()
     {
         return 'MultiSelect';
     }

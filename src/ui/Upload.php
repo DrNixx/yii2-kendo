@@ -6,7 +6,7 @@ use yii2\kendo\JavaScriptFunction;
 
 class Upload extends Widget
 {
-    protected function name()
+    protected function kendoName()
     {
         return 'Upload';
     }
