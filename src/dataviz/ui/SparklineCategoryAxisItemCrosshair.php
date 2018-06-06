@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineCategoryAxisItemCrosshair extends SerializableObject {
 
     /**
      * The color of the crosshair.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class SparklineCategoryAxisItemCrosshair extends SerializableObject {
     /**
      * The width of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -27,7 +27,7 @@ class SparklineCategoryAxisItemCrosshair extends SerializableObject {
     /**
      * The opacity of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -36,7 +36,7 @@ class SparklineCategoryAxisItemCrosshair extends SerializableObject {
     /**
      * The dash type of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -45,7 +45,7 @@ class SparklineCategoryAxisItemCrosshair extends SerializableObject {
     /**
      * The dash type of the crosshair.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -53,8 +53,8 @@ class SparklineCategoryAxisItemCrosshair extends SerializableObject {
 
     /**
      * The crosshar tooltip configuration options.
-     * @param \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshairTooltip|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
+     * @param \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshairTooltip|array $value
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemCrosshair
      */
     public function tooltip($value) {
         return $this->setProperty('tooltip', $value);

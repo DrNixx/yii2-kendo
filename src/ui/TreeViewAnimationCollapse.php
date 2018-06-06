@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class TreeViewAnimationCollapse extends SerializableObject {
 
     /**
      * The number of milliseconds used for the animation when a node is expanded.
      * @param float $value
-     * @return \yii2\kendo\ui\TreeViewAnimationCollapse
+     * @return \kendo\ui\TreeViewAnimationCollapse
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);
@@ -19,7 +19,7 @@ class TreeViewAnimationCollapse extends SerializableObject {
      * A whitespace-delimited string of animation effects that are utilized when a TreeView node
 is collapsed. Options include "fadeOut".
      * @param string $value
-     * @return \yii2\kendo\ui\TreeViewAnimationCollapse
+     * @return \kendo\ui\TreeViewAnimationCollapse
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);

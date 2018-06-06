@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
 
 class Slider extends InputWidget
 {
@@ -19,7 +19,7 @@ class Slider extends InputWidget
     /**
      * The title of the decrease button of the Slider.
      * @param string $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function decreaseButtonTitle($value) {
         return $this->setProperty('decreaseButtonTitle', $value);
@@ -28,7 +28,7 @@ class Slider extends InputWidget
     /**
      * The title of the increase button of the Slider.
      * @param string $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function increaseButtonTitle($value) {
         return $this->setProperty('increaseButtonTitle', $value);
@@ -38,7 +38,7 @@ class Slider extends InputWidget
      * The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
 handle must be focused). Note: The allied largeStep will also set large tick for every large step.
      * @param float $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function largeStep($value) {
         return $this->setProperty('largeStep', $value);
@@ -47,7 +47,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
     /**
      * The maximum value of the Slider.
      * @param float $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function max($value) {
         return $this->setProperty('max', $value);
@@ -56,7 +56,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
     /**
      * The minimum value of the Slider.
      * @param float $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function min($value) {
         return $this->setProperty('min', $value);
@@ -65,7 +65,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
     /**
      * The orientation of a Slider: "horizontal" or "vertical".
      * @param string $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function orientation($value) {
         return $this->setProperty('orientation', $value);
@@ -75,7 +75,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
      * Can be used to show (true) or hide (false) the
 increase and decrease buttons of a Slider.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function showButtons($value) {
         return $this->setProperty('showButtons', $value);
@@ -86,7 +86,7 @@ increase and decrease buttons of a Slider.
 (1) clicks on the increase or decrease buttons of the Slider, (2) presses the arrow keys
 (the drag handle must be focused), or (3) drags the drag handle.
      * @param float $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function smallStep($value) {
         return $this->setProperty('smallStep', $value);
@@ -95,7 +95,7 @@ increase and decrease buttons of a Slider.
     /**
      * Denotes the location of the tick marks in the Slider. The available options are:
      * @param string $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function tickPlacement($value) {
         return $this->setProperty('tickPlacement', $value);
@@ -103,8 +103,8 @@ increase and decrease buttons of a Slider.
 
     /**
      * Configuration of the Slider tooltip.
-     * @param \yii2\kendo\ui\SliderTooltip|array $value
-     * @return \yii2\kendo\ui\Slider
+     * @param \kendo\ui\SliderTooltip|array $value
+     * @return \kendo\ui\Slider
      */
     public function tooltip($value) {
         return $this->setProperty('tooltip', $value);
@@ -113,7 +113,7 @@ increase and decrease buttons of a Slider.
     /**
      * The underlying value of the Slider.
      * @param float $value
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function value($value) {
         return $this->setProperty('value', $value);
@@ -123,7 +123,7 @@ increase and decrease buttons of a Slider.
      * Sets the change event of the Slider.
      * Fires when the slider value changes as a result of selecting a new value with the drag handle, buttons or keyboard.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function change($value) {
         if (is_string($value)) {
@@ -137,7 +137,7 @@ increase and decrease buttons of a Slider.
      * Sets the slide event of the Slider.
      * Fires when the user drags the drag handle to a new position.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Slider
+     * @return \kendo\ui\Slider
      */
     public function slide($value) {
         if (is_string($value)) {

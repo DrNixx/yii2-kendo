@@ -1,15 +1,15 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class EditorImageBrowserTransport extends SerializableObject
 {
     /**
      * Options or URL for remote image retrieval.
-     * @param string|\yii2\kendo\ui\EditorImageBrowserTransportRead|array $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @param string|\kendo\ui\EditorImageBrowserTransportRead|array $value
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function read($value)
     {
@@ -25,7 +25,7 @@ class EditorImageBrowserTransport extends SerializableObject
      * If not specified a default image icon will be shown.
      * If function is assign, the current path and image name will be provided.
      * @param string|JavaScriptFunction $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function thumbnailUrl($value)
     {
@@ -36,7 +36,7 @@ class EditorImageBrowserTransport extends SerializableObject
      * The URL which will handle the upload of the new images.
      * If not specified the Upload button will not be displayed.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function uploadUrl($value)
     {
@@ -46,7 +46,7 @@ class EditorImageBrowserTransport extends SerializableObject
     /**
      * The URL responsible for serving the original image. A file name placeholder should be specifed.
      * @param string|JavaScriptFunction $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function imageUrl($value)
     {
@@ -56,8 +56,8 @@ class EditorImageBrowserTransport extends SerializableObject
     /**
      * Options or URL which will handle the file and directory deletion.
      * If not specified the delete button will not be present.
-     * @param string|\yii2\kendo\ui\EditorImageBrowserTransportDestroy|array $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @param string|\kendo\ui\EditorImageBrowserTransportDestroy|array $value
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function destroy($value)
     {
@@ -71,8 +71,8 @@ class EditorImageBrowserTransport extends SerializableObject
     /**
      * Options or URL which will handle the directory creation.
      * If not specified that create new folder button will not be present.
-     * @param string|\yii2\kendo\ui\EditorImageBrowserTransportCreate|array $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransport
+     * @param string|\kendo\ui\EditorImageBrowserTransportCreate|array $value
+     * @return \kendo\ui\EditorImageBrowserTransport
      */
     public function create($value)
     {

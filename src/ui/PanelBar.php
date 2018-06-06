@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
 
 class PanelBar extends Widget
 {

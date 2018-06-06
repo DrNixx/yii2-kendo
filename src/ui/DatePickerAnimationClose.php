@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class DatePickerAnimationClose extends SerializableObject {
 
     /**
      * Effect to be used for closing of the popup.
      * @param string $value
-     * @return \yii2\kendo\ui\DatePickerAnimationClose
+     * @return \kendo\ui\DatePickerAnimationClose
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);
@@ -18,7 +18,7 @@ class DatePickerAnimationClose extends SerializableObject {
     /**
      * Difines the animation duration.
      * @param float $value
-     * @return \yii2\kendo\ui\DatePickerAnimationClose
+     * @return \kendo\ui\DatePickerAnimationClose
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);

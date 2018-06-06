@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridSortable extends SerializableObject
 {
     /**
      * Defines whether column can have unsorted state.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridSortable
+     * @return \kendo\ui\GridSortable
      */
     public function allowUnsort($value)
     {
@@ -18,7 +18,7 @@ class GridSortable extends SerializableObject
     /**
      * Defines sorting mode. Possible values:
      * @param string $value
-     * @return \yii2\kendo\ui\GridSortable
+     * @return \kendo\ui\GridSortable
      */
     public function mode($value)
     {

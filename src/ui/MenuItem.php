@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
+use kendo\Html\Element;
 
 class MenuItem extends NavigationalItem
 {
@@ -11,7 +11,7 @@ class MenuItem extends NavigationalItem
     }
 
     /**
-     * @param \yii2\kendo\html\Element $element
+     * @param \kendo\html\Element $element
      */
     protected function renderContent($element)
     {
@@ -43,7 +43,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the text displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\MenuItem
+     * @return \kendo\ui\MenuItem
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -52,7 +52,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the URL of the image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\MenuItem
+     * @return \kendo\ui\MenuItem
      */
     public function imageUrl($value) {
         return $this->setProperty('imageUrl', $value);
@@ -61,7 +61,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the class name for the sprite image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\MenuItem
+     * @return \kendo\ui\MenuItem
      */
     public function spriteCssClass($value) {
         return $this->setProperty('spriteCssClass', $value);
@@ -70,7 +70,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies whether the item is initially enabled
      * @param boolean $value
-     * @return \yii2\kendo\ui\MenuItem
+     * @return \kendo\ui\MenuItem
      */
     public function enabled($value) {
         return $this->setProperty('enabled', $value);
@@ -79,7 +79,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies whether the item is initially selected
      * @param boolean $value
-     * @return \yii2\kendo\ui\MenuItem
+     * @return \kendo\ui\MenuItem
      */
     public function selected($value) {
         return $this->setProperty('selected', $value);
@@ -88,7 +88,7 @@ class MenuItem extends NavigationalItem
     /**
      * Sets the HTML content of the MenuItem.
      * @param string $value
-     * @return \yii2\kendo\ui\MenuItem    */
+     * @return \kendo\ui\MenuItem    */
     public function content($value) {
         return $this->setProperty('content', $value);
     }
@@ -107,9 +107,9 @@ class MenuItem extends NavigationalItem
         $this->content(ob_get_clean());
     }
     /**
-     * Adds one or more \yii2\kendo\ui\MenuItem.
-     * @param \yii2\kendo\ui\MenuItem|array,... $value
-     * @return \yii2\kendo\ui\Menu    */
+     * Adds one or more \kendo\ui\MenuItem.
+     * @param \kendo\ui\MenuItem|array,... $value
+     * @return \kendo\ui\Menu    */
     public function addItem($value) {
         return $this->add('items', func_get_args());
     }

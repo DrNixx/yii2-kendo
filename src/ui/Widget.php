@@ -1,12 +1,12 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
 use yii\base\Widget as YiiWidget;
 use yii\web\View;
-use yii2\kendo\Html\Element;
-use yii2\kendo\Serializable;
-use yii2\kendo\SerializableTrait;
-use yii2\kendo\Serializer;
+use kendo\Html\Element;
+use kendo\Serializable;
+use kendo\SerializableTrait;
+use kendo\Serializer;
 
 abstract class Widget extends YiiWidget implements Serializable
 {

@@ -16,10 +16,16 @@
     ],
     "autoload": {
         "psr-4": {
-            "yii2\\kendo\\": "src/"
+            "kendo\\": "src/"
         }
     },
-     "config": {
+    "config": {
         "platform": {"php": "5.6"}
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

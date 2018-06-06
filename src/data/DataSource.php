@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class DataSource extends SerializableObject
 {
@@ -19,7 +19,7 @@ class DataSource extends SerializableObject
     /**
      * Enables (true) or disables (false) the automatic invocation of the sync() method for each change made.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function autoSync($value)
     {
@@ -29,7 +29,7 @@ class DataSource extends SerializableObject
     /**
      * Enables (true) or disables (false) batch mode.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function batch($value)
     {
@@ -39,7 +39,7 @@ class DataSource extends SerializableObject
     /**
      * Specifies the local JavaScript object to use for the data source.
      * @param array $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function data($value)
     {
@@ -48,8 +48,8 @@ class DataSource extends SerializableObject
 
     /**
      * Adds DataSourceFilterItem to the DataSource.
-     * @param \yii2\kendo\data\DataSourceFilterItem|array,... $value one or more DataSourceFilterItem to add.
-     * @return \yii2\kendo\data\DataSource
+     * @param \kendo\data\DataSourceFilterItem|array,... $value one or more DataSourceFilterItem to add.
+     * @return \kendo\data\DataSource
      */
     public function addFilterItem($value)
     {
@@ -62,8 +62,8 @@ class DataSource extends SerializableObject
 
     /**
      * Adds DataSourceGroupItem to the DataSource.
-     * @param \yii2\kendo\data\DataSourceGroupItem|array,... $value one or more DataSourceGroupItem to add.
-     * @return \yii2\kendo\data\DataSource
+     * @param \kendo\data\DataSourceGroupItem|array,... $value one or more DataSourceGroupItem to add.
+     * @return \kendo\data\DataSource
      */
     public function addGroupItem($value)
     {
@@ -73,7 +73,7 @@ class DataSource extends SerializableObject
     /**
      * Sets the index of the displayed page of data.
      * @param float $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function page($value)
     {
@@ -83,7 +83,7 @@ class DataSource extends SerializableObject
     /**
      * Sets the number of records which contains a given page of data.
      * @param float $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function pageSize($value)
     {
@@ -92,8 +92,8 @@ class DataSource extends SerializableObject
 
     /**
      * Set the object responsible for describing the raw data format.
-     * @param \yii2\kendo\data\DataSourceSchema|array $value
-     * @return \yii2\kendo\data\DataSource
+     * @param \kendo\data\DataSourceSchema|array $value
+     * @return \kendo\data\DataSource
      */
     public function schema($value)
     {
@@ -108,7 +108,7 @@ class DataSource extends SerializableObject
      * Determines if aggregates are calculated on the server or not.
      * By default aggregates are calculated client-side.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function serverAggregates($value)
     {
@@ -120,7 +120,7 @@ class DataSource extends SerializableObject
      * By default filtering is performed client-side.By default, a filter object is sent to the server
      * with the query string in the following form:Possible values for operator include:
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function serverFiltering($value)
     {
@@ -133,7 +133,7 @@ class DataSource extends SerializableObject
      * with the query string in the following form:It is possible to modify these parameters by using
      * the parameterMap function found on the transport.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function serverGrouping($value)
     {
@@ -146,7 +146,7 @@ class DataSource extends SerializableObject
      * Use the schema.total setting to customize that.The following options are sent to the server
      * as part of the query string by default:
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function serverPaging($value)
     {
@@ -159,7 +159,7 @@ class DataSource extends SerializableObject
      * with the query string in the following form:It is possible to modify these parameters by using
      * the parameterMap function found on the transport.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function serverSorting($value)
     {
@@ -168,8 +168,8 @@ class DataSource extends SerializableObject
 
     /**
      * Adds DataSourceSortItem to the DataSource.
-     * @param \yii2\kendo\data\DataSourceSortItem|array,... $value one or more DataSourceSortItem to add.
-     * @return \yii2\kendo\data\DataSource
+     * @param \kendo\data\DataSourceSortItem|array,... $value one or more DataSourceSortItem to add.
+     * @return \kendo\data\DataSource
      */
     public function addSortItem($value)
     {
@@ -190,8 +190,8 @@ class DataSource extends SerializableObject
 
     /**
      * Specifies the settings for loading and saving data. This can be a remote or local/in-memory data.
-     * @param \yii2\kendo\data\DataSourceTransport|array $value
-     * @return \yii2\kendo\data\DataSource
+     * @param \kendo\data\DataSourceTransport|array $value
+     * @return \kendo\data\DataSource
      */
     public function transport($value)
     {
@@ -206,7 +206,7 @@ class DataSource extends SerializableObject
      * Loads transport with preconfigured settings.
      * Currently supports only "odata" (Requires kendo.data.odata.js to be included).
      * @param string $value
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function type($value)
     {
@@ -217,7 +217,7 @@ class DataSource extends SerializableObject
      * Sets the change event of the DataSource.
      * Fires when data is changed or read from the transport.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function change($value)
     {
@@ -232,7 +232,7 @@ class DataSource extends SerializableObject
      * Sets the error event of the DataSource.
      * Fires when an error occurs during data read or sync.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function error($value)
     {
@@ -247,7 +247,7 @@ class DataSource extends SerializableObject
      * Sets the sync event of the DataSource.
      * Fires after changes are synced.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function sync($value)
     {
@@ -262,7 +262,7 @@ class DataSource extends SerializableObject
      * Sets the requestStart event of the DataSource.
      * Fires when data request is to be made.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function requestStart($value)
     {
@@ -277,7 +277,7 @@ class DataSource extends SerializableObject
      * Sets the requestEnd event of the DataSource.
      * Fires when a data request is received. Raised after a Create, Read, Update or Destroy request is performed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSource
+     * @return \kendo\data\DataSource
      */
     public function requestEnd($value)
     {

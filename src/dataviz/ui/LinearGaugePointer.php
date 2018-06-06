@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class LinearGaugePointer extends SerializableObject {
 
     /**
      * The border of the pointer.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugePointerBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @param \kendo\dataviz\ui\LinearGaugePointerBorder|array $value
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -18,7 +18,7 @@ class LinearGaugePointer extends SerializableObject {
     /**
      * The color of the pointer.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -27,7 +27,7 @@ class LinearGaugePointer extends SerializableObject {
     /**
      * The margin of the pointer.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -37,7 +37,7 @@ class LinearGaugePointer extends SerializableObject {
      * The opacity of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -46,7 +46,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The shape of the pointer.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function shape($value) {
         return $this->setProperty('shape', $value);
@@ -55,7 +55,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The size of the pointer.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function size($value) {
         return $this->setProperty('size', $value);
@@ -64,8 +64,8 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The element arround/under the pointer.
 (available only for 'barIndicator' shape)
-     * @param \yii2\kendo\dataviz\ui\LinearGaugePointerTrack|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @param \kendo\dataviz\ui\LinearGaugePointerTrack|array $value
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function track($value) {
         return $this->setProperty('track', $value);
@@ -74,7 +74,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The value of the gauge.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointer
+     * @return \kendo\dataviz\ui\LinearGaugePointer
      */
     public function value($value) {
         return $this->setProperty('value', $value);

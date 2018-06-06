@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo\html;
+namespace kendo\html;
 
 interface Node
 {

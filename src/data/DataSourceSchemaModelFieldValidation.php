@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class DataSourceSchemaModelFieldValidation extends SerializableObject
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineChartArea extends SerializableObject {
 
     /**
      * The background color of the chart area.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,7 +18,7 @@ class SparklineChartArea extends SerializableObject {
     /**
      * The background opacity of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -26,8 +26,8 @@ class SparklineChartArea extends SerializableObject {
 
     /**
      * The border of the chart area.
-     * @param \yii2\kendo\dataviz\ui\SparklineChartAreaBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @param \kendo\dataviz\ui\SparklineChartAreaBorder|array $value
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -36,7 +36,7 @@ class SparklineChartArea extends SerializableObject {
     /**
      * The height of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -45,7 +45,7 @@ class SparklineChartArea extends SerializableObject {
     /**
      * The margin of the chart area.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -54,7 +54,7 @@ class SparklineChartArea extends SerializableObject {
     /**
      * The width of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineChartArea
+     * @return \kendo\dataviz\ui\SparklineChartArea
      */
     public function width($value) {
         return $this->setProperty('width', $value);

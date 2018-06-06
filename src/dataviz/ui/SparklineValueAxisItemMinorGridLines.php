@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineValueAxisItemMinorGridLines extends SerializableObject {
 
     /**
      * The color of the lines.Note that this has no effect if the visibility of the minor grid lines is not set to true.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
+     * @return \kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class SparklineValueAxisItemMinorGridLines extends SerializableObject {
     /**
      * The dash type of the minor grid lines.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
+     * @return \kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -27,7 +27,7 @@ class SparklineValueAxisItemMinorGridLines extends SerializableObject {
     /**
      * The visibility of the lines.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
+     * @return \kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -36,7 +36,7 @@ class SparklineValueAxisItemMinorGridLines extends SerializableObject {
     /**
      * The width of the lines.Note that this settings has no effect if the visibility of the minor grid lines is not set to true.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
+     * @return \kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines
      */
     public function width($value) {
         return $this->setProperty('width', $value);

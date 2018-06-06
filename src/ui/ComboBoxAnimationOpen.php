@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ComboBoxAnimationOpen extends SerializableObject {
 
     /**
      * Effect to be used for opening of the popup.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBoxAnimationOpen
+     * @return \kendo\ui\ComboBoxAnimationOpen
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);
@@ -18,7 +18,7 @@ class ComboBoxAnimationOpen extends SerializableObject {
     /**
      * Difines the animation duration.
      * @param float $value
-     * @return \yii2\kendo\ui\ComboBoxAnimationOpen
+     * @return \kendo\ui\ComboBoxAnimationOpen
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);

@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridColumnMenu extends SerializableObject {
 
     /**
      * Enable/disable columns section in column header menu.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumnMenu
+     * @return \kendo\ui\GridColumnMenu
      */
     public function columns($value) {
         return $this->setProperty('columns', $value);
@@ -18,7 +18,7 @@ class GridColumnMenu extends SerializableObject {
     /**
      * Enable/disable filter section in column header menu.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumnMenu
+     * @return \kendo\ui\GridColumnMenu
      */
     public function filterable($value) {
         return $this->setProperty('filterable', $value);
@@ -27,7 +27,7 @@ class GridColumnMenu extends SerializableObject {
     /**
      * Enable/disable sorting section in column header menu.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumnMenu
+     * @return \kendo\ui\GridColumnMenu
      */
     public function sortable($value) {
         return $this->setProperty('sortable', $value);
@@ -35,8 +35,8 @@ class GridColumnMenu extends SerializableObject {
 
     /**
      * Sets the columnMenu messages.
-     * @param \yii2\kendo\ui\GridColumnMenuMessages|array $value
-     * @return \yii2\kendo\ui\GridColumnMenu
+     * @param \kendo\ui\GridColumnMenuMessages|array $value
+     * @return \kendo\ui\GridColumnMenu
      */
     public function messages($value) {
         return $this->setProperty('messages', $value);

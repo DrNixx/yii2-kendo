@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartSeriesItemTooltipBorder extends SerializableObject {
 
     /**
      * The color of the border.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItemTooltipBorder
+     * @return \kendo\dataviz\ui\StockChartSeriesItemTooltipBorder
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class StockChartSeriesItemTooltipBorder extends SerializableObject {
     /**
      * The width of the border.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItemTooltipBorder
+     * @return \kendo\dataviz\ui\StockChartSeriesItemTooltipBorder
      */
     public function width($value) {
         return $this->setProperty('width', $value);

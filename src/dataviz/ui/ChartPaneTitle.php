@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartPaneTitle extends SerializableObject {
 
@@ -10,7 +10,7 @@ class ChartPaneTitle extends SerializableObject {
      * The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,8 +18,8 @@ hex and rgb.
 
     /**
      * The border of the title.
-     * @param \yii2\kendo\dataviz\ui\ChartPaneTitleBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @param \kendo\dataviz\ui\ChartPaneTitleBorder|array $value
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -28,7 +28,7 @@ hex and rgb.
     /**
      * The text color of the title. Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -37,7 +37,7 @@ hex and rgb.
     /**
      * The font style of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -46,7 +46,7 @@ hex and rgb.
     /**
      * The margin of the title.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -55,7 +55,7 @@ hex and rgb.
     /**
      * The position of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function position($value) {
         return $this->setProperty('position', $value);
@@ -64,7 +64,7 @@ hex and rgb.
     /**
      * The text of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -73,7 +73,7 @@ hex and rgb.
     /**
      * The visibility of the title.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartPaneTitle
+     * @return \kendo\dataviz\ui\ChartPaneTitle
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

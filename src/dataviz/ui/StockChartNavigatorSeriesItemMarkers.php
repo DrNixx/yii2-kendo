@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartNavigatorSeriesItemMarkers extends SerializableObject {
 
     /**
      * The background color of the current series markers.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
+     * @return \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -17,8 +17,8 @@ class StockChartNavigatorSeriesItemMarkers extends SerializableObject {
 
     /**
      * The border of the markers.
-     * @param \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkersBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
+     * @param \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkersBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -27,7 +27,7 @@ class StockChartNavigatorSeriesItemMarkers extends SerializableObject {
     /**
      * The marker size.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
+     * @return \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
      */
     public function size($value) {
         return $this->setProperty('size', $value);
@@ -36,7 +36,7 @@ class StockChartNavigatorSeriesItemMarkers extends SerializableObject {
     /**
      * Configures the markers shape type.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
+     * @return \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
      */
     public function type($value) {
         return $this->setProperty('type', $value);
@@ -45,7 +45,7 @@ class StockChartNavigatorSeriesItemMarkers extends SerializableObject {
     /**
      * The markers visibility.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
+     * @return \kendo\dataviz\ui\StockChartNavigatorSeriesItemMarkers
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

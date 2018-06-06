@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartNavigatorSelect extends SerializableObject
 {
     /**
      * The lower boundary of the selected range.
      * @param \DateTime $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSelect
+     * @return \kendo\dataviz\ui\StockChartNavigatorSelect
      */
     public function from($value)
     {
@@ -18,7 +18,7 @@ class StockChartNavigatorSelect extends SerializableObject
     /**
      * The upper boundary of the selected range.
      * @param \DateTime $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigatorSelect
+     * @return \kendo\dataviz\ui\StockChartNavigatorSelect
      */
     public function to($value)
     {

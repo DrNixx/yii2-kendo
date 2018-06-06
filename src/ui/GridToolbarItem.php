@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class GridToolbarItem extends SerializableObject
 {
@@ -29,7 +29,7 @@ class GridToolbarItem extends SerializableObject
     /**
      * The name of the command. One of the predefined or a custom.
      * @param string $value
-     * @return \yii2\kendo\ui\GridToolbarItem
+     * @return \kendo\ui\GridToolbarItem
      */
     public function name($value)
     {
@@ -40,7 +40,7 @@ class GridToolbarItem extends SerializableObject
      * Sets the template option of the GridToolbarItem.
      * The template for the command button.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridToolbarItem
+     * @return \kendo\ui\GridToolbarItem
      */
     public function templateId($value)
     {
@@ -52,7 +52,7 @@ class GridToolbarItem extends SerializableObject
      * Sets the template option of the GridToolbarItem.
      * The template for the command button.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridToolbarItem
+     * @return \kendo\ui\GridToolbarItem
      */
     public function template($value)
     {
@@ -62,7 +62,7 @@ class GridToolbarItem extends SerializableObject
     /**
      * The text of the command that will be set on the button.
      * @param string $value
-     * @return \yii2\kendo\ui\GridToolbarItem
+     * @return \kendo\ui\GridToolbarItem
      */
     public function text($value)
     {

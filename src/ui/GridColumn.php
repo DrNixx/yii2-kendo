@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class GridColumn extends SerializableObject
 {
@@ -11,7 +11,7 @@ class GridColumn extends SerializableObject
      * Definition of column cells' HTML attributes.
      * Reserved words in Javascript should be enclosed in quotation marks.
      * @param  $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function attributes($value)
     {
@@ -20,8 +20,8 @@ class GridColumn extends SerializableObject
 
     /**
      * Adds GridColumnCommandItem to the GridColumn.
-     * @param \yii2\kendo\ui\GridColumnCommandItem|array,... $value one or more GridColumnCommandItem to add.
-     * @return \yii2\kendo\ui\GridColumn
+     * @param \kendo\ui\GridColumnCommandItem|array,... $value one or more GridColumnCommandItem to add.
+     * @return \kendo\ui\GridColumn
      */
     public function addCommandItem($value)
     {
@@ -30,8 +30,8 @@ class GridColumn extends SerializableObject
 
     /**
      * Adds GridColumn to the GridColumn.
-     * @param \yii2\kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
-     * @return \yii2\kendo\ui\GridColumn
+     * @param \kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
+     * @return \kendo\ui\GridColumn
      */
     public function addColumn($value)
     {
@@ -46,7 +46,7 @@ class GridColumn extends SerializableObject
      * Sets the editor option of the GridColumn.
      * Provides a way to specify custom editor for this column.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function editor($value)
     {
@@ -60,7 +60,7 @@ class GridColumn extends SerializableObject
     /**
      * Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function encoded($value)
     {
@@ -70,7 +70,7 @@ class GridColumn extends SerializableObject
     /**
      * The field from the datasource that will be displayed in the column.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function field($value)
     {
@@ -79,8 +79,8 @@ class GridColumn extends SerializableObject
 
     /**
      * Specifies whether given column is filterable.
-     * @param boolean|\yii2\kendo\ui\GridColumnFilterable|array $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @param boolean|\kendo\ui\GridColumnFilterable|array $value
+     * @return \kendo\ui\GridColumn
      */
     public function filterable($value)
     {
@@ -90,7 +90,7 @@ class GridColumn extends SerializableObject
     /**
      * The format that will be applied on the column cells.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function format($value)
     {
@@ -101,7 +101,7 @@ class GridColumn extends SerializableObject
      * Definition of column header cell's HTML attributes.
      * Reserved words in Javascript should be enclosed in quotation marks.
      * @param  $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function headerAttributes($value)
     {
@@ -114,7 +114,7 @@ class GridColumn extends SerializableObject
      * If sorting is enabled, it will be wrapped in a <a class="k-link"> element, so the template
      * should consist of only inline elements in order to have valid HTML markup in the Grid.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function headerTemplateId($value)
     {
@@ -128,7 +128,7 @@ class GridColumn extends SerializableObject
      * If sorting is enabled, it will be wrapped in a <a class="k-link"> element, so the template
      * should consist of only inline elements in order to have valid HTML markup in the Grid.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function headerTemplate($value)
     {
@@ -138,7 +138,7 @@ class GridColumn extends SerializableObject
     /**
      * Specifies whether given column is hidden.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function hidden($value)
     {
@@ -148,7 +148,7 @@ class GridColumn extends SerializableObject
     /**
      * Specifies whether given column is sortable.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function sortable($value)
     {
@@ -159,7 +159,7 @@ class GridColumn extends SerializableObject
      * Sets the template option of the GridColumn.
      * The template for column's cells.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function templateId($value)
     {
@@ -171,7 +171,7 @@ class GridColumn extends SerializableObject
      * Sets the template option of the GridColumn.
      * The template for column's cells.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function template($value)
     {
@@ -181,7 +181,7 @@ class GridColumn extends SerializableObject
     /**
      * The aggregates to be used when grouping is applied
      * @param array $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function aggregates($value)
     {
@@ -192,7 +192,7 @@ class GridColumn extends SerializableObject
      * Sets the groupHeaderTemplate option of the GridColumn.
      * The template for group header item.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function groupHeaderTemplateId($value)
     {
@@ -204,7 +204,7 @@ class GridColumn extends SerializableObject
      * Sets the groupHeaderTemplate option of the GridColumn.
      * The template for group header item.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function groupHeaderTemplate($value)
     {
@@ -215,7 +215,7 @@ class GridColumn extends SerializableObject
      * Sets the groupFooterTemplate option of the GridColumn.
      * The template for column's cell in group footer item.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function groupFooterTemplateId($value)
     {
@@ -227,7 +227,7 @@ class GridColumn extends SerializableObject
      * Sets the groupFooterTemplate option of the GridColumn.
      * The template for column's cell in group footer item.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function groupFooterTemplate($value)
     {
@@ -238,7 +238,7 @@ class GridColumn extends SerializableObject
      * Sets the footerTemplate option of the GridColumn.
      * The template for column's cell in footer item.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function footerTemplateId($value)
     {
@@ -250,7 +250,7 @@ class GridColumn extends SerializableObject
      * Sets the footerTemplate option of the GridColumn.
      * The template for column's cell in footer item.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function footerTemplate($value)
     {
@@ -260,7 +260,7 @@ class GridColumn extends SerializableObject
     /**
      * The text that will be displayed in the column header.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function title($value)
     {
@@ -270,7 +270,7 @@ class GridColumn extends SerializableObject
     /**
      * The width of the column.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function width($value)
     {
@@ -281,7 +281,7 @@ class GridColumn extends SerializableObject
      * An array of values that will be used in a foreign key column.
      * Each item in the array should have a text and value field.
      * @param array $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function values($value)
     {
@@ -291,7 +291,7 @@ class GridColumn extends SerializableObject
     /**
      * Indicates whether the column should be visible in column menu.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridColumn
+     * @return \kendo\ui\GridColumn
      */
     public function menu($value)
     {

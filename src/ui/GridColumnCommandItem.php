@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class GridColumnCommandItem extends SerializableObject
 {
@@ -10,7 +10,7 @@ class GridColumnCommandItem extends SerializableObject
      * The unique name of the command.
      * The supported built-in commands are: "create", "cancel", "save", "destroy".
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumnCommandItem
+     * @return \kendo\ui\GridColumnCommandItem
      */
     public function name($value)
     {
@@ -20,7 +20,7 @@ class GridColumnCommandItem extends SerializableObject
     /**
      * The text displayed by the command.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumnCommandItem
+     * @return \kendo\ui\GridColumnCommandItem
      */
     public function text($value)
     {
@@ -30,7 +30,7 @@ class GridColumnCommandItem extends SerializableObject
     /**
      * The CSS class of the command.
      * @param string $value
-     * @return \yii2\kendo\ui\GridColumnCommandItem
+     * @return \kendo\ui\GridColumnCommandItem
      */
     public function className($value)
     {
@@ -41,7 +41,7 @@ class GridColumnCommandItem extends SerializableObject
      * Sets the click option of the GridColumnCommandItem.
      * The JavaScript function executed when the user clicks the command button.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\GridColumnCommandItem
+     * @return \kendo\ui\GridColumnCommandItem
      */
     public function click($value)
     {

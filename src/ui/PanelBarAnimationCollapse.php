@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class PanelBarAnimationCollapse extends SerializableObject {
 
     /**
      * The number of milliseconds used for the visual animation when a PanelBar item is closed.
      * @param float $value
-     * @return \yii2\kendo\ui\PanelBarAnimationCollapse
+     * @return \kendo\ui\PanelBarAnimationCollapse
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);
@@ -19,7 +19,7 @@ class PanelBarAnimationCollapse extends SerializableObject {
      * A whitespace-delimited string of animation effects that are utilized when a PanelBar item
 is closed. Options include "fadeOut".
      * @param string $value
-     * @return \yii2\kendo\ui\PanelBarAnimationCollapse
+     * @return \kendo\ui\PanelBarAnimationCollapse
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);

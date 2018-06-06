@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class DropDownListAnimationClose extends SerializableObject {
 
     /**
      * Effect to be used for closing of the popup.
      * @param string $value
-     * @return \yii2\kendo\ui\DropDownListAnimationClose
+     * @return \kendo\ui\DropDownListAnimationClose
      */
     public function effects($value)
     {
@@ -19,7 +19,7 @@ class DropDownListAnimationClose extends SerializableObject {
     /**
      * Difines the animation duration.
      * @param float $value
-     * @return \yii2\kendo\ui\DropDownListAnimationClose
+     * @return \kendo\ui\DropDownListAnimationClose
      */
     public function duration($value)
     {

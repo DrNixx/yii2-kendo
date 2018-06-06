@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class RadialGaugeGaugeArea extends SerializableObject {
 
@@ -10,7 +10,7 @@ class RadialGaugeGaugeArea extends SerializableObject {
      * The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\RadialGaugeGaugeArea
+     * @return \kendo\dataviz\ui\RadialGaugeGaugeArea
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,8 +18,8 @@ Any valid CSS color string will work here, including hex and rgb.
 
     /**
      * The border of the gauge area.
-     * @param \yii2\kendo\dataviz\ui\RadialGaugeGaugeAreaBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\RadialGaugeGaugeArea
+     * @param \kendo\dataviz\ui\RadialGaugeGaugeAreaBorder|array $value
+     * @return \kendo\dataviz\ui\RadialGaugeGaugeArea
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -28,7 +28,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The height of the gauge area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\RadialGaugeGaugeArea
+     * @return \kendo\dataviz\ui\RadialGaugeGaugeArea
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -37,7 +37,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The margin of the gauge area.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\RadialGaugeGaugeArea
+     * @return \kendo\dataviz\ui\RadialGaugeGaugeArea
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -46,7 +46,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The width of the gauge area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\RadialGaugeGaugeArea
+     * @return \kendo\dataviz\ui\RadialGaugeGaugeArea
      */
     public function width($value) {
         return $this->setProperty('width', $value);

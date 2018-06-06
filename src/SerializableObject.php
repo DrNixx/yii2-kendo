@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo;
+namespace kendo;
 
 abstract class SerializableObject implements Serializable
 {

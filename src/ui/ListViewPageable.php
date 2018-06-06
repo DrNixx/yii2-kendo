@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ListViewPageable extends SerializableObject {
 
     /**
      * Defines the number of records which will be displyed.
      * @param float $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function pageSize($value) {
         return $this->setProperty('pageSize', $value);
@@ -18,7 +18,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines if buttons for navigating to the first, last, previous and next pages will be shown.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function previousNext($value) {
         return $this->setProperty('previousNext', $value);
@@ -27,7 +27,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines if numeric portion of the pager will be shown.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function numeric($value) {
         return $this->setProperty('numeric', $value);
@@ -36,7 +36,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines the number of buttons displayed in the numeric pager.
      * @param float $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function buttonCount($value) {
         return $this->setProperty('buttonCount', $value);
@@ -45,7 +45,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines if an input element which allows the user to navigate to given page will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function input($value) {
         return $this->setProperty('input', $value);
@@ -54,7 +54,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
      * @param boolean|array $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function pageSizes($value) {
         return $this->setProperty('pageSizes', $value);
@@ -63,7 +63,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines if a refresh button will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function refresh($value) {
         return $this->setProperty('refresh', $value);
@@ -72,7 +72,7 @@ class ListViewPageable extends SerializableObject {
     /**
      * Defines if a label showing current paging information will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @return \kendo\ui\ListViewPageable
      */
     public function info($value) {
         return $this->setProperty('info', $value);
@@ -80,8 +80,8 @@ class ListViewPageable extends SerializableObject {
 
     /**
      * Defines texts shown within the pager.
-     * @param \yii2\kendo\ui\ListViewPageableMessages|array $value
-     * @return \yii2\kendo\ui\ListViewPageable
+     * @param \kendo\ui\ListViewPageableMessages|array $value
+     * @return \kendo\ui\ListViewPageable
      */
     public function messages($value) {
         return $this->setProperty('messages', $value);

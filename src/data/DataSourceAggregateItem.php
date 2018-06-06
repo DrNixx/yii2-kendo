@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class DataSourceAggregateItem extends SerializableObject
 {
     /**
      * Specifies the field on which the aggregate will be calculated.
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceAggregateItem
+     * @return \kendo\data\DataSourceAggregateItem
      */
     public function field($value)
     {
@@ -18,7 +18,7 @@ class DataSourceAggregateItem extends SerializableObject
     /**
      * Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceAggregateItem
+     * @return \kendo\data\DataSourceAggregateItem
      */
     public function aggregate($value)
     {

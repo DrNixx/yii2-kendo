@@ -1,15 +1,15 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class EditorImageBrowserSchemaModelFieldsName extends SerializableObject
 {
     /**
      * The name of the field.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserSchemaModelFieldsName
+     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsName
      */
     public function field($value)
     {
@@ -20,7 +20,7 @@ class EditorImageBrowserSchemaModelFieldsName extends SerializableObject
      * Sets the parse option of the EditorImageBrowserSchemaModelFieldsName.
      * Specifies the function which will parse the field value. If not set default parsers will be used.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\EditorImageBrowserSchemaModelFieldsName
+     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsName
      */
     public function parse($value)
     {

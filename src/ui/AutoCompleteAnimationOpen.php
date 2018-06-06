@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class AutoCompleteAnimationOpen extends SerializableObject
 {
     /**
      * The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimationOpen
+     * @return \kendo\ui\AutoCompleteAnimationOpen
      */
     public function effects($value)
     {
@@ -18,7 +18,7 @@ class AutoCompleteAnimationOpen extends SerializableObject
     /**
      * The duration of the open animation in milliseconds.
      * @param float $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimationOpen
+     * @return \kendo\ui\AutoCompleteAnimationOpen
      */
     public function duration($value)
     {

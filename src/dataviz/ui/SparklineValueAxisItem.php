@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineValueAxisItem extends SerializableObject {
 
     /**
      * Value at which the category axis crosses this axis. (Only for object)Value indicies at which the category axes cross the value axis. (Only for array)Date at which the category axis crosses this axis. (Only for date)
      * @param |date|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function axisCrossingValue($value) {
         return $this->setProperty('axisCrossingValue', $value);
@@ -19,7 +19,7 @@ class SparklineValueAxisItem extends SerializableObject {
      * Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -27,8 +27,8 @@ Individual color settings for line and labels take priority. Any valid CSS color
 
     /**
      * Configures the axis labels.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemLabels|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemLabels|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function labels($value) {
         return $this->setProperty('labels', $value);
@@ -36,8 +36,8 @@ Individual color settings for line and labels take priority. Any valid CSS color
 
     /**
      * Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemLine|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemLine|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function line($value) {
         return $this->setProperty('line', $value);
@@ -46,8 +46,8 @@ Individual color settings for line and labels take priority. Any valid CSS color
     /**
      * Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemMajorGridLines|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemMajorGridLines|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function majorGridLines($value) {
         return $this->setProperty('majorGridLines', $value);
@@ -55,8 +55,8 @@ body of the chart.
 
     /**
      * The major ticks of the axis.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemMajorTicks|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemMajorTicks|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function majorTicks($value) {
         return $this->setProperty('majorTicks', $value);
@@ -65,7 +65,7 @@ body of the chart.
     /**
      * The interval between major divisions.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function majorUnit($value) {
         return $this->setProperty('majorUnit', $value);
@@ -75,7 +75,7 @@ body of the chart.
      * The maximum value of the axis.
 This is often used in combination with the min configuration option.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function max($value) {
         return $this->setProperty('max', $value);
@@ -85,7 +85,7 @@ This is often used in combination with the min configuration option.
      * The minimum value of the axis.
 This is often used in combination with the max configuration option.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function min($value) {
         return $this->setProperty('min', $value);
@@ -93,8 +93,8 @@ This is often used in combination with the max configuration option.
 
     /**
      * Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemMinorGridLines|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function minorGridLines($value) {
         return $this->setProperty('minorGridLines', $value);
@@ -102,8 +102,8 @@ This is often used in combination with the max configuration option.
 
     /**
      * The minor ticks of the axis.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemMinorTicks|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemMinorTicks|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function minorTicks($value) {
         return $this->setProperty('minorTicks', $value);
@@ -113,7 +113,7 @@ This is often used in combination with the max configuration option.
      * The interval between minor divisions.
 It defaults to 1/5th of the majorUnit.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function minorUnit($value) {
         return $this->setProperty('minorUnit', $value);
@@ -122,7 +122,7 @@ It defaults to 1/5th of the majorUnit.
     /**
      * The unique axis name.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function name($value) {
         return $this->setProperty('name', $value);
@@ -131,7 +131,7 @@ It defaults to 1/5th of the majorUnit.
     /**
      * Prevents the automatic axis range from snapping to 0.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function narrowRange($value) {
         return $this->setProperty('narrowRange', $value);
@@ -139,8 +139,8 @@ It defaults to 1/5th of the majorUnit.
 
     /**
      * Adds SparklineValueAxisItemPlotBand to the SparklineValueAxisItem.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemPlotBand|array,... $value one or more SparklineValueAxisItemPlotBand to add.
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemPlotBand|array,... $value one or more SparklineValueAxisItemPlotBand to add.
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function addPlotBand($value) {
         return $this->add('plotBands', func_get_args());
@@ -150,7 +150,7 @@ It defaults to 1/5th of the majorUnit.
      * Reverses the axis direction -
 values increase from right to left and from top to bottom.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function reverse($value) {
         return $this->setProperty('reverse', $value);
@@ -158,8 +158,8 @@ values increase from right to left and from top to bottom.
 
     /**
      * The title of the value axis.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemTitle|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemTitle|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function title($value) {
         return $this->setProperty('title', $value);
@@ -168,7 +168,7 @@ values increase from right to left and from top to bottom.
     /**
      * The visibility of the axis.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -176,8 +176,8 @@ values increase from right to left and from top to bottom.
 
     /**
      * The crosshair configuration options.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItemCrosshair|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineValueAxisItem
+     * @param \kendo\dataviz\ui\SparklineValueAxisItemCrosshair|array $value
+     * @return \kendo\dataviz\ui\SparklineValueAxisItem
      */
     public function crosshair($value) {
         return $this->setProperty('crosshair', $value);

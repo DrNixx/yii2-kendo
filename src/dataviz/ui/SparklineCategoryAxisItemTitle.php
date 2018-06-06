@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineCategoryAxisItemTitle extends SerializableObject {
 
@@ -10,7 +10,7 @@ class SparklineCategoryAxisItemTitle extends SerializableObject {
      * The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,8 +18,8 @@ hex and rgb.
 
     /**
      * The border of the title.
-     * @param \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitleBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @param \kendo\dataviz\ui\SparklineCategoryAxisItemTitleBorder|array $value
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -28,7 +28,7 @@ hex and rgb.
     /**
      * The text color of the title. Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -37,7 +37,7 @@ hex and rgb.
     /**
      * The font style of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -46,7 +46,7 @@ hex and rgb.
     /**
      * The margin of the title.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -55,7 +55,7 @@ hex and rgb.
     /**
      * The position of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function position($value) {
         return $this->setProperty('position', $value);
@@ -64,7 +64,7 @@ hex and rgb.
     /**
      * The rotation angle of the title.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function rotation($value) {
         return $this->setProperty('rotation', $value);
@@ -73,7 +73,7 @@ hex and rgb.
     /**
      * The text of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -82,7 +82,7 @@ hex and rgb.
     /**
      * The visibility of the title.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\SparklineCategoryAxisItemTitle
+     * @return \kendo\dataviz\ui\SparklineCategoryAxisItemTitle
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

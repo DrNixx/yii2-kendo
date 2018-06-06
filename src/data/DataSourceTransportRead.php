@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class DataSourceTransportRead extends SerializableObject
 {
@@ -57,7 +57,7 @@ class DataSourceTransportRead extends SerializableObject
      * The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceTransportRead
+     * @return \kendo\data\DataSourceTransportRead
      */
     public function type($value)
     {

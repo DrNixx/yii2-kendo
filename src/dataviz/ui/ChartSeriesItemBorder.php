@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartSeriesItemBorder extends SerializableObject {
 
     /**
      * The color of the border.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemBorder
+     * @return \kendo\dataviz\ui\ChartSeriesItemBorder
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class ChartSeriesItemBorder extends SerializableObject {
     /**
      * The dash type of the border.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemBorder
+     * @return \kendo\dataviz\ui\ChartSeriesItemBorder
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -27,7 +27,7 @@ class ChartSeriesItemBorder extends SerializableObject {
     /**
      * The border opacity.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemBorder
+     * @return \kendo\dataviz\ui\ChartSeriesItemBorder
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -36,7 +36,7 @@ class ChartSeriesItemBorder extends SerializableObject {
     /**
      * The width of the border.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemBorder
+     * @return \kendo\dataviz\ui\ChartSeriesItemBorder
      */
     public function width($value) {
         return $this->setProperty('width', $value);

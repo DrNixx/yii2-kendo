@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class SliderTooltip extends SerializableObject
 {

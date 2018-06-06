@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class CalendarMonth extends SerializableObject
 {
     /**
      * Template to be used for rendering the cells in the "month" view, which are in range.
      * @param string $value
-     * @return \yii2\kendo\ui\CalendarMonth
+     * @return \kendo\ui\CalendarMonth
      */
     public function content($value)
     {
@@ -18,7 +18,7 @@ class CalendarMonth extends SerializableObject
     /**
      * Template to be used for rendering the cells in the "month" view, which are not in the min/max range.
      * @param string $value
-     * @return \yii2\kendo\ui\CalendarMonth
+     * @return \kendo\ui\CalendarMonth
      */
     public function _empty($value)
     {

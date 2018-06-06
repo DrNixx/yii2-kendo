@@ -1,15 +1,15 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class RangeSliderTooltip extends SerializableObject
 {
     /**
      * Disables (false) or enables (true) the tooltip of the RangeSlider.
      * @param boolean $value
-     * @return \yii2\kendo\ui\RangeSliderTooltip
+     * @return \kendo\ui\RangeSliderTooltip
      */
     public function enabled($value)
     {
@@ -22,7 +22,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\ui\RangeSliderTooltip
+     * @return \kendo\ui\RangeSliderTooltip
      */
     public function format($value)
     {
@@ -35,7 +35,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value The id of the element which represents the kendo template.
      *
-     * @return \yii2\kendo\ui\RangeSliderTooltip
+     * @return \kendo\ui\RangeSliderTooltip
      */
     public function templateId($value)
     {
@@ -50,7 +50,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value The template content.
      *
-     * @return \yii2\kendo\ui\RangeSliderTooltip
+     * @return \kendo\ui\RangeSliderTooltip
      */
     public function template($value)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo;
+namespace kendo;
 
 trait SerializableTrait
 {
@@ -57,11 +57,12 @@ trait SerializableTrait
     }
 
     /**
-     * @param string $key
+     * Set object property
      *
-     * @param mixed $value
+     * @param string $key   property key
+     * @param mixed  $value property value
      *
-     * @return $this
+     * @return static
      */
     protected function setProperty($key, $value)
     {

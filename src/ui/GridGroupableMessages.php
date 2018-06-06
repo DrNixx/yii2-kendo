@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridGroupableMessages extends SerializableObject
 {
@@ -9,7 +9,7 @@ class GridGroupableMessages extends SerializableObject
     /**
      * Sets the text of the empty grouping area message
      * @param string $value
-     * @return \yii2\kendo\ui\GridGroupableMessages
+     * @return \kendo\ui\GridGroupableMessages
      */
     public function _empty($value)
     {

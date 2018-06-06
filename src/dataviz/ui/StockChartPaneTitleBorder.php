@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartPaneTitleBorder extends SerializableObject {
 
@@ -10,7 +10,7 @@ class StockChartPaneTitleBorder extends SerializableObject {
      * The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPaneTitleBorder
+     * @return \kendo\dataviz\ui\StockChartPaneTitleBorder
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -19,7 +19,7 @@ hex and rgb.
     /**
      * The dash type of the border.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPaneTitleBorder
+     * @return \kendo\dataviz\ui\StockChartPaneTitleBorder
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -28,7 +28,7 @@ hex and rgb.
     /**
      * The width of the border.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPaneTitleBorder
+     * @return \kendo\dataviz\ui\StockChartPaneTitleBorder
      */
     public function width($value) {
         return $this->setProperty('width', $value);

@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartYAxisItemTitleBorder extends SerializableObject
 {
@@ -10,7 +10,7 @@ class ChartYAxisItemTitleBorder extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\dataviz\ui\ChartYAxisItemTitleBorder
+     * @return \kendo\dataviz\ui\ChartYAxisItemTitleBorder
      */
     public function color($value)
     {
@@ -22,7 +22,7 @@ class ChartYAxisItemTitleBorder extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\dataviz\ui\ChartYAxisItemTitleBorder
+     * @return \kendo\dataviz\ui\ChartYAxisItemTitleBorder
      */
     public function dashType($value)
     {

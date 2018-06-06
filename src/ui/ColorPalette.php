@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
+use kendo\JavaScriptFunction;
 
 class ColorPalette extends InputWidget
 {
@@ -17,7 +17,7 @@ class ColorPalette extends InputWidget
      * As a shortcut, you can pass "basic" to get the simple palette (this is the default)
      * or "websafe" to get the Web-safe palette.
      * @param string|array $value
-     * @return \yii2\kendo\ui\ColorPalette
+     * @return \kendo\ui\ColorPalette
      */
     public function palette($value)
     {
@@ -28,7 +28,7 @@ class ColorPalette extends InputWidget
      * The number of columns to display.
      * When you pass "websafe" this will automatically default to 18.
      * @param float $value
-     * @return \yii2\kendo\ui\ColorPalette
+     * @return \kendo\ui\ColorPalette
      */
     public function columns($value)
     {
@@ -38,7 +38,7 @@ class ColorPalette extends InputWidget
     /**
      * The size of a color cell.
      * @param float|ColorPaletteTileSize|array $value
-     * @return \yii2\kendo\ui\ColorPalette
+     * @return \kendo\ui\ColorPalette
      */
     public function tileSize($value)
     {
@@ -48,7 +48,7 @@ class ColorPalette extends InputWidget
     /**
      * Specifies the initially selected color.
      * @param string $value
-     * @return \yii2\kendo\ui\ColorPalette
+     * @return \kendo\ui\ColorPalette
      */
     public function value($value)
     {
@@ -59,7 +59,7 @@ class ColorPalette extends InputWidget
      * Sets the change event of the ColorPalette.
      * Triggers when a new color has been changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ColorPalette
+     * @return \kendo\ui\ColorPalette
      */
     public function change($value)
     {

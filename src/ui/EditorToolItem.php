@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class EditorToolItem extends SerializableObject
 {
     /**
      * The string that the popup item will show.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorToolItem
+     * @return \kendo\ui\EditorToolItem
      */
     public function text($value)
     {
@@ -18,7 +18,7 @@ class EditorToolItem extends SerializableObject
     /**
      * The value that will be applied by the tool when this item is selected.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorToolItem
+     * @return \kendo\ui\EditorToolItem
      */
     public function value($value)
     {

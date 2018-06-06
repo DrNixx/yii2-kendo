@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\Template;
+use kendo\JavaScriptFunction;
+use kendo\Template;
 
 class Grid extends Widget
 {
@@ -14,7 +14,7 @@ class Grid extends Widget
     /**
      * Indicates whether the grid will call read on the DataSource initially.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function autoBind($value)
     {
@@ -23,8 +23,8 @@ class Grid extends Widget
 
     /**
      * Adds GridColumn to the Grid.
-     * @param \yii2\kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
-     * @return \yii2\kendo\ui\Grid
+     * @param \kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
+     * @return \kendo\ui\Grid
      */
     public function addColumn($value)
     {
@@ -37,8 +37,8 @@ class Grid extends Widget
 
     /**
      * Adds GridColumn to the Grid.
-     * @param \yii2\kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
-     * @return \yii2\kendo\ui\Grid
+     * @param \kendo\ui\GridColumn|array,... $value one or more GridColumn to add.
+     * @return \kendo\ui\Grid
      */
     public function columns($items)
     {
@@ -59,8 +59,8 @@ class Grid extends Widget
 
     /**
      * Enables column header menu
-     * @param boolean|\yii2\kendo\ui\GridColumnMenu|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridColumnMenu|array $value
+     * @return \kendo\ui\Grid
      */
     public function columnMenu($value)
     {
@@ -69,8 +69,8 @@ class Grid extends Widget
 
     /**
      * Sets the data source of the Grid.
-     * @param array|\yii2\kendo\data\DataSource $value
-     * @return \yii2\kendo\ui\Grid
+     * @param array|\kendo\data\DataSource $value
+     * @return \kendo\ui\Grid
      */
     public function dataSource($value)
     {
@@ -79,8 +79,8 @@ class Grid extends Widget
 
     /**
      * Indicates whether editing is enabled/disabled.
-     * @param boolean|\yii2\kendo\ui\GridEditable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridEditable|array $value
+     * @return \kendo\ui\Grid
      */
     public function editable($value)
     {
@@ -89,8 +89,8 @@ class Grid extends Widget
 
     /**
      * Indicates whether filtering is enabled/disabled.
-     * @param boolean|\yii2\kendo\ui\GridFilterable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridFilterable|array $value
+     * @return \kendo\ui\Grid
      */
     public function filterable($value)
     {
@@ -100,7 +100,7 @@ class Grid extends Widget
     /**
      * Indicates whether column reordering is enabled/disable.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function reorderable($value)
     {
@@ -110,7 +110,7 @@ class Grid extends Widget
     /**
      * Indicates whether column resizing is enabled/disable.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function resizable($value)
     {
@@ -119,8 +119,8 @@ class Grid extends Widget
 
     /**
      * Indicates whether grouping is enabled/disabled.
-     * @param boolean|\yii2\kendo\ui\GridGroupable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridGroupable|array $value
+     * @return \kendo\ui\Grid
      */
     public function groupable($value)
     {
@@ -130,7 +130,7 @@ class Grid extends Widget
     /**
      * Sets the height of the grid.
      * @param float|string $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function height($value)
     {
@@ -140,7 +140,7 @@ class Grid extends Widget
     /**
      * Indicates whether keyboard navigation is enabled/disabled.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function navigatable($value)
     {
@@ -149,8 +149,8 @@ class Grid extends Widget
 
     /**
      * Indicates whether paging is enabled/disabled.
-     * @param boolean|\yii2\kendo\ui\GridPageable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridPageable|array $value
+     * @return \kendo\ui\Grid
      */
     public function pageable($value)
     {
@@ -159,8 +159,8 @@ class Grid extends Widget
 
     /**
      * Enable/disable grid scrolling.
-     * @param boolean|\yii2\kendo\ui\GridScrollable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridScrollable|array $value
+     * @return \kendo\ui\Grid
      */
     public function scrollable($value)
     {
@@ -170,7 +170,7 @@ class Grid extends Widget
     /**
      * Indicates whether selection is enabled/disabled. Possible values:
      * @param string $value
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function selectable($value)
     {
@@ -179,8 +179,8 @@ class Grid extends Widget
 
     /**
      * Defines whether grid columns are sortable.
-     * @param boolean|\yii2\kendo\ui\GridSortable|array $value
-     * @return \yii2\kendo\ui\Grid
+     * @param boolean|\kendo\ui\GridSortable|array $value
+     * @return \kendo\ui\Grid
      */
     public function sortable($value)
     {
@@ -189,8 +189,8 @@ class Grid extends Widget
 
     /**
      * Adds GridToolbarItem to the Grid.
-     * @param \yii2\kendo\ui\GridToolbarItem|array,... $value one or more GridToolbarItem to add.
-     * @return \yii2\kendo\ui\Grid
+     * @param \kendo\ui\GridToolbarItem|array,... $value one or more GridToolbarItem to add.
+     * @return \kendo\ui\Grid
      */
     public function addToolbarItem($value)
     {
@@ -205,7 +205,7 @@ class Grid extends Widget
      * Sets the detailTemplate option of the Grid.
      * The id of the template used for rendering the detail rows in the grid.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function detailTemplateId($value)
     {
@@ -217,7 +217,7 @@ class Grid extends Widget
      * Sets the detailTemplate option of the Grid.
      * The id of the template used for rendering the detail rows in the grid.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function detailTemplate($value)
     {
@@ -228,7 +228,7 @@ class Grid extends Widget
      * Sets the rowTemplate option of the Grid.
      * The id of the template used for rendering the rows in the grid.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function rowTemplateId($value)
     {
@@ -240,7 +240,7 @@ class Grid extends Widget
      * Sets the rowTemplate option of the Grid.
      * The id of the template used for rendering the rows in the grid.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function rowTemplate($value)
     {
@@ -251,7 +251,7 @@ class Grid extends Widget
      * Sets the altRowTemplate option of the Grid.
      * The id of the template used for rendering the alternate rows in the grid.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function altRowTemplateId($value)
     {
@@ -263,7 +263,7 @@ class Grid extends Widget
      * Sets the altRowTemplate option of the Grid.
      * The id of the template used for rendering the alternate rows in the grid.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function altRowTemplate($value)
     {
@@ -275,7 +275,7 @@ class Grid extends Widget
      * Raised when the user clicks the "cancel" button (in inline or popup editing mode) or
      * closes the popup window (popup editing mode).
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function cancel($value)
     {
@@ -290,7 +290,7 @@ class Grid extends Widget
      * Sets the change event of the Grid.
      * Fires when the grid selection has changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function change($value)
     {
@@ -305,7 +305,7 @@ class Grid extends Widget
      * Sets the columnHide event of the Grid.
      * Fires when the user hides a column.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function columnHide($value)
     {
@@ -320,7 +320,7 @@ class Grid extends Widget
      * Sets the columnReorder event of the Grid.
      * Fires when the user changes the order of a column.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function columnReorder($value)
     {
@@ -335,7 +335,7 @@ class Grid extends Widget
      * Sets the columnResize event of the Grid.
      * Fires when the user resizes a column.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function columnResize($value)
     {
@@ -350,7 +350,7 @@ class Grid extends Widget
      * Sets the columnShow event of the Grid.
      * Fires when a column is shown.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function columnShow($value)
     {
@@ -365,7 +365,7 @@ class Grid extends Widget
      * Sets the dataBound event of the Grid.
      * Fires when the grid has received data from the data source.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function dataBound($value)
     {
@@ -380,7 +380,7 @@ class Grid extends Widget
      * Sets the dataBinding event of the Grid.
      * Fires when the grid is about to be rendered.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function dataBinding($value)
     {
@@ -395,7 +395,7 @@ class Grid extends Widget
      * Sets the detailCollapse event of the Grid.
      * Fires when the grid detail row is collapsed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function detailCollapse($value)
     {
@@ -410,7 +410,7 @@ class Grid extends Widget
      * Sets the detailExpand event of the Grid.
      * Fires when the grid detail row is expanded.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function detailExpand($value)
     {
@@ -425,7 +425,7 @@ class Grid extends Widget
      * Sets the detailInit event of the Grid.
      * Fires when the grid detail is initialized.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function detailInit($value)
     {
@@ -440,7 +440,7 @@ class Grid extends Widget
      * Sets the edit event of the Grid.
      * Fires when the grid enters edit mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function edit($value)
     {
@@ -455,7 +455,7 @@ class Grid extends Widget
      * Sets the filterMenuInit event of the Grid.
      * Fires when the grid column filter menu is initialized.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function filterMenuInit($value)
     {
@@ -470,7 +470,7 @@ class Grid extends Widget
      * Sets the columnMenuInit event of the Grid.
      * Fires when the grid column menu is initialized.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function columnMenuInit($value)
     {
@@ -485,7 +485,7 @@ class Grid extends Widget
      * Sets the remove event of the Grid.
      * Fires before the grid item is removed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function remove($value)
     {
@@ -500,7 +500,7 @@ class Grid extends Widget
      * Sets the save event of the Grid.
      * Fires before the grid item is changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function save($value)
     {
@@ -515,7 +515,7 @@ class Grid extends Widget
      * Sets the saveChanges event of the Grid.
      * Fires before the grid calls DataSource sync.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function saveChanges($value)
     {
@@ -530,7 +530,7 @@ class Grid extends Widget
      * Sets the toolbar option of the Grid.
      * The id of the template used for rendering the toolbar in the grid.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\Grid
+     * @return \kendo\ui\Grid
      */
     public function toolbarTemplateId($value)
     {

@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class DatePickerAnimation extends SerializableObject {
 
     /**
      * The animation(s) used for hiding of the pop-up.
-     * @param \yii2\kendo\ui\DatePickerAnimationClose|array $value
-     * @return \yii2\kendo\ui\DatePickerAnimation
+     * @param \kendo\ui\DatePickerAnimationClose|array $value
+     * @return \kendo\ui\DatePickerAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class DatePickerAnimation extends SerializableObject {
 
     /**
      * The animation(s) used for displaying of the pop-up.
-     * @param \yii2\kendo\ui\DatePickerAnimationOpen|array $value
-     * @return \yii2\kendo\ui\DatePickerAnimation
+     * @param \kendo\ui\DatePickerAnimationOpen|array $value
+     * @return \kendo\ui\DatePickerAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

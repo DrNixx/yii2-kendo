@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartXAxisItemCrosshair extends SerializableObject {
 
     /**
      * The color of the crosshair.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class StockChartXAxisItemCrosshair extends SerializableObject {
     /**
      * The width of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -27,7 +27,7 @@ class StockChartXAxisItemCrosshair extends SerializableObject {
     /**
      * The opacity of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -36,7 +36,7 @@ class StockChartXAxisItemCrosshair extends SerializableObject {
     /**
      * The dash type of the crosshair.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -45,7 +45,7 @@ class StockChartXAxisItemCrosshair extends SerializableObject {
     /**
      * The dash type of the crosshair.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -53,8 +53,8 @@ class StockChartXAxisItemCrosshair extends SerializableObject {
 
     /**
      * The crosshar tooltip configuration options.
-     * @param \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshairTooltip|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartXAxisItemCrosshair
+     * @param \kendo\dataviz\ui\StockChartXAxisItemCrosshairTooltip|array $value
+     * @return \kendo\dataviz\ui\StockChartXAxisItemCrosshair
      */
     public function tooltip($value) {
         return $this->setProperty('tooltip', $value);

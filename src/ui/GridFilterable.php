@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridFilterable extends SerializableObject
 {
     /**
      * Indicates whether second filter input is enabled/disabled.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridFilterable
+     * @return \kendo\ui\GridFilterable
      */
     public function extra($value)
     {
@@ -17,8 +17,8 @@ class GridFilterable extends SerializableObject
 
     /**
      * Sets the filter menu messages.
-     * @param \yii2\kendo\ui\GridFilterableMessages|array $value
-     * @return \yii2\kendo\ui\GridFilterable
+     * @param \kendo\ui\GridFilterableMessages|array $value
+     * @return \kendo\ui\GridFilterable
      */
     public function messages($value)
     {
@@ -27,8 +27,8 @@ class GridFilterable extends SerializableObject
 
     /**
      * Enable/Disable and set the text of filter operators.
-     * @param \yii2\kendo\ui\GridFilterableOperators|array $value
-     * @return \yii2\kendo\ui\GridFilterable
+     * @param \kendo\ui\GridFilterableOperators|array $value
+     * @return \kendo\ui\GridFilterable
      */
     public function operators($value)
     {

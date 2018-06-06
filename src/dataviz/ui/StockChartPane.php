@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartPane extends SerializableObject {
 
     /**
      * The unique pane name.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function name($value) {
         return $this->setProperty('name', $value);
@@ -18,7 +18,7 @@ class StockChartPane extends SerializableObject {
     /**
      * The margin of the pane.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -27,7 +27,7 @@ class StockChartPane extends SerializableObject {
     /**
      * The padding of the pane.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -36,7 +36,7 @@ class StockChartPane extends SerializableObject {
     /**
      * The background color of the pane.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -44,8 +44,8 @@ class StockChartPane extends SerializableObject {
 
     /**
      * The border of the pane.
-     * @param \yii2\kendo\dataviz\ui\StockChartPaneBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @param \kendo\dataviz\ui\StockChartPaneBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -54,7 +54,7 @@ class StockChartPane extends SerializableObject {
     /**
      * The pane height in pixels.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -62,8 +62,8 @@ class StockChartPane extends SerializableObject {
 
     /**
      * The pane title text or configuration.
-     * @param string|\yii2\kendo\dataviz\ui\StockChartPaneTitle|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartPane
+     * @param string|\kendo\dataviz\ui\StockChartPaneTitle|array $value
+     * @return \kendo\dataviz\ui\StockChartPane
      */
     public function title($value) {
         return $this->setProperty('title', $value);

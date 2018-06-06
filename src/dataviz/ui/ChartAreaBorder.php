@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartAreaBorder extends SerializableObject
 {
@@ -10,7 +10,7 @@ class ChartAreaBorder extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\dataviz\ui\ChartAreaBorder
+     * @return \kendo\dataviz\ui\ChartAreaBorder
      */
     public function color($value)
     {
@@ -22,7 +22,7 @@ class ChartAreaBorder extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\dataviz\ui\ChartAreaBorder
+     * @return \kendo\dataviz\ui\ChartAreaBorder
      */
     public function dashType($value)
     {
@@ -34,7 +34,7 @@ class ChartAreaBorder extends SerializableObject
      *
      * @param float $value
      *
-     * @return \yii2\kendo\dataviz\ui\ChartAreaBorder
+     * @return \kendo\dataviz\ui\ChartAreaBorder
      */
     public function width($value)
     {

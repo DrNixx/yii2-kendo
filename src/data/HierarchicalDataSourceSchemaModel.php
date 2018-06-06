@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
 class HierarchicalDataSourceSchemaModel extends DataSourceSchemaModel
 {
@@ -7,7 +7,7 @@ class HierarchicalDataSourceSchemaModel extends DataSourceSchemaModel
     /**
      * Sets the hasChildren property
      * @param boolean|string $value
-     * @return \yii2\kendo\data\HierarchicalDataSourceSchemaModel
+     * @return \kendo\data\HierarchicalDataSourceSchemaModel
      */
     public function hasChildren($value)
     {
@@ -17,7 +17,7 @@ class HierarchicalDataSourceSchemaModel extends DataSourceSchemaModel
     /**
      * Sets the hasChildren property
      * @param mixed|string $value
-     * @return \yii2\kendo\data\HierarchicalDataSourceSchemaModel
+     * @return \kendo\data\HierarchicalDataSourceSchemaModel
      */
     public function children($value)
     {

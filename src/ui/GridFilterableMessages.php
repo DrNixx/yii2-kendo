@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridFilterableMessages extends SerializableObject
 {
     /**
      * Set the text of the "and" option from logic drop down list.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function _and($value)
     {
@@ -18,7 +18,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the clear button of the filter menu.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function clear($value)
     {
@@ -28,7 +28,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the filter button of the filter menu.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function filter($value)
     {
@@ -38,7 +38,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the information message on top of the filter menu.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function info($value)
     {
@@ -48,7 +48,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the isFalse radio button of the filter menu for boolean values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function isFalse($value)
     {
@@ -58,7 +58,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the isTrue radio button of the filter menu for boolean values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function isTrue($value)
     {
@@ -68,7 +68,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the "or" option from logic drop down list.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function _or($value)
     {
@@ -78,7 +78,7 @@ class GridFilterableMessages extends SerializableObject
     /**
      * Set the text of the option label for foreign key drop down list.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableMessages
+     * @return \kendo\ui\GridFilterableMessages
      */
     public function selectValue($value)
     {

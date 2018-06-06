@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\UI\Widget;
+use kendo\UI\Widget;
 
 class LinearGauge extends Widget {
     protected function kendoName() {
@@ -12,8 +12,8 @@ class LinearGauge extends Widget {
     /**
      * The gauge area configuration options.
 This is the entire visible area of the gauge.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugeGaugeArea|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGauge
+     * @param \kendo\dataviz\ui\LinearGaugeGaugeArea|array $value
+     * @return \kendo\dataviz\ui\LinearGauge
      */
     public function gaugeArea($value) {
         return $this->setProperty('gaugeArea', $value);
@@ -21,8 +21,8 @@ This is the entire visible area of the gauge.
 
     /**
      * The pointer configuration options.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugePointer|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGauge
+     * @param \kendo\dataviz\ui\LinearGaugePointer|array $value
+     * @return \kendo\dataviz\ui\LinearGauge
      */
     public function pointer($value) {
         return $this->setProperty('pointer', $value);
@@ -30,8 +30,8 @@ This is the entire visible area of the gauge.
 
     /**
      * Configures the scale.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugeScale|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGauge
+     * @param \kendo\dataviz\ui\LinearGaugeScale|array $value
+     * @return \kendo\dataviz\ui\LinearGauge
      */
     public function scale($value) {
         return $this->setProperty('scale', $value);
@@ -40,7 +40,7 @@ This is the entire visible area of the gauge.
     /**
      * A value indicating if transition animations should be played.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\LinearGauge
+     * @return \kendo\dataviz\ui\LinearGauge
      */
     public function transitions($value) {
         return $this->setProperty('transitions', $value);

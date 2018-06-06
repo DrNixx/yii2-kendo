@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartSeriesItemNegativeValues extends SerializableObject {
 
     /**
      * The color of the negative values.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemNegativeValues
+     * @return \kendo\dataviz\ui\ChartSeriesItemNegativeValues
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class ChartSeriesItemNegativeValues extends SerializableObject {
     /**
      * The visibility of the negative values.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemNegativeValues
+     * @return \kendo\dataviz\ui\ChartSeriesItemNegativeValues
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

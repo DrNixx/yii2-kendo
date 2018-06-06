@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class GridEditable extends SerializableObject
 {
@@ -14,7 +14,7 @@ class GridEditable extends SerializableObject
     /**
      * Defines the text that will be used in confirmation box when delete an item.
      * @param boolean|string $value
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function confirmation($value)
     {
@@ -25,7 +25,7 @@ class GridEditable extends SerializableObject
      * Indicates whether the created record should be inserted at the top or at the bottom of the current page.
      * Available values are "top" and "bottom".
      * @param string $value
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function createAt($value)
     {
@@ -35,7 +35,7 @@ class GridEditable extends SerializableObject
     /**
      * Indicates whether item should be deleted when click on delete button.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function destroy($value)
     {
@@ -45,7 +45,7 @@ class GridEditable extends SerializableObject
     /**
      * Indicates which of the available edit modes(incell(default)/inline/popup) will be used
      * @param string $value
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function mode($value)
     {
@@ -56,7 +56,7 @@ class GridEditable extends SerializableObject
      * Sets the template option of the GridEditable.
      * Template which will be use during popup editing
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function templateId($value)
     {
@@ -68,7 +68,7 @@ class GridEditable extends SerializableObject
      * Sets the template option of the GridEditable.
      * Template which will be use during popup editing
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function template($value)
     {
@@ -78,7 +78,7 @@ class GridEditable extends SerializableObject
     /**
      * Indicates whether item should be switched to edit mode on click.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridEditable
+     * @return \kendo\ui\GridEditable
      */
     public function update($value)
     {

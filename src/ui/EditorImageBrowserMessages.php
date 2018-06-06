@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class EditorImageBrowserMessages extends SerializableObject
 {
     /**
      * Defines text for upload button.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function uploadFile($value)
     {
@@ -18,7 +18,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for order by label.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function orderBy($value)
     {
@@ -28,7 +28,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for Name item of order by drop down list.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function orderByName($value)
     {
@@ -38,7 +38,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for Size item of order by drop down list.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function orderBySize($value)
     {
@@ -48,7 +48,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for dialog shown when the directory not found error occurs.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function directoryNotFound($value)
     {
@@ -58,7 +58,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text displayed when folder does not contain items.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function emptyFolder($value)
     {
@@ -68,7 +68,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for dialog shown when the file or directory is deleted.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function deleteFile($value)
     {
@@ -78,7 +78,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for dialog shown when an invalid file is set for upload.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function invalidFileType($value)
     {
@@ -88,7 +88,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for dialog shown when an already existing file is set for upload.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function overwriteFile($value)
     {
@@ -98,7 +98,7 @@ class EditorImageBrowserMessages extends SerializableObject
     /**
      * Defines text for search box pleaceholder.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserMessages
+     * @return \kendo\ui\EditorImageBrowserMessages
      */
     public function search($value)
     {

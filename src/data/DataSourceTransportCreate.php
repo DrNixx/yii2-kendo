@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 /**
  * Class DataSourceTransportCreate

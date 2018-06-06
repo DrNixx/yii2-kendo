@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class ChartSeriesItemLabels extends SerializableObject {
 
     /**
      * Defines the alignment of the labels.** Available for donut and pie series. **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function align($value) {
         return $this->setProperty('align', $value);
@@ -19,7 +19,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The background color of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -27,8 +27,8 @@ class ChartSeriesItemLabels extends SerializableObject {
 
     /**
      * The border of the labels.
-     * @param \yii2\kendo\dataviz\ui\ChartSeriesItemLabelsBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @param \kendo\dataviz\ui\ChartSeriesItemLabelsBorder|array $value
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -37,7 +37,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The text color of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -46,7 +46,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The distance of the labels.** Available for donut and pie series. **
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function distance($value) {
         return $this->setProperty('distance', $value);
@@ -55,7 +55,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The font style of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -64,7 +64,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The format of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function format($value) {
         return $this->setProperty('format', $value);
@@ -73,7 +73,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The margin of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -82,7 +82,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The padding of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -91,7 +91,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * Defines the position of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function position($value) {
         return $this->setProperty('position', $value);
@@ -101,7 +101,7 @@ class ChartSeriesItemLabels extends SerializableObject {
      * Sets the template option of the ChartSeriesItemLabels.
      * The label template. Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -113,7 +113,7 @@ class ChartSeriesItemLabels extends SerializableObject {
      * Sets the template option of the ChartSeriesItemLabels.
      * The label template. Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function template($value) {
         return $this->setProperty('template', $value);
@@ -122,7 +122,7 @@ class ChartSeriesItemLabels extends SerializableObject {
     /**
      * The visibility of the labels.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemLabels
+     * @return \kendo\dataviz\ui\ChartSeriesItemLabels
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

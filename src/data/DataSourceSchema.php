@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class DataSourceSchema extends SerializableObject
 {
@@ -24,7 +24,7 @@ class DataSourceSchema extends SerializableObject
      * If set to a function - the function will be called to return the aggregate results for the current response.
      * Result should have the following format: i.e.
      * @param JavaScriptFunction|string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function aggregates($value)
     {
@@ -35,7 +35,7 @@ class DataSourceSchema extends SerializableObject
      * Specifies the field from the response which contains the data items.
      * If set to a function - the function will be called to return the data items for the current response.
      * @param JavaScriptFunction|string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function data($value)
     {
@@ -47,7 +47,7 @@ class DataSourceSchema extends SerializableObject
      * If set to a function - the function will be called to return the errors for the current response (if present).
      * If there are any errors the error event of the DataSource will be raised.
      * @param JavaScriptFunction|string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function errors($value)
     {
@@ -60,7 +60,7 @@ class DataSourceSchema extends SerializableObject
      * Used instead of the schema.data setting if remote grouping operation is executed.
      * The result should have the following format:
      * @param JavaScriptFunction|string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function groups($value)
     {
@@ -71,7 +71,7 @@ class DataSourceSchema extends SerializableObject
      * Sets the parse option of the DataSourceSchema.
      * Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function parse($value)
     {
@@ -87,7 +87,7 @@ class DataSourceSchema extends SerializableObject
      * If set to a function - the function will be called to return the total number of data items
      * for the current response.
      * @param JavaScriptFunction|string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function total($value)
     {
@@ -97,7 +97,7 @@ class DataSourceSchema extends SerializableObject
     /**
      * Specify the type of the response - XML or JSON. The only supported values are "xml" and "json".
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceSchema
+     * @return \kendo\data\DataSourceSchema
      */
     public function type($value)
     {

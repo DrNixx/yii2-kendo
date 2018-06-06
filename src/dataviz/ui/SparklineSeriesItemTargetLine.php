@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklineSeriesItemTargetLine extends SerializableObject {
 
     /**
      * The width of the line.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\SparklineSeriesItemTargetLine
+     * @return \kendo\dataviz\ui\SparklineSeriesItemTargetLine
      */
     public function width($value) {
         return $this->setProperty('width', $value);

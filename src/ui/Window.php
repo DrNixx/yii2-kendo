@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
 
 class Window extends Widget
 {
@@ -32,7 +32,7 @@ class Window extends Widget
      * The buttons for interacting with the window. Predefined array values are "Close", "Refresh", "Minimize",
 and "Maximize".
      * @param array $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function actions($value) {
         return $this->setProperty('actions', $value);
@@ -41,8 +41,8 @@ and "Maximize".
     /**
      * A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
-     * @param \yii2\kendo\ui\WindowAnimation|array $value
-     * @return \yii2\kendo\ui\Window
+     * @param \kendo\ui\WindowAnimation|array $value
+     * @return \kendo\ui\Window
      */
     public function animation($value) {
         return $this->setProperty('animation', $value);
@@ -52,7 +52,7 @@ will disable all animations in the widget.
      * The element that the Window will be appended to.
 Note that this does not constrain the window dragging within the given element.
      * @param |string $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function appendTo($value) {
         return $this->setProperty('appendTo', $value);
@@ -62,7 +62,7 @@ Note that this does not constrain the window dragging within the given element.
      * Enables (true) or disables (false) the ability for users to move/drag a
 Window.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function draggable($value) {
         return $this->setProperty('draggable', $value);
@@ -71,7 +71,7 @@ Window.
     /**
      * Explicitly states whether content iframe should be created.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function iframe($value) {
         return $this->setProperty('iframe', $value);
@@ -80,7 +80,7 @@ Window.
     /**
      * The maximum height (in pixels) that may be achieved by resizing the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function maxHeight($value) {
         return $this->setProperty('maxHeight', $value);
@@ -89,7 +89,7 @@ Window.
     /**
      * The maximum width (in pixels) that may be achieved by resizing the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function maxWidth($value) {
         return $this->setProperty('maxWidth', $value);
@@ -98,7 +98,7 @@ Window.
     /**
      * The minimum height (in pixels) that may be achieved by resizing the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function minHeight($value) {
         return $this->setProperty('minHeight', $value);
@@ -107,7 +107,7 @@ Window.
     /**
      * The minimum width (in pixels) that may be achieved by resizing the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function minWidth($value) {
         return $this->setProperty('minWidth', $value);
@@ -116,7 +116,7 @@ Window.
     /**
      * Specifies whether the window should show a modal overlay over the page.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function modal($value) {
         return $this->setProperty('modal', $value);
@@ -126,7 +126,7 @@ Window.
      * Enables (true) or disables (false) the ability for users to resize a
 Window.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function resizable($value) {
         return $this->setProperty('resizable', $value);
@@ -135,7 +135,7 @@ Window.
     /**
      * The text in the window title bar. If false, the window will be displayed without a title bar. Note that this will prevent the window from being dragged, and the window titlebar buttons will not be shown.
      * @param string|boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function title($value) {
         return $this->setProperty('title', $value);
@@ -144,7 +144,7 @@ Window.
     /**
      * Specifies whether the window will be initially visible.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -153,7 +153,7 @@ Window.
     /**
      * Specifies width of the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -162,7 +162,7 @@ Window.
     /**
      * Specifies height of the window.
      * @param float $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -172,7 +172,7 @@ Window.
      * Sets the activate event of the Window.
      * Triggered when a Window has finished its opening animation.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function activate($value) {
         if (is_string($value)) {
@@ -186,7 +186,7 @@ Window.
      * Sets the close event of the Window.
      * Triggered when a Window is closed (by a user or through the close() method).
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function close($value) {
         if (is_string($value)) {
@@ -200,7 +200,7 @@ Window.
      * Sets the deactivate event of the Window.
      * Triggered when a Window has finished its closing animation.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function deactivate($value) {
         if (is_string($value)) {
@@ -214,7 +214,7 @@ Window.
      * Sets the dragend event of the Window.
      * Triggered when a Window has been moved by a user.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function dragend($value) {
         if (is_string($value)) {
@@ -228,7 +228,7 @@ Window.
      * Sets the dragstart event of the Window.
      * Triggered when the user starts to move the window.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function dragstart($value) {
         if (is_string($value)) {
@@ -242,7 +242,7 @@ Window.
      * Sets the error event of the Window.
      * Triggered when an AJAX request for content fails.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function error($value) {
         if (is_string($value)) {
@@ -256,7 +256,7 @@ Window.
      * Sets the open event of the Window.
      * Triggered when a Window is opened (i.e. the open() method is called).
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function open($value) {
         if (is_string($value)) {
@@ -272,7 +272,7 @@ Window.
 * when the window iframe has finished loading, or when the refresh button
 * has been clicked on a window with static content.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function refresh($value) {
         if (is_string($value)) {
@@ -286,7 +286,7 @@ Window.
      * Sets the resize event of the Window.
      * Triggered when a Window has been resized by a user.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function resize($value) {
         if (is_string($value)) {
@@ -300,7 +300,7 @@ Window.
     /**
      * Sets the HTML content of the Window.
      * @param string $value
-     * @return \yii2\kendo\ui\Window
+     * @return \kendo\ui\Window
      */
     public function content($value) {
         return $this->setProperty('content', $value);

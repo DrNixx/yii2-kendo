@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class PanelBarAnimationExpand extends SerializableObject {
 
     /**
      * The number of milliseconds used for the visual animation when an item is opened.
      * @param float $value
-     * @return \yii2\kendo\ui\PanelBarAnimationExpand
+     * @return \kendo\ui\PanelBarAnimationExpand
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);
@@ -19,7 +19,7 @@ class PanelBarAnimationExpand extends SerializableObject {
      * A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 "expandVertical" and "fadeIn".
      * @param string $value
-     * @return \yii2\kendo\ui\PanelBarAnimationExpand
+     * @return \kendo\ui\PanelBarAnimationExpand
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);
@@ -28,7 +28,7 @@ class PanelBarAnimationExpand extends SerializableObject {
     /**
      * 
      * @param boolean $value
-     * @return \yii2\kendo\ui\PanelBarAnimationExpand
+     * @return \kendo\ui\PanelBarAnimationExpand
      */
     public function show($value) {
         return $this->setProperty('show', $value);

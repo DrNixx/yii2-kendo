@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
 class HierarchicalDataSource extends DataSource
 {

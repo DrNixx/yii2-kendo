@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartCategoryAxisItemCrosshairTooltipBorder extends SerializableObject {
 
     /**
      * The color of the border.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemCrosshairTooltipBorder
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemCrosshairTooltipBorder
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class ChartCategoryAxisItemCrosshairTooltipBorder extends SerializableObject {
     /**
      * The width of the border.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemCrosshairTooltipBorder
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemCrosshairTooltipBorder
      */
     public function width($value) {
         return $this->setProperty('width', $value);

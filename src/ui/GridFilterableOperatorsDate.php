@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridFilterableOperatorsDate extends SerializableObject
 {
     /**
      * Enable/Disable and set the text of the "Is equal to" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function eq($value)
     {
@@ -18,7 +18,7 @@ class GridFilterableOperatorsDate extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is not equal to" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function neq($value)
     {
@@ -28,7 +28,7 @@ class GridFilterableOperatorsDate extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is after or equal to" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function gte($value)
     {
@@ -38,7 +38,7 @@ class GridFilterableOperatorsDate extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is after" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function gt($value)
     {
@@ -48,7 +48,7 @@ class GridFilterableOperatorsDate extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is before or equal to" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function lte($value)
     {
@@ -58,7 +58,7 @@ class GridFilterableOperatorsDate extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is before" filter option for columns with date values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsDate
+     * @return \kendo\ui\GridFilterableOperatorsDate
      */
     public function lt($value)
     {

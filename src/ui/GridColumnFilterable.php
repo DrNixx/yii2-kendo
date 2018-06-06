@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class GridColumnFilterable extends SerializableObject {
     /**
      * Role of the widget shown as column filter menu input element.
      * @param string|JavaScriptFunction $value
-     * @return \yii2\kendo\ui\GridColumnFilterable
+     * @return \kendo\ui\GridColumnFilterable
      */
     public function ui($value)
     {

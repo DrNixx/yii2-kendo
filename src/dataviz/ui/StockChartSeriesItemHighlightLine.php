@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartSeriesItemHighlightLine extends SerializableObject {
 
     /**
      * The width of the line.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItemHighlightLine
+     * @return \kendo\dataviz\ui\StockChartSeriesItemHighlightLine
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -18,7 +18,7 @@ class StockChartSeriesItemHighlightLine extends SerializableObject {
     /**
      * The line color.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItemHighlightLine
+     * @return \kendo\dataviz\ui\StockChartSeriesItemHighlightLine
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -27,7 +27,7 @@ class StockChartSeriesItemHighlightLine extends SerializableObject {
     /**
      * The opacity of the line.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItemHighlightLine
+     * @return \kendo\dataviz\ui\StockChartSeriesItemHighlightLine
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);

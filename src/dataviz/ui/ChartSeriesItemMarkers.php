@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartSeriesItemMarkers extends SerializableObject {
 
     /**
      * The background color of the current series markers.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemMarkers
+     * @return \kendo\dataviz\ui\ChartSeriesItemMarkers
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -17,8 +17,8 @@ class ChartSeriesItemMarkers extends SerializableObject {
 
     /**
      * The border of the markers.
-     * @param \yii2\kendo\dataviz\ui\ChartSeriesItemMarkersBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemMarkers
+     * @param \kendo\dataviz\ui\ChartSeriesItemMarkersBorder|array $value
+     * @return \kendo\dataviz\ui\ChartSeriesItemMarkers
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -27,7 +27,7 @@ class ChartSeriesItemMarkers extends SerializableObject {
     /**
      * The marker size.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemMarkers
+     * @return \kendo\dataviz\ui\ChartSeriesItemMarkers
      */
     public function size($value) {
         return $this->setProperty('size', $value);
@@ -36,7 +36,7 @@ class ChartSeriesItemMarkers extends SerializableObject {
     /**
      * Configures the markers shape type.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemMarkers
+     * @return \kendo\dataviz\ui\ChartSeriesItemMarkers
      */
     public function type($value) {
         return $this->setProperty('type', $value);
@@ -45,7 +45,7 @@ class ChartSeriesItemMarkers extends SerializableObject {
     /**
      * The markers visibility.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartSeriesItemMarkers
+     * @return \kendo\dataviz\ui\ChartSeriesItemMarkers
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

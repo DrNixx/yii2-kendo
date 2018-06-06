@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ComboBoxAnimation extends SerializableObject
 {
     /**
      * Animation to be used for closing of the popup.
-     * @param \yii2\kendo\ui\ComboBoxAnimationClose|array $value
-     * @return \yii2\kendo\ui\ComboBoxAnimation
+     * @param \kendo\ui\ComboBoxAnimationClose|array $value
+     * @return \kendo\ui\ComboBoxAnimation
      */
     public function close($value)
     {
@@ -17,8 +17,8 @@ class ComboBoxAnimation extends SerializableObject
 
     /**
      * Animation to be used for opening of the popup.
-     * @param \yii2\kendo\ui\ComboBoxAnimationOpen|array $value
-     * @return \yii2\kendo\ui\ComboBoxAnimation
+     * @param \kendo\ui\ComboBoxAnimationOpen|array $value
+     * @return \kendo\ui\ComboBoxAnimation
      */
     public function open($value)
     {

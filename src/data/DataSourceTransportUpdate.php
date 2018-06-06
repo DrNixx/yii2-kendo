@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class DataSourceTransportUpdate extends SerializableObject
 {
@@ -11,7 +11,7 @@ class DataSourceTransportUpdate extends SerializableObject
      * Setting cache to false also appends a query string parameter, "_=[TIMESTAMP]", to the URL.
      * Refer to the jQuery.ajax documentation for further info.
      * @param boolean $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function cache($value)
     {
@@ -23,7 +23,7 @@ class DataSourceTransportUpdate extends SerializableObject
      * Default is "application/x-www-form-urlencoded". Use "application/json" if the content is JSON.
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function contentType($value)
     {
@@ -34,7 +34,7 @@ class DataSourceTransportUpdate extends SerializableObject
      * Data to be send to the server.
      * Refer to the jQuery.ajax documentation for further info.
      * @param |string|\Kendo\JavaScriptFunction $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function data($value)
     {
@@ -45,7 +45,7 @@ class DataSourceTransportUpdate extends SerializableObject
      * The type of data that you're expecting back from the server. Commonly used values are "json" and "jsonp".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function dataType($value)
     {
@@ -56,7 +56,7 @@ class DataSourceTransportUpdate extends SerializableObject
      * The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function type($value)
     {
@@ -66,7 +66,7 @@ class DataSourceTransportUpdate extends SerializableObject
     /**
      * The remote url to call when creating a new record.
      * @param string|JavaScriptFunction $value
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function url($value)
     {
@@ -82,7 +82,7 @@ class DataSourceTransportUpdate extends SerializableObject
 
     /**
      * @param bool $flag
-     * @return \yii2\kendo\data\DataSourceTransportUpdate
+     * @return \kendo\data\DataSourceTransportUpdate
      */
     public function withCredentials($flag)
     {

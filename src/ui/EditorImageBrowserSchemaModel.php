@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class EditorImageBrowserSchemaModel extends SerializableObject
 {
     /**
      * The name of the field which acts as an identifier.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserSchemaModel
+     * @return \kendo\ui\EditorImageBrowserSchemaModel
      */
     public function id($value)
     {
@@ -17,8 +17,8 @@ class EditorImageBrowserSchemaModel extends SerializableObject
 
     /**
      *
-     * @param \yii2\kendo\ui\EditorImageBrowserSchemaModelFields|array $value
-     * @return \yii2\kendo\ui\EditorImageBrowserSchemaModel
+     * @param \kendo\ui\EditorImageBrowserSchemaModelFields|array $value
+     * @return \kendo\ui\EditorImageBrowserSchemaModel
      */
     public function fields($value)
     {

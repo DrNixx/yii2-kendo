@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ColorPaletteTileSize extends SerializableObject
 {
     /**
      * The width of the color cell.
      * @param float $value
-     * @return \yii2\kendo\ui\ColorPaletteTileSize
+     * @return \kendo\ui\ColorPaletteTileSize
      */
     public function width($value)
     {
@@ -18,7 +18,7 @@ class ColorPaletteTileSize extends SerializableObject
     /**
      * The height of the color cell.
      * @param float $value
-     * @return \yii2\kendo\ui\ColorPaletteTileSize
+     * @return \kendo\ui\ColorPaletteTileSize
      */
     public function height($value)
     {

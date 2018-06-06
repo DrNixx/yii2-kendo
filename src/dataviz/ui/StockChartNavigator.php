@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartNavigator extends SerializableObject {
 
     /**
      * Sets the data source of the StockChartNavigator.
-     * @param array|\yii2\kendo\data\DataSource $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @param array|\kendo\data\DataSource $value
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function dataSource($value) {
         return $this->setProperty('dataSource', $value);
@@ -19,7 +19,7 @@ class StockChartNavigator extends SerializableObject {
      * Indicates whether the navigator will call read on the data source initially.
 Applicable only when using a dedicated navigator data source.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function autoBind($value) {
         return $this->setProperty('autoBind', $value);
@@ -29,7 +29,7 @@ Applicable only when using a dedicated navigator data source.
      * The field containing the point date.
 It is used as a default field for the navigator axis.The data item field value must be either:
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function dateField($value) {
         return $this->setProperty('dateField', $value);
@@ -38,7 +38,7 @@ It is used as a default field for the navigator axis.The data item field value m
     /**
      * The visibility of the navigator.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -46,8 +46,8 @@ It is used as a default field for the navigator axis.The data item field value m
 
     /**
      * Adds StockChartNavigatorSeriesItem to the StockChartNavigator.
-     * @param \yii2\kendo\dataviz\ui\StockChartNavigatorSeriesItem|array,... $value one or more StockChartNavigatorSeriesItem to add.
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @param \kendo\dataviz\ui\StockChartNavigatorSeriesItem|array,... $value one or more StockChartNavigatorSeriesItem to add.
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function addSeriesItem($value) {
         return $this->add('series', func_get_args());
@@ -55,8 +55,8 @@ It is used as a default field for the navigator axis.The data item field value m
 
     /**
      * Specifies the initially selected range.The full range of values is shown if no range is specified.
-     * @param \yii2\kendo\dataviz\ui\StockChartNavigatorSelect|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @param \kendo\dataviz\ui\StockChartNavigatorSelect|array $value
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function select($value) {
         return $this->setProperty('select', $value);
@@ -64,8 +64,8 @@ It is used as a default field for the navigator axis.The data item field value m
 
     /**
      * Default options for the navigator hint.
-     * @param \yii2\kendo\dataviz\ui\StockChartNavigatorHint|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartNavigator
+     * @param \kendo\dataviz\ui\StockChartNavigatorHint|array $value
+     * @return \kendo\dataviz\ui\StockChartNavigator
      */
     public function hint($value) {
         return $this->setProperty('hint', $value);

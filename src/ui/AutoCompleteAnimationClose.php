@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class AutoCompleteAnimationClose extends SerializableObject
 {
     /**
      * The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimationClose
+     * @return \kendo\ui\AutoCompleteAnimationClose
      */
     public function effects($value)
     {
@@ -18,7 +18,7 @@ class AutoCompleteAnimationClose extends SerializableObject
     /**
      * The duration of the close animation in milliseconds.
      * @param float $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimationClose
+     * @return \kendo\ui\AutoCompleteAnimationClose
      */
     public function duration($value)
     {

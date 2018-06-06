@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\Html\Text;
-use yii2\kendo\SerializableObject;
+use kendo\Html\Element;
+use kendo\Html\Text;
+use kendo\SerializableObject;
 
 class PanelBarItem extends SerializableObject 
 {
@@ -35,7 +35,7 @@ class PanelBarItem extends SerializableObject
     }
 
     /**
-     * @param \yii2\kendo\html\Element $element
+     * @param \kendo\html\Element $element
      */
     protected function createSubGroup($element)
     {
@@ -182,11 +182,11 @@ class PanelBarItem extends SerializableObject
     }
 
     /**
-     * Adds one or more \yii2\kendo\ui\PanelBarItem.
+     * Adds one or more \kendo\ui\PanelBarItem.
      *
      * @param PanelBarItem|array,... $value
      *
-     * @return \yii2\kendo\ui\PanelBar    */
+     * @return \kendo\ui\PanelBar    */
     public function addItem($value)
     {
         return $this->add('items', func_get_args());

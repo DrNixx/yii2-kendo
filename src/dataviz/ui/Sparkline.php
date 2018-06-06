@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\UI\Widget;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
+use kendo\UI\Widget;
 
 class Sparkline extends Widget {
     function __construct($id, $data = null) {
@@ -24,7 +24,7 @@ class Sparkline extends Widget {
     /**
      * Default options for all chart axes.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function axisDefaults($value) {
         return $this->setProperty('axisDefaults', $value);
@@ -32,8 +32,8 @@ class Sparkline extends Widget {
 
     /**
      * Adds SparklineCategoryAxisItem to the Sparkline.
-     * @param \yii2\kendo\dataviz\ui\SparklineCategoryAxisItem|array,... $value one or more SparklineCategoryAxisItem to add.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineCategoryAxisItem|array,... $value one or more SparklineCategoryAxisItem to add.
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function addCategoryAxisItem($value) {
         return $this->add('categoryAxis', func_get_args());
@@ -42,8 +42,8 @@ class Sparkline extends Widget {
     /**
      * The chart area configuration options.
 This is the entire visible area of the chart.
-     * @param \yii2\kendo\dataviz\ui\SparklineChartArea|array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineChartArea|array $value
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function chartArea($value) {
         return $this->setProperty('chartArea', $value);
@@ -52,7 +52,7 @@ This is the entire visible area of the chart.
     /**
      * The data for the default sparkline series.Will be discareded if series are supplied.
      * @param array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function data($value) {
         return $this->setProperty('data', $value);
@@ -60,8 +60,8 @@ This is the entire visible area of the chart.
 
     /**
      * Sets the data source of the Sparkline.
-     * @param array|\yii2\kendo\data\DataSource $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param array|\kendo\data\DataSource $value
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function dataSource($value) {
         return $this->setProperty('dataSource', $value);
@@ -70,7 +70,7 @@ This is the entire visible area of the chart.
     /**
      * Indicates whether the chart will call read on the data source initially.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function autoBind($value) {
         return $this->setProperty('autoBind', $value);
@@ -78,8 +78,8 @@ This is the entire visible area of the chart.
 
     /**
      * The plot area configuration options. This is the area containing the plotted series.
-     * @param \yii2\kendo\dataviz\ui\SparklinePlotArea|array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklinePlotArea|array $value
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function plotArea($value) {
         return $this->setProperty('plotArea', $value);
@@ -88,7 +88,7 @@ This is the entire visible area of the chart.
     /**
      * The width to allocate for each data point.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function pointWidth($value) {
         return $this->setProperty('pointWidth', $value);
@@ -96,8 +96,8 @@ This is the entire visible area of the chart.
 
     /**
      * Adds SparklineSeriesItem to the Sparkline.
-     * @param \yii2\kendo\dataviz\ui\SparklineSeriesItem|array,... $value one or more SparklineSeriesItem to add.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineSeriesItem|array,... $value one or more SparklineSeriesItem to add.
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function addSeriesItem($value) {
         return $this->add('series', func_get_args());
@@ -106,7 +106,7 @@ This is the entire visible area of the chart.
     /**
      * The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
      * @param array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function seriesColors($value) {
         return $this->setProperty('seriesColors', $value);
@@ -114,8 +114,8 @@ This is the entire visible area of the chart.
 
     /**
      * Default values for each series.
-     * @param \yii2\kendo\dataviz\ui\SparklineSeriesDefaults|array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineSeriesDefaults|array $value
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function seriesDefaults($value) {
         return $this->setProperty('seriesDefaults', $value);
@@ -124,7 +124,7 @@ This is the entire visible area of the chart.
     /**
      * Sets Chart theme. Available themes: default, blueOpal, black.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function theme($value) {
         return $this->setProperty('theme', $value);
@@ -132,8 +132,8 @@ This is the entire visible area of the chart.
 
     /**
      * The data point tooltip configuration options.
-     * @param \yii2\kendo\dataviz\ui\SparklineTooltip|array $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineTooltip|array $value
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function tooltip($value) {
         return $this->setProperty('tooltip', $value);
@@ -142,7 +142,7 @@ This is the entire visible area of the chart.
     /**
      * A value indicating if transition animations should be played.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function transitions($value) {
         return $this->setProperty('transitions', $value);
@@ -151,7 +151,7 @@ This is the entire visible area of the chart.
     /**
      * The default series type.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function type($value) {
         return $this->setProperty('type', $value);
@@ -159,8 +159,8 @@ This is the entire visible area of the chart.
 
     /**
      * Adds SparklineValueAxisItem to the Sparkline.
-     * @param \yii2\kendo\dataviz\ui\SparklineValueAxisItem|array,... $value one or more SparklineValueAxisItem to add.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @param \kendo\dataviz\ui\SparklineValueAxisItem|array,... $value one or more SparklineValueAxisItem to add.
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function addValueAxisItem($value) {
         return $this->add('valueAxis', func_get_args());
@@ -170,7 +170,7 @@ This is the entire visible area of the chart.
      * Sets the axisLabelClick event of the Sparkline.
      * Fires when an axis label is clicked.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function axisLabelClick($value) {
         if (is_string($value)) {
@@ -185,7 +185,7 @@ This is the entire visible area of the chart.
      * Fires when the chart has received data from the data source
 * and is about to render it.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function dataBound($value) {
         if (is_string($value)) {
@@ -199,7 +199,7 @@ This is the entire visible area of the chart.
      * Sets the dragStart event of the Sparkline.
      * Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function dragStart($value) {
         if (is_string($value)) {
@@ -213,7 +213,7 @@ This is the entire visible area of the chart.
      * Sets the drag event of the Sparkline.
      * Fires as long as the user is dragging the chart using the mouse or swipe gestures.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function drag($value) {
         if (is_string($value)) {
@@ -227,7 +227,7 @@ This is the entire visible area of the chart.
      * Sets the dragEnd event of the Sparkline.
      * Fires when the user stops dragging the chart.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function dragEnd($value) {
         if (is_string($value)) {
@@ -241,7 +241,7 @@ This is the entire visible area of the chart.
      * Sets the plotAreaClick event of the Sparkline.
      * Fires when plot area is clicked.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function plotAreaClick($value) {
         if (is_string($value)) {
@@ -255,7 +255,7 @@ This is the entire visible area of the chart.
      * Sets the seriesClick event of the Sparkline.
      * Fires when chart series are clicked.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function seriesClick($value) {
         if (is_string($value)) {
@@ -269,7 +269,7 @@ This is the entire visible area of the chart.
      * Sets the seriesHover event of the Sparkline.
      * Fires when chart series are hovered.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function seriesHover($value) {
         if (is_string($value)) {
@@ -283,7 +283,7 @@ This is the entire visible area of the chart.
      * Sets the zoomStart event of the Sparkline.
      * Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function zoomStart($value) {
         if (is_string($value)) {
@@ -297,7 +297,7 @@ This is the entire visible area of the chart.
      * Sets the zoom event of the Sparkline.
      * Fires as long as the user is zooming the chart using the mousewheel.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function zoom($value) {
         if (is_string($value)) {
@@ -311,7 +311,7 @@ This is the entire visible area of the chart.
      * Sets the zoomEnd event of the Sparkline.
      * Fires when the user stops zooming the chart.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\dataviz\ui\Sparkline
+     * @return \kendo\dataviz\ui\Sparkline
      */
     public function zoomEnd($value) {
         if (is_string($value)) {

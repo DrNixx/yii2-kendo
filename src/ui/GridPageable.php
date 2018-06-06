@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridPageable extends SerializableObject
 {
     /**
      * Defines the number of records which will be displyed.
      * @param float $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function pageSize($value)
     {
@@ -18,7 +18,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines if buttons for navigating to the first, last, previous and next pages will be shown.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function previousNext($value)
     {
@@ -28,7 +28,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines if numeric portion of the pager will be shown.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function numeric($value)
     {
@@ -38,7 +38,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines the number of buttons displayed in the numeric pager.
      * @param float $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function buttonCount($value)
     {
@@ -48,7 +48,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines if an input element which allows the user to navigate to given page will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function input($value)
     {
@@ -58,7 +58,7 @@ class GridPageable extends SerializableObject
     /**
      * Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
      * @param boolean|array $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function pageSizes($value)
     {
@@ -68,7 +68,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines if a refresh button will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function refresh($value)
     {
@@ -78,7 +78,7 @@ class GridPageable extends SerializableObject
     /**
      * Defines if a label showing current paging information will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @return \kendo\ui\GridPageable
      */
     public function info($value)
     {
@@ -87,8 +87,8 @@ class GridPageable extends SerializableObject
 
     /**
      * Defines texts shown within the pager.
-     * @param \yii2\kendo\ui\GridPageableMessages|array $value
-     * @return \yii2\kendo\ui\GridPageable
+     * @param \kendo\ui\GridPageableMessages|array $value
+     * @return \kendo\ui\GridPageable
      */
     public function messages($value)
     {

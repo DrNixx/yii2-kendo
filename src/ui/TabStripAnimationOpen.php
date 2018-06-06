@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class TabStripAnimationOpen extends SerializableObject
 {

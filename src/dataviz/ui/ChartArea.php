@@ -1,12 +1,12 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
 /**
 * PHP wrapper for the chartArea option of Chart.
 */
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 /**
 */
@@ -15,7 +15,7 @@ class ChartArea extends SerializableObject {
     /**
      * The background color of the chart area.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -24,7 +24,7 @@ class ChartArea extends SerializableObject {
     /**
      * The background opacity of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -32,8 +32,8 @@ class ChartArea extends SerializableObject {
 
     /**
      * The border of the chart area.
-     * @param \yii2\kendo\dataviz\ui\ChartAreaBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @param \kendo\dataviz\ui\ChartAreaBorder|array $value
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -42,7 +42,7 @@ class ChartArea extends SerializableObject {
     /**
      * The height of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -51,7 +51,7 @@ class ChartArea extends SerializableObject {
     /**
      * The margin of the chart area.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -60,7 +60,7 @@ class ChartArea extends SerializableObject {
     /**
      * The width of the chart area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartArea
+     * @return \kendo\dataviz\ui\ChartArea
      */
     public function width($value) {
         return $this->setProperty('width', $value);

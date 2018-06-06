@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\data;
+namespace kendo\data;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 /**
  * Class DataSourceGroupItem
@@ -34,7 +34,7 @@ class DataSourceGroupItem extends SerializableObject
     /**
      * Adds DataSourceGroupItemAggregate to the DataSourceGroupItem.
      * @param DataSourceGroupItemAggregate|array,... $value one or more DataSourceGroupItemAggregate to add.
-     * @return \yii2\kendo\data\DataSourceGroupItem
+     * @return \kendo\data\DataSourceGroupItem
      */
     public function addAggregate($value)
     {

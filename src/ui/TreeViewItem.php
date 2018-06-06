@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
 class TreeViewItem extends NavigationalItem {
     function __construct($text = null) {
@@ -15,7 +15,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies the text displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -24,7 +24,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies the URL of the image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function imageUrl($value) {
         return $this->setProperty('imageUrl', $value);
@@ -33,7 +33,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies the class name for the sprite image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function spriteCssClass($value) {
         return $this->setProperty('spriteCssClass', $value);
@@ -42,7 +42,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies whether the item is initially enabled
      * @param boolean $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function enabled($value) {
         return $this->setProperty('enabled', $value);
@@ -51,7 +51,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies whether the item is initially selected
      * @param boolean $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function selected($value) {
         return $this->setProperty('selected', $value);
@@ -60,7 +60,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Specifies whether the item is initially expanded
      * @param boolean $value
-     * @return \yii2\kendo\ui\TreeViewItem
+     * @return \kendo\ui\TreeViewItem
      */
     public function expanded($value) {
         return $this->setProperty('expanded', $value);
@@ -69,7 +69,7 @@ class TreeViewItem extends NavigationalItem {
     /**
      * Sets the HTML content of the TreeViewItem.
      * @param string $value
-     * @return \yii2\kendo\ui\TreeViewItem    */
+     * @return \kendo\ui\TreeViewItem    */
     public function content($value) {
         return $this->setProperty('content', $value);
     }
@@ -88,9 +88,9 @@ class TreeViewItem extends NavigationalItem {
         $this->content(ob_get_clean());
     }
     /**
-     * Adds one or more \yii2\kendo\ui\TreeViewItem.
-     * @param \yii2\kendo\ui\TreeViewItem|array,... $value
-     * @return \yii2\kendo\ui\TreeView    */
+     * Adds one or more \kendo\ui\TreeViewItem.
+     * @param \kendo\ui\TreeViewItem|array,... $value
+     * @return \kendo\ui\TreeView    */
     public function addItem($value) {
         return $this->add('items', func_get_args());
     }

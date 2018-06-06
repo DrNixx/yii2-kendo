@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartYAxisItemPlotBand extends SerializableObject {
 
     /**
      * The start position of the plot band in axis units.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartYAxisItemPlotBand
+     * @return \kendo\dataviz\ui\StockChartYAxisItemPlotBand
      */
     public function from($value) {
         return $this->setProperty('from', $value);
@@ -18,7 +18,7 @@ class StockChartYAxisItemPlotBand extends SerializableObject {
     /**
      * The end position of the plot band in axis units.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartYAxisItemPlotBand
+     * @return \kendo\dataviz\ui\StockChartYAxisItemPlotBand
      */
     public function to($value) {
         return $this->setProperty('to', $value);
@@ -27,7 +27,7 @@ class StockChartYAxisItemPlotBand extends SerializableObject {
     /**
      * The color of the plot band.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartYAxisItemPlotBand
+     * @return \kendo\dataviz\ui\StockChartYAxisItemPlotBand
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -36,7 +36,7 @@ class StockChartYAxisItemPlotBand extends SerializableObject {
     /**
      * The opacity of the plot band.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartYAxisItemPlotBand
+     * @return \kendo\dataviz\ui\StockChartYAxisItemPlotBand
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);

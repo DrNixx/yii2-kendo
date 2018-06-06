@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class TimePickerAnimation extends SerializableObject {
 
     /**
      * Animation to be used for closing of the popup.
-     * @param \yii2\kendo\ui\TimePickerAnimationClose|array $value
-     * @return \yii2\kendo\ui\TimePickerAnimation
+     * @param \kendo\ui\TimePickerAnimationClose|array $value
+     * @return \kendo\ui\TimePickerAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class TimePickerAnimation extends SerializableObject {
 
     /**
      * Animation to be used for opening of the popup.
-     * @param \yii2\kendo\ui\TimePickerAnimationOpen|array $value
-     * @return \yii2\kendo\ui\TimePickerAnimation
+     * @param \kendo\ui\TimePickerAnimationOpen|array $value
+     * @return \kendo\ui\TimePickerAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

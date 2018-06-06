@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\Template;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
+use kendo\Template;
 
 class AutoComplete extends InputWidget
 {
@@ -21,8 +21,8 @@ class AutoComplete extends InputWidget
      * Configures the opening and closing animations of the suggestion popup.
      * Setting the animation option to false will disable the opening and closing animations.
      * As a result the suggestion popup will open and close instantly.
-     * @param \yii2\kendo\ui\AutoCompleteAnimation|array $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @param \kendo\ui\AutoCompleteAnimation|array $value
+     * @return \kendo\ui\AutoComplete
      */
     public function animation($value)
     {
@@ -31,8 +31,8 @@ class AutoComplete extends InputWidget
 
     /**
      * Sets the data source of the AutoComplete.
-     * @param array|\yii2\kendo\data\DataSource $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @param array|\kendo\data\DataSource $value
+     * @return \kendo\ui\AutoComplete
      */
     public function dataSource($value)
     {
@@ -42,7 +42,7 @@ class AutoComplete extends InputWidget
     /**
      * The field of the data item used when searching for suggestions.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function dataTextField($value)
     {
@@ -52,7 +52,7 @@ class AutoComplete extends InputWidget
     /**
      * The delay in milliseconds between a keystroke and when the widget displays the suggestion popup.
      * @param float $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function delay($value)
     {
@@ -63,7 +63,7 @@ class AutoComplete extends InputWidget
      * If set to false the widget will be disabled and will not allow user input.
      * The widget is enabled by default and allows user input.
      * @param boolean $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function enable($value)
     {
@@ -76,7 +76,7 @@ class AutoComplete extends InputWidget
      * widget value are displayed in the suggestion popup.
      * The supported filter values are startswith, endswith and contains.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function filter($value)
     {
@@ -86,7 +86,7 @@ class AutoComplete extends InputWidget
     /**
      * The height of the suggestion popup in pixels. The default value is 200 pixels.
      * @param float $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function height($value)
     {
@@ -96,7 +96,7 @@ class AutoComplete extends InputWidget
     /**
      * If set to true the first suggestion will be automatically highlighted.
      * @param boolean $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function highlightFirst($value)
     {
@@ -107,7 +107,7 @@ class AutoComplete extends InputWidget
      * If set to false case-sensitive search will be performed to find suggestions.
      * The widget performs case-insensitive searching by default.
      * @param boolean $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function ignoreCase($value)
     {
@@ -118,7 +118,7 @@ class AutoComplete extends InputWidget
      * The minimum number of characters the user must type before a search is performed.
      * Set to higher value than 1 if the search could match a lot of items.
      * @param float $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function minLength($value)
     {
@@ -128,7 +128,7 @@ class AutoComplete extends InputWidget
     /**
      * The hint displayed by the widget when it is empty. Not set by default.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function placeholder($value)
     {
@@ -138,7 +138,7 @@ class AutoComplete extends InputWidget
     /**
      * The character used to separate multiple values. Empty by default.
      * @param string $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function separator($value)
     {
@@ -148,7 +148,7 @@ class AutoComplete extends InputWidget
     /**
      * If set to true the widget will automatically use the first suggestion as its value.
      * @param boolean $value
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function suggest($value)
     {
@@ -160,7 +160,7 @@ class AutoComplete extends InputWidget
      * The template used to render the suggestions.
      * By default the widget displays only the text of the suggestion (configured via dataTextField).
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function templateId($value)
     {
@@ -174,7 +174,7 @@ class AutoComplete extends InputWidget
      * The template used to render the suggestions.
      * By default the widget displays only the text of the suggestion (configured via dataTextField).
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function template($value)
     {
@@ -186,7 +186,7 @@ class AutoComplete extends InputWidget
      * Fired when the value of the widget is changed by the user.
      * The event handler function context (available via the this keyword) will be set to the widget instance.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function change($value)
     {
@@ -202,7 +202,7 @@ class AutoComplete extends InputWidget
      * Fired when the suggestion popup of the widget is closed by the user.
      * The event handler function context (available via the this keyword) will be set to the widget instance.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function close($value)
     {
@@ -218,7 +218,7 @@ class AutoComplete extends InputWidget
      * Fired when the widget is bound to data from its data source.
      * The event handler function context (available via the this keyword) will be set to the widget instance.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function dataBound($value)
     {
@@ -234,7 +234,7 @@ class AutoComplete extends InputWidget
      * Fired when the suggestion popup of the widget is opened by the user.
      * The event handler function context (available via the this keyword) will be set to the widget instance.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function open($value)
     {
@@ -249,7 +249,7 @@ class AutoComplete extends InputWidget
      * Sets the select event of the AutoComplete.
      * Fired when an item from the suggestion popup is selected by the user.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\AutoComplete
+     * @return \kendo\ui\AutoComplete
      */
     public function select($value)
     {

@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\Template;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
+use kendo\Template;
 
 class TreeView extends Widget
 {
@@ -78,7 +78,7 @@ class TreeView extends Widget
     /**
      * Sets the data source of the TreeView.
      *
-     * @param array|\yii2\kendo\data\HierarchicalDataSource $value
+     * @param array|\kendo\data\HierarchicalDataSource $value
      *
      * @return $this
      */

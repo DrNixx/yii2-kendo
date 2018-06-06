@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class StockChartSeriesDefaultsTooltip extends SerializableObject {
 
     /**
      * The background color of the tooltip. The default is determined from the series color.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,8 +18,8 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
 
     /**
      * The border configuration options.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltipBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @param \kendo\dataviz\ui\StockChartSeriesDefaultsTooltipBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -28,7 +28,7 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
     /**
      * The text color of the tooltip. The default is the same as the series labels color.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -37,7 +37,7 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
     /**
      * The tooltip font.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -46,7 +46,7 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
     /**
      * The tooltip format.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function format($value) {
         return $this->setProperty('format', $value);
@@ -55,7 +55,7 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
     /**
      * The padding of the tooltip.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -66,7 +66,7 @@ class StockChartSeriesDefaultsTooltip extends SerializableObject {
      * The tooltip template.
 Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -79,7 +79,7 @@ Template variables:
      * The tooltip template.
 Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function template($value) {
         return $this->setProperty('template', $value);
@@ -88,7 +88,7 @@ Template variables:
     /**
      * A value indicating if the tooltip should be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsTooltip
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

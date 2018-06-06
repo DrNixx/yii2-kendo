@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartValueAxisItemMajorGridLines extends SerializableObject {
 
     /**
      * The color of the lines.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
+     * @return \kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -18,7 +18,7 @@ class ChartValueAxisItemMajorGridLines extends SerializableObject {
     /**
      * The visibility of the lines.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
+     * @return \kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -27,7 +27,7 @@ class ChartValueAxisItemMajorGridLines extends SerializableObject {
     /**
      * The width of the lines.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
+     * @return \kendo\dataviz\ui\ChartValueAxisItemMajorGridLines
      */
     public function width($value) {
         return $this->setProperty('width', $value);

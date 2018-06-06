@@ -1,10 +1,10 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\Html\Text;
-use yii2\kendo\SerializableObject;
+use kendo\Html\Element;
+use kendo\Html\Text;
+use kendo\SerializableObject;
 
 class TabStripItem extends SerializableObject {
     public function createElement() {
@@ -45,7 +45,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies the text displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -54,7 +54,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies the URL of the image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function imageUrl($value) {
         return $this->setProperty('imageUrl', $value);
@@ -63,7 +63,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies the class name for the sprite image displayed by the item
      * @param string $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function spriteCssClass($value) {
         return $this->setProperty('spriteCssClass', $value);
@@ -72,7 +72,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies whether the item is initially enabled
      * @param boolean $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function enabled($value) {
         return $this->setProperty('enabled', $value);
@@ -81,7 +81,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies whether the item is initially selected
      * @param boolean $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function selected($value) {
         return $this->setProperty('selected', $value);
@@ -90,7 +90,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Specifies the url from which the item content will be loaded
      * @param string $value
-     * @return \yii2\kendo\ui\TabStripItem
+     * @return \kendo\ui\TabStripItem
      */
     public function contentUrl($value) {
         return $this->setProperty('contentUrl', $value);
@@ -99,7 +99,7 @@ class TabStripItem extends SerializableObject {
     /**
      * Sets the HTML content of the TabStripItem.
      * @param string $value
-     * @return \yii2\kendo\ui\TabStripItem    */
+     * @return \kendo\ui\TabStripItem    */
     public function content($value) {
         return $this->setProperty('content', $value);
     }
@@ -118,9 +118,9 @@ class TabStripItem extends SerializableObject {
         $this->content(ob_get_clean());
     }
     /**
-     * Adds one or more \yii2\kendo\ui\TabStripItem.
-     * @param \yii2\kendo\ui\TabStripItem|array,... $value
-     * @return \yii2\kendo\ui\TabStrip    */
+     * Adds one or more \kendo\ui\TabStripItem.
+     * @param \kendo\ui\TabStripItem|array,... $value
+     * @return \kendo\ui\TabStrip    */
     public function addItem($value) {
         return $this->add('items', func_get_args());
     }

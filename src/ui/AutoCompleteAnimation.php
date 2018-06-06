@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class AutoCompleteAnimation extends SerializableObject
 {
     /**
      * The animation played when the suggestion popup is closed.
-     * @param \yii2\kendo\ui\AutoCompleteAnimationClose|array $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimation
+     * @param \kendo\ui\AutoCompleteAnimationClose|array $value
+     * @return \kendo\ui\AutoCompleteAnimation
      */
     public function close($value)
     {
@@ -17,8 +17,8 @@ class AutoCompleteAnimation extends SerializableObject
 
     /**
      * The animation played when the suggestion popup is opened.
-     * @param \yii2\kendo\ui\AutoCompleteAnimationOpen|array $value
-     * @return \yii2\kendo\ui\AutoCompleteAnimation
+     * @param \kendo\ui\AutoCompleteAnimationOpen|array $value
+     * @return \kendo\ui\AutoCompleteAnimation
      */
     public function open($value)
     {

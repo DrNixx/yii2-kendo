@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class StockChartSeriesItem extends SerializableObject {
 
     /**
      * The type of the series. Available types:
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function type($value) {
         return $this->setProperty('type', $value);
@@ -19,7 +19,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The series line dash type.** Applicable only to line series **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function dashType($value) {
         return $this->setProperty('dashType', $value);
@@ -28,7 +28,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * Array of data items. The data item type can be either a:
      * @param array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function data($value) {
         return $this->setProperty('data', $value);
@@ -37,7 +37,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The data field containing the high value.** Available for candlestick and ohlc series only **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function highField($value) {
         return $this->setProperty('highField', $value);
@@ -46,7 +46,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The data field containing the series value.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function field($value) {
         return $this->setProperty('field', $value);
@@ -55,7 +55,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The data field containing the current value.** Available for bullet and verticalBullet series. **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function currentField($value) {
         return $this->setProperty('currentField', $value);
@@ -64,7 +64,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The data field containing the target value.** Available for bullet and verticalBullet series. **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function targetField($value) {
         return $this->setProperty('targetField', $value);
@@ -74,7 +74,7 @@ class StockChartSeriesItem extends SerializableObject {
      * Sets the groupNameTemplate option of the StockChartSeriesItem.
      * Name template for auto-generated series when binding to grouped data.Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function groupNameTemplateId($value) {
         $value = new Template($value);
@@ -86,7 +86,7 @@ class StockChartSeriesItem extends SerializableObject {
      * Sets the groupNameTemplate option of the StockChartSeriesItem.
      * Name template for auto-generated series when binding to grouped data.Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function groupNameTemplate($value) {
         return $this->setProperty('groupNameTemplate', $value);
@@ -95,7 +95,7 @@ class StockChartSeriesItem extends SerializableObject {
     /**
      * The series name visible in the legend.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function name($value) {
         return $this->setProperty('name', $value);
@@ -103,8 +103,8 @@ class StockChartSeriesItem extends SerializableObject {
 
     /**
      * Configures the appearance of highlighted points.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemHighlight|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemHighlight|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function highlight($value) {
         return $this->setProperty('highlight', $value);
@@ -114,7 +114,7 @@ class StockChartSeriesItem extends SerializableObject {
      * Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function aggregate($value) {
         return $this->setProperty('aggregate', $value);
@@ -123,7 +123,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The name of the value axis to use.** Applicable to area, column, line, ohlc and candlestick series **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function axis($value) {
         return $this->setProperty('axis', $value);
@@ -131,8 +131,8 @@ The function return value is displayed instead of the individual points.
 
     /**
      * The border of the points.** Applicable to column, ohlc and candlestick series **
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -141,7 +141,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The data field containing the close value.** Available for candlestick and ohlc series only **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function closeField($value) {
         return $this->setProperty('closeField', $value);
@@ -150,7 +150,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The series base color.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -159,7 +159,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The data field containing the point color.** Applicable for column, candlestick and ohlc series. **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function colorField($value) {
         return $this->setProperty('colorField', $value);
@@ -168,7 +168,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The series color when open value is smoller then close value.** Available for candlestick series only **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function downColor($value) {
         return $this->setProperty('downColor', $value);
@@ -177,7 +177,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The data field containing the body color.** Available for candlestick series only **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function downColorField($value) {
         return $this->setProperty('downColorField', $value);
@@ -186,7 +186,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The distance between category clusters.** Applicable for column, candlestick and ohlc series. **
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function gap($value) {
         return $this->setProperty('gap', $value);
@@ -194,8 +194,8 @@ The function return value is displayed instead of the individual points.
 
     /**
      * Configures the series data labels.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemLabels|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemLabels|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function labels($value) {
         return $this->setProperty('labels', $value);
@@ -203,8 +203,8 @@ The function return value is displayed instead of the individual points.
 
     /**
      * Line options.** Applicable to area, candlestick and ohlc series. **
-     * @param string|\yii2\kendo\dataviz\ui\StockChartSeriesItemLine|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param string|\kendo\dataviz\ui\StockChartSeriesItemLine|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function line($value) {
         return $this->setProperty('line', $value);
@@ -213,7 +213,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The data field containing the low value.** Available for candlestick and ohlc series **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function lowField($value) {
         return $this->setProperty('lowField', $value);
@@ -221,8 +221,8 @@ The function return value is displayed instead of the individual points.
 
     /**
      * Marker options.** Applicable for area and line series. **
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemMarkers|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemMarkers|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function markers($value) {
         return $this->setProperty('markers', $value);
@@ -231,7 +231,7 @@ The function return value is displayed instead of the individual points.
     /**
      * Configures the behavior for handling missing values.** Applicable for area and line series. **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function missingValues($value) {
         return $this->setProperty('missingValues', $value);
@@ -240,7 +240,7 @@ The function return value is displayed instead of the individual points.
     /**
      * Color to use for bars with negative values.** Applicable only to column series. **The plot stops before the missing point and continues after it.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function negativeColor($value) {
         return $this->setProperty('negativeColor', $value);
@@ -249,7 +249,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The series opacity.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -258,7 +258,7 @@ The function return value is displayed instead of the individual points.
     /**
      * The data field containing the open value.** Available for candlestick and ohlc series **
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function openField($value) {
         return $this->setProperty('openField', $value);
@@ -266,8 +266,8 @@ The function return value is displayed instead of the individual points.
 
     /**
      * The effects overlay.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemOverlay|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemOverlay|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function overlay($value) {
         return $this->setProperty('overlay', $value);
@@ -276,7 +276,7 @@ The function return value is displayed instead of the individual points.
     /**
      * Space between points as proportion of the point width.Available for column, candlestick and ohlc series.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function spacing($value) {
         return $this->setProperty('spacing', $value);
@@ -286,7 +286,7 @@ The function return value is displayed instead of the individual points.
      * A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
 Available for column series.
      * @param boolean|string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function stack($value) {
         return $this->setProperty('stack', $value);
@@ -294,8 +294,8 @@ Available for column series.
 
     /**
      * The data point tooltip configuration options.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemTooltip|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemTooltip|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function tooltip($value) {
         return $this->setProperty('tooltip', $value);
@@ -304,7 +304,7 @@ Available for column series.
     /**
      * The line width.** Applicable for area and line series. **
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -312,8 +312,8 @@ Available for column series.
 
     /**
      * The target of the bullet chart.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesItemTarget|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesItem
+     * @param \kendo\dataviz\ui\StockChartSeriesItemTarget|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesItem
      */
     public function target($value) {
         return $this->setProperty('target', $value);

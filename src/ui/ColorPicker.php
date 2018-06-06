@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
 
 class ColorPicker extends InputWidget
 {
@@ -31,7 +31,7 @@ class ColorPicker extends InputWidget
      * Applicable only for the HSV selector (that is, when pallete is null).
      * This specifies whether the "Apply" / "Cancel" buttons are to be displayed in the drop-down HSV picker.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function buttons($value)
     {
@@ -43,7 +43,7 @@ class ColorPicker extends InputWidget
      * For the "basic" and "websafe" palettes this is automatically initialized;
      * if you pass a custom palette then you can set this to some value that makes sense for your colors.
      * @param float $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function columns($value)
     {
@@ -52,8 +52,8 @@ class ColorPicker extends InputWidget
 
     /**
      * The size of a color cell.
-     * @param float|\yii2\kendo\ui\ColorPickerTileSize|array $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @param float|\kendo\ui\ColorPickerTileSize|array $value
+     * @return \kendo\ui\ColorPicker
      */
     public function tileSize($value)
     {
@@ -63,7 +63,7 @@ class ColorPicker extends InputWidget
     /**
      * Allows customization of "Apply" / "Cancel" labels.
      * @param  $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function messages($value)
     {
@@ -74,7 +74,7 @@ class ColorPicker extends InputWidget
      * When a non-null palette argument is supplied, the drop-down will be a simple color picker.
      * The following are supported:If palette is missing or null, the widget will display the HSV selector.
      * @param string $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function palette($value)
     {
@@ -85,7 +85,7 @@ class ColorPicker extends InputWidget
      * Only for the HSV selector.  If true, the widget will display the opacity slider.
      * Note that currently in HTML5 the <input type="color"> does not support opacity.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function opacity($value)
     {
@@ -97,7 +97,7 @@ class ColorPicker extends InputWidget
      * Displays the color preview element, along with an input field where the end
      * user can paste a color in a CSS-supported notation.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function preview($value)
     {
@@ -108,7 +108,7 @@ class ColorPicker extends InputWidget
      * A CSS class name to display an icon in the color picker button.
      * If specified, the HTML for the element will look like this:
      * @param string $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function toolIcon($value)
     {
@@ -121,7 +121,7 @@ class ColorPicker extends InputWidget
      * Note that when initializing the widget from an <input> element, the initial color
      * will be decided by the field instead.
      * @param string $value
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function value($value)
     {
@@ -133,7 +133,7 @@ class ColorPicker extends InputWidget
      * Fires when a color was selected, either by clicking on it (in the simple picker),
      * by clicking ENTER or by pressing "Apply" in the HSV picker.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function change($value)
     {
@@ -151,7 +151,7 @@ class ColorPicker extends InputWidget
      * the sliders in the HSV selector are dragged, but then pressing ESC would cancel the selection
      * and the color will revert to the original value.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function select($value)
     {
@@ -166,7 +166,7 @@ class ColorPicker extends InputWidget
      * Sets the open event of the ColorPicker.
      * Fires when the picker popup is opening.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function open($value)
     {
@@ -181,7 +181,7 @@ class ColorPicker extends InputWidget
      * Sets the close event of the ColorPicker.
      * Fires when the picker popup is closing.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ColorPicker
+     * @return \kendo\ui\ColorPicker
      */
     public function close($value)
     {

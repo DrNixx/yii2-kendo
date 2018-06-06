@@ -1,5 +1,5 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
 use yii\base\InvalidConfigException;
 use yii\base\Model;

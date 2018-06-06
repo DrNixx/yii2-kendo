@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class ChartLegendLabels extends SerializableObject {
 
@@ -11,7 +11,7 @@ class ChartLegendLabels extends SerializableObject {
      * The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartLegendLabels
+     * @return \kendo\dataviz\ui\ChartLegendLabels
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -20,7 +20,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The font style of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartLegendLabels
+     * @return \kendo\dataviz\ui\ChartLegendLabels
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -31,7 +31,7 @@ Any valid CSS color string will work here, including hex and rgb.
      * The template of the labels.
 Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\ChartLegendLabels
+     * @return \kendo\dataviz\ui\ChartLegendLabels
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -44,7 +44,7 @@ Template variables:
      * The template of the labels.
 Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\ChartLegendLabels
+     * @return \kendo\dataviz\ui\ChartLegendLabels
      */
     public function template($value) {
         return $this->setProperty('template', $value);

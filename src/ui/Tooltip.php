@@ -1,8 +1,8 @@
 <?php
 
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
+use kendo\JavaScriptFunction;
 
 class Tooltip extends Widget
 {
@@ -25,7 +25,7 @@ class Tooltip extends Widget
     /**
      * Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function autoHide($value) {
         return $this->setProperty('autoHide', $value);
@@ -34,8 +34,8 @@ class Tooltip extends Widget
     /**
      * A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
-     * @param \yii2\kendo\ui\TooltipAnimation|array $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @param \kendo\ui\TooltipAnimation|array $value
+     * @return \kendo\ui\Tooltip
      */
     public function animation($value) {
         return $this->setProperty('animation', $value);
@@ -44,7 +44,7 @@ will disable all animations in the widget.
     /**
      * Specifies if the tooltip callout will be displayed.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function callout($value) {
         return $this->setProperty('callout', $value);
@@ -53,7 +53,7 @@ will disable all animations in the widget.
     /**
      * Specifies a selector for elements, within the container, for which the tooltip will be displayed.
      * @param string $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function filter($value) {
         return $this->setProperty('filter', $value);
@@ -62,7 +62,7 @@ will disable all animations in the widget.
     /**
      * Explicitly states whether content iframe should be created.
      * @param boolean $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function iframe($value) {
         return $this->setProperty('iframe', $value);
@@ -71,7 +71,7 @@ will disable all animations in the widget.
     /**
      * The height (in pixels) of the tooltip.
      * @param float $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function height($value) {
         return $this->setProperty('height', $value);
@@ -80,7 +80,7 @@ will disable all animations in the widget.
     /**
      * The width (in pixels) of the tooltip.
      * @param float $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -89,7 +89,7 @@ will disable all animations in the widget.
     /**
      * The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
      * @param string $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function position($value) {
         return $this->setProperty('position', $value);
@@ -98,7 +98,7 @@ will disable all animations in the widget.
     /**
      * Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
      * @param float $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function showAfter($value) {
         return $this->setProperty('showAfter', $value);
@@ -107,7 +107,7 @@ will disable all animations in the widget.
     /**
      * The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
      * @param string $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function showOn($value) {
         return $this->setProperty('showOn', $value);
@@ -117,7 +117,7 @@ will disable all animations in the widget.
      * Sets the contentLoad event of the Tooltip.
      * Triggered when an AJAX request for content completes.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function contentLoad($value) {
         if (is_string($value)) {
@@ -131,7 +131,7 @@ will disable all animations in the widget.
      * Sets the show event of the Tooltip.
      * Triggered when a Tooltip is shown.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function show($value) {
         if (is_string($value)) {
@@ -145,7 +145,7 @@ will disable all animations in the widget.
      * Sets the hide event of the Tooltip.
      * Triggered when a Tooltip is hidden
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function hide($value) {
         if (is_string($value)) {
@@ -159,7 +159,7 @@ will disable all animations in the widget.
      * Sets the requestStart event of the Tooltip.
      * Triggered before an AJAX request started.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function requestStart($value) {
         if (is_string($value)) {
@@ -173,7 +173,7 @@ will disable all animations in the widget.
      * Sets the error event of the Tooltip.
      * Triggered when an AJAX request for content fails.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function error($value) {
         if (is_string($value)) {
@@ -187,7 +187,7 @@ will disable all animations in the widget.
     /**
      * Sets the HTML content of the Tooltip.
      * @param string $value
-     * @return \yii2\kendo\ui\Tooltip
+     * @return \kendo\ui\Tooltip
      */
     public function content($value) {
         return $this->setProperty('content', $value);

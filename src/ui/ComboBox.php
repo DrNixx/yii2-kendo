@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\Template;
+use kendo\Html\Element;
+use kendo\JavaScriptFunction;
+use kendo\Template;
 
 class ComboBox extends InputWidget
 {
@@ -19,8 +19,8 @@ class ComboBox extends InputWidget
 
     /**
      * Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
-     * @param \yii2\kendo\ui\ComboBoxAnimation|array $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @param \kendo\ui\ComboBoxAnimation|array $value
+     * @return \kendo\ui\ComboBox
      */
     public function animation($value)
     {
@@ -30,7 +30,7 @@ class ComboBox extends InputWidget
     /**
      * Controls whether to bind the widget to the DataSource on initialization.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function autoBind($value)
     {
@@ -40,7 +40,7 @@ class ComboBox extends InputWidget
     /**
      * Use it to set the Id of the parent DropDownList.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function cascadeFrom($value)
     {
@@ -49,8 +49,8 @@ class ComboBox extends InputWidget
 
     /**
      * Sets the data source of the ComboBox.
-     * @param array|\yii2\kendo\data\DataSource $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @param array|\kendo\data\DataSource $value
+     * @return \kendo\ui\ComboBox
      */
     public function dataSource($value)
     {
@@ -60,7 +60,7 @@ class ComboBox extends InputWidget
     /**
      * Sets the field of the data item that provides the text content of the list items.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function dataTextField($value)
     {
@@ -70,7 +70,7 @@ class ComboBox extends InputWidget
     /**
      * Sets the field of the data item that provides the value content of the list items.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function dataValueField($value)
     {
@@ -80,7 +80,7 @@ class ComboBox extends InputWidget
     /**
      * Specifies the delay in ms after which the ComboBox will start filtering dataSource.
      * @param float $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function delay($value)
     {
@@ -90,7 +90,7 @@ class ComboBox extends InputWidget
     /**
      * Controls whether the ComboBox should be initially enabled.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function enable($value)
     {
@@ -100,7 +100,7 @@ class ComboBox extends InputWidget
     /**
      * Defines the type of filtration. If "none" the ComboBox will not filter the items.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function filter($value)
     {
@@ -110,7 +110,7 @@ class ComboBox extends InputWidget
     /**
      * Define the height of the drop-down list in pixels.
      * @param float $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function height($value)
     {
@@ -120,7 +120,7 @@ class ComboBox extends InputWidget
     /**
      * Controls whether the first item will be automatically highlighted.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function highlightFirst($value)
     {
@@ -130,7 +130,7 @@ class ComboBox extends InputWidget
     /**
      * Defines whether the filtration should be case sensitive.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function ignoreCase($value)
     {
@@ -140,7 +140,7 @@ class ComboBox extends InputWidget
     /**
      * Defines the initial selected item.
      * @param float $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function index($value)
     {
@@ -150,7 +150,7 @@ class ComboBox extends InputWidget
     /**
      * Specifies the minimum characters that should be typed before the ComboBox activates
      * @param float $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function minLength($value)
     {
@@ -160,7 +160,7 @@ class ComboBox extends InputWidget
     /**
      * A string that appears in the textbox when the combobox has no value.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function placeholder($value)
     {
@@ -170,7 +170,7 @@ class ComboBox extends InputWidget
     /**
      * Controls whether the ComboBox should automatically auto-type the rest of text.
      * @param boolean $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function suggest($value)
     {
@@ -181,7 +181,7 @@ class ComboBox extends InputWidget
      * Sets the template option of the ComboBox.
      * Template to be used for rendering the items in the list.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function templateId($value)
     {
@@ -194,7 +194,7 @@ class ComboBox extends InputWidget
      * Sets the template option of the ComboBox.
      * Template to be used for rendering the items in the list.
      * @param string $value The template content.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function template($value)
     {
@@ -204,7 +204,7 @@ class ComboBox extends InputWidget
     /**
      * Define the text of the widget, when the autoBind is set to false.
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function text($value)
     {
@@ -214,7 +214,7 @@ class ComboBox extends InputWidget
     /**
      * Define the value of the widget
      * @param string $value
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function value($value)
     {
@@ -225,7 +225,7 @@ class ComboBox extends InputWidget
      * Sets the change event of the ComboBox.
      * Fires when the value has been changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function change($value)
     {
@@ -240,7 +240,7 @@ class ComboBox extends InputWidget
      * Sets the close event of the ComboBox.
      * Fires when the drop-down list is closed
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function close($value)
     {
@@ -255,7 +255,7 @@ class ComboBox extends InputWidget
      * Sets the dataBound event of the ComboBox.
      * Fires when the ComboBox has received data from the data source.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function dataBound($value)
     {
@@ -270,7 +270,7 @@ class ComboBox extends InputWidget
      * Sets the open event of the ComboBox.
      * Fires when the drop-down list is opened
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function open($value)
     {
@@ -285,7 +285,7 @@ class ComboBox extends InputWidget
      * Sets the select event of the ComboBox.
      * Triggered when a Li element is selected.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function select($value)
     {
@@ -300,7 +300,7 @@ class ComboBox extends InputWidget
      * Sets the cascade event of the ComboBox.
      * Triggered when value of the widget is changed via API or user interaction.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \yii2\kendo\ui\ComboBox
+     * @return \kendo\ui\ComboBox
      */
     public function cascade($value)
     {

@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartCategoryAxisItemSelect extends SerializableObject {
 
     /**
      * The lower boundary of the selected range.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelect
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemSelect
      */
     public function from($value) {
         return $this->setProperty('from', $value);
@@ -20,7 +20,7 @@ class ChartCategoryAxisItemSelect extends SerializableObject {
 unless the axis is justified. In order to select all categories specify
 a value larger than the last category index (date).
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelect
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemSelect
      */
     public function to($value) {
         return $this->setProperty('to', $value);
@@ -29,7 +29,7 @@ a value larger than the last category index (date).
     /**
      * The minimum value that is selectable by the user.
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelect
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemSelect
      */
     public function min($value) {
         return $this->setProperty('min', $value);
@@ -40,7 +40,7 @@ a value larger than the last category index (date).
 unless the axis is justified. In order to select all categories specify
 a value larger than the last category index (date).
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelect
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemSelect
      */
     public function max($value) {
         return $this->setProperty('max', $value);
@@ -48,8 +48,8 @@ a value larger than the last category index (date).
 
     /**
      * Mousewheel zoom settings for the selection.
-     * @param \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelectMousewheel|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemSelect
+     * @param \kendo\dataviz\ui\ChartCategoryAxisItemSelectMousewheel|array $value
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemSelect
      */
     public function mousewheel($value) {
         return $this->setProperty('mousewheel', $value);

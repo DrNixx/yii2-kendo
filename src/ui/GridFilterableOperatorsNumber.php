@@ -1,14 +1,14 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class GridFilterableOperatorsNumber extends SerializableObject
 {
     /**
      * Enable/Disable and set the text of the "Is equal to" filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function eq($value)
     {
@@ -18,7 +18,7 @@ class GridFilterableOperatorsNumber extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is not equal to" filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function neq($value)
     {
@@ -29,7 +29,7 @@ class GridFilterableOperatorsNumber extends SerializableObject
      * Enable/Disable and set the text of the "Is greater than or equal to"
      * filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function gte($value)
     {
@@ -39,7 +39,7 @@ class GridFilterableOperatorsNumber extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is greater than" filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function gt($value)
     {
@@ -49,7 +49,7 @@ class GridFilterableOperatorsNumber extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is less than or equal to" filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function lte($value)
     {
@@ -59,7 +59,7 @@ class GridFilterableOperatorsNumber extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is less than" filter option for columns with number values.
      * @param string $value
-     * @return \yii2\kendo\ui\GridFilterableOperatorsNumber
+     * @return \kendo\ui\GridFilterableOperatorsNumber
      */
     public function lt($value)
     {

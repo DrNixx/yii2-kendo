@@ -1,9 +1,9 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\Html\Text;
-use yii2\kendo\SerializableObject;
+use kendo\Html\Element;
+use kendo\Html\Text;
+use kendo\SerializableObject;
 
 abstract class NavigationalItem extends SerializableObject
 {

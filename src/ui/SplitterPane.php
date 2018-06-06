@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\Html\Element;
-use yii2\kendo\SerializableObject;
+use kendo\Html\Element;
+use kendo\SerializableObject;
 
 class SplitterPane extends SerializableObject
 {

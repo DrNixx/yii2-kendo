@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class SparklinePlotArea extends SerializableObject {
 
     /**
      * The background color of the plot area.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\SparklinePlotArea
+     * @return \kendo\dataviz\ui\SparklinePlotArea
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,7 +18,7 @@ class SparklinePlotArea extends SerializableObject {
     /**
      * The background opacity of the plot area.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\SparklinePlotArea
+     * @return \kendo\dataviz\ui\SparklinePlotArea
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -26,8 +26,8 @@ class SparklinePlotArea extends SerializableObject {
 
     /**
      * The border of the plot area.
-     * @param \yii2\kendo\dataviz\ui\SparklinePlotAreaBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\SparklinePlotArea
+     * @param \kendo\dataviz\ui\SparklinePlotAreaBorder|array $value
+     * @return \kendo\dataviz\ui\SparklinePlotArea
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -36,7 +36,7 @@ class SparklinePlotArea extends SerializableObject {
     /**
      * The margin of the plot area.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\SparklinePlotArea
+     * @return \kendo\dataviz\ui\SparklinePlotArea
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);

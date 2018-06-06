@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class StockChartTitle extends SerializableObject {
 
     /**
      * The alignment of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function align($value) {
         return $this->setProperty('align', $value);
@@ -18,7 +18,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The background color of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -26,8 +26,8 @@ class StockChartTitle extends SerializableObject {
 
     /**
      * The border of the title.
-     * @param \yii2\kendo\dataviz\ui\StockChartTitleBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @param \kendo\dataviz\ui\StockChartTitleBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -36,7 +36,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The font of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -45,7 +45,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The margin of the title.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -54,7 +54,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The padding of the title.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -63,7 +63,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The position of the title.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function position($value) {
         return $this->setProperty('position', $value);
@@ -72,7 +72,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The title of the chart. You can also set the text directly for a title with default options.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function text($value) {
         return $this->setProperty('text', $value);
@@ -81,7 +81,7 @@ class StockChartTitle extends SerializableObject {
     /**
      * The visibility of the title.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartTitle
+     * @return \kendo\dataviz\ui\StockChartTitle
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

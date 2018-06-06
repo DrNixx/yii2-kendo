@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class TooltipContent extends SerializableObject
 {
@@ -12,7 +12,7 @@ class TooltipContent extends SerializableObject
      *
      * @param string $value
      *
-     * @return \yii2\kendo\ui\TooltipContent
+     * @return \kendo\ui\TooltipContent
      */
     public function url($value)
     {

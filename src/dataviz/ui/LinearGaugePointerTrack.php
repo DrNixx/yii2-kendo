@@ -1,15 +1,15 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class LinearGaugePointerTrack extends SerializableObject {
 
     /**
      * The border of the track.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugePointerTrackBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointerTrack
+     * @param \kendo\dataviz\ui\LinearGaugePointerTrackBorder|array $value
+     * @return \kendo\dataviz\ui\LinearGaugePointerTrack
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -18,7 +18,7 @@ class LinearGaugePointerTrack extends SerializableObject {
     /**
      * The color of the track.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointerTrack
+     * @return \kendo\dataviz\ui\LinearGaugePointerTrack
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -27,7 +27,7 @@ class LinearGaugePointerTrack extends SerializableObject {
     /**
      * The opacity of the track.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointerTrack
+     * @return \kendo\dataviz\ui\LinearGaugePointerTrack
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -36,7 +36,7 @@ class LinearGaugePointerTrack extends SerializableObject {
     /**
      * The size of the track.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointerTrack
+     * @return \kendo\dataviz\ui\LinearGaugePointerTrack
      */
     public function size($value) {
         return $this->setProperty('size', $value);
@@ -45,7 +45,7 @@ class LinearGaugePointerTrack extends SerializableObject {
     /**
      * The visibility of the track.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugePointerTrack
+     * @return \kendo\dataviz\ui\LinearGaugePointerTrack
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class LinearGaugeScaleLabels extends SerializableObject {
 
@@ -11,7 +11,7 @@ class LinearGaugeScaleLabels extends SerializableObject {
      * The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -19,8 +19,8 @@ Any valid CSS color string will work here, including hex and rgb
 
     /**
      * The border of the labels.
-     * @param \yii2\kendo\dataviz\ui\LinearGaugeScaleLabelsBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @param \kendo\dataviz\ui\LinearGaugeScaleLabelsBorder|array $value
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -30,7 +30,7 @@ Any valid CSS color string will work here, including hex and rgb
      * The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -39,7 +39,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The font style of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -48,7 +48,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The format of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function format($value) {
         return $this->setProperty('format', $value);
@@ -57,7 +57,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The margin of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -66,7 +66,7 @@ Any valid CSS color string will work here, including hex and rgb.
     /**
      * The padding of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -77,7 +77,7 @@ Any valid CSS color string will work here, including hex and rgb.
      * The label template.
 Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -90,7 +90,7 @@ Template variables:
      * The label template.
 Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function template($value) {
         return $this->setProperty('template', $value);
@@ -99,7 +99,7 @@ Template variables:
     /**
      * The visibility of the labels.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\LinearGaugeScaleLabels
+     * @return \kendo\dataviz\ui\LinearGaugeScaleLabels
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

@@ -1,16 +1,16 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class ChartCategoryAxisItemLabels extends SerializableObject {
 
     /**
      * The background color of the labels. Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -18,8 +18,8 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
 
     /**
      * The border of the labels.
-     * @param \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabelsBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @param \kendo\dataviz\ui\ChartCategoryAxisItemLabelsBorder|array $value
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -28,7 +28,7 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
     /**
      * The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -37,7 +37,7 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
     /**
      * The font style of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -46,7 +46,7 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
     /**
      * The format of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function format($value) {
         return $this->setProperty('format', $value);
@@ -55,7 +55,7 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
     /**
      * The margin of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -66,7 +66,7 @@ class ChartCategoryAxisItemLabels extends SerializableObject {
 If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function mirror($value) {
         return $this->setProperty('mirror', $value);
@@ -75,7 +75,7 @@ mirroring the axis will render them to the right.
     /**
      * The padding of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -84,7 +84,7 @@ mirroring the axis will render them to the right.
     /**
      * The rotation angle of the labels.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function rotation($value) {
         return $this->setProperty('rotation', $value);
@@ -94,7 +94,7 @@ mirroring the axis will render them to the right.
      * Number of labels to skip.
 Skips rendering the first n labels.
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function skip($value) {
         return $this->setProperty('skip', $value);
@@ -104,7 +104,7 @@ Skips rendering the first n labels.
      * Label rendering step.
 Every n-th label is rendered where n is the step
      * @param float $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function step($value) {
         return $this->setProperty('step', $value);
@@ -115,7 +115,7 @@ Every n-th label is rendered where n is the step
      * The label template.
 Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -128,7 +128,7 @@ Template variables:
      * The label template.
 Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function template($value) {
         return $this->setProperty('template', $value);
@@ -137,7 +137,7 @@ Template variables:
     /**
      * The visibility of the labels.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);
@@ -146,7 +146,7 @@ Template variables:
     /**
      * Culture to use for formatting the dates. See Globalization for more information.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function culture($value) {
         return $this->setProperty('culture', $value);
@@ -155,7 +155,7 @@ Template variables:
     /**
      * Date format strings
      * @param  $value
-     * @return \yii2\kendo\dataviz\ui\ChartCategoryAxisItemLabels
+     * @return \kendo\dataviz\ui\ChartCategoryAxisItemLabels
      */
     public function dateFormats($value) {
         return $this->setProperty('dateFormats', $value);

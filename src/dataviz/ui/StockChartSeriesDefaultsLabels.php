@@ -1,9 +1,9 @@
 <?php
 
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
-use yii2\kendo\Template;
+use kendo\SerializableObject;
+use kendo\Template;
 
 class StockChartSeriesDefaultsLabels extends SerializableObject {
 
@@ -11,7 +11,7 @@ class StockChartSeriesDefaultsLabels extends SerializableObject {
      * The background color of the labels. Any valid CSS color string will work here,
 including hex and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function background($value) {
         return $this->setProperty('background', $value);
@@ -19,8 +19,8 @@ including hex and rgb.
 
     /**
      * The border of the labels.
-     * @param \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabelsBorder|array $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @param \kendo\dataviz\ui\StockChartSeriesDefaultsLabelsBorder|array $value
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function border($value) {
         return $this->setProperty('border', $value);
@@ -30,7 +30,7 @@ including hex and rgb.
      * The text color of the labels. Any valid CSS color string will work here, inlcuding hex
 and rgb.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function color($value) {
         return $this->setProperty('color', $value);
@@ -40,7 +40,7 @@ and rgb.
      * The font style of the labels.
 labels
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function font($value) {
         return $this->setProperty('font', $value);
@@ -49,7 +49,7 @@ labels
     /**
      * The format of the labels.
      * @param string $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function format($value) {
         return $this->setProperty('format', $value);
@@ -58,7 +58,7 @@ labels
     /**
      * The margin of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function margin($value) {
         return $this->setProperty('margin', $value);
@@ -67,7 +67,7 @@ labels
     /**
      * The padding of the labels.
      * @param float| $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function padding($value) {
         return $this->setProperty('padding', $value);
@@ -78,7 +78,7 @@ labels
      * The label template.
 Template variables:
      * @param string $value The id of the element which represents the kendo template.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function templateId($value) {
         $value = new Template($value);
@@ -91,7 +91,7 @@ Template variables:
      * The label template.
 Template variables:
      * @param string $value The template content.
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function template($value) {
         return $this->setProperty('template', $value);
@@ -100,7 +100,7 @@ Template variables:
     /**
      * The visibility of the labels.
      * @param boolean $value
-     * @return \yii2\kendo\dataviz\ui\StockChartSeriesDefaultsLabels
+     * @return \kendo\dataviz\ui\StockChartSeriesDefaultsLabels
      */
     public function visible($value) {
         return $this->setProperty('visible', $value);

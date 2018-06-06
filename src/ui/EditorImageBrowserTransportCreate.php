@@ -1,8 +1,8 @@
 <?php
-namespace yii2\kendo\ui;
+namespace kendo\ui;
 
-use yii2\kendo\JavaScriptFunction;
-use yii2\kendo\SerializableObject;
+use kendo\JavaScriptFunction;
+use kendo\SerializableObject;
 
 class EditorImageBrowserTransportCreate extends SerializableObject
 {
@@ -12,7 +12,7 @@ class EditorImageBrowserTransportCreate extends SerializableObject
      * Use "application/json" if the content is JSON.
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransportCreate
+     * @return \kendo\ui\EditorImageBrowserTransportCreate
      */
     public function contentType($value)
     {
@@ -23,7 +23,7 @@ class EditorImageBrowserTransportCreate extends SerializableObject
      * Data to be send to the server.
      * Refer to the jQuery.ajax documentation for further info.
      * @param |string|\Kendo\JavaScriptFunction $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransportCreate
+     * @return \kendo\ui\EditorImageBrowserTransportCreate
      */
     public function data($value)
     {
@@ -35,7 +35,7 @@ class EditorImageBrowserTransportCreate extends SerializableObject
      * Commonly used values are "json" and "jsonp".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransportCreate
+     * @return \kendo\ui\EditorImageBrowserTransportCreate
      */
     public function dataType($value)
     {
@@ -46,7 +46,7 @@ class EditorImageBrowserTransportCreate extends SerializableObject
      * The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransportCreate
+     * @return \kendo\ui\EditorImageBrowserTransportCreate
      */
     public function type($value)
     {
@@ -56,7 +56,7 @@ class EditorImageBrowserTransportCreate extends SerializableObject
     /**
      * The remote url to call when creating a new record.
      * @param string|JavaScriptFunction $value
-     * @return \yii2\kendo\ui\EditorImageBrowserTransportCreate
+     * @return \kendo\ui\EditorImageBrowserTransportCreate
      */
     public function url($value)
     {

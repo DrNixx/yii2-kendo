@@ -1,7 +1,7 @@
 <?php
-namespace yii2\kendo\dataviz\ui;
+namespace kendo\dataviz\ui;
 
-use yii2\kendo\SerializableObject;
+use kendo\SerializableObject;
 
 class ChartSeriesItemLabelsBorder extends SerializableObject
 {
