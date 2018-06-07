@@ -36,9 +36,9 @@ class ListView extends Widget
         return $html;
     }
 
-    public function properties()
+    public function getProperties()
     {
-        $properties = parent::properties();
+        $properties = parent::getProperties();
 
         //remove tagName from init script
         unset($properties['tagName']);

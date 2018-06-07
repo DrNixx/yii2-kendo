@@ -21,5 +21,10 @@ abstract class SerializableObject implements Serializable
 
     public function __construct($args = null)
     {
+        if (is_array($args)) {
+            foreach ($args as $key => $value) {
+                $this->$key($value);
+            }
+        }
     }
 }

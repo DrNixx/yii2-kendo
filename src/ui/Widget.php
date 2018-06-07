@@ -16,24 +16,13 @@ abstract class Widget extends YiiWidget implements Serializable
 
     private $isClientTemplate = false;
 
-    public static function make($args = null)
-    {
-        if (is_array($args)) {
-            $field = array_shift($args);
-            $obj = new static($field);
-            foreach ($args as $key => $value) {
-                $obj->$key($value);
-            }
-
-            return $obj;
-        } else {
-            return new static($args);
-        }
-    }
-
     public function __construct($config = [])
     {
         parent::__construct();
+
+        foreach ($config as $key => $value) {
+            $this->$key($value);
+        }
     }
 
     public function init()

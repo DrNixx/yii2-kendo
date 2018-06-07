@@ -6,16 +6,6 @@ use kendo\SerializableObject;
 class GridFilterableMessages extends SerializableObject
 {
     /**
-     * Set the text of the "and" option from logic drop down list.
-     * @param string $value
-     * @return \kendo\ui\GridFilterableMessages
-     */
-    public function _and($value)
-    {
-        return $this->setProperty('and', $value);
-    }
-
-    /**
      * Set the text of the clear button of the filter menu.
      * @param string $value
      * @return \kendo\ui\GridFilterableMessages
@@ -63,6 +53,16 @@ class GridFilterableMessages extends SerializableObject
     public function isTrue($value)
     {
         return $this->setProperty('isTrue', $value);
+    }
+
+    /**
+     * Set the text of the "and" option from logic drop down list.
+     * @param string $value
+     * @return \kendo\ui\GridFilterableMessages
+     */
+    public function _and($value)
+    {
+        return $this->setProperty('and', $value);
     }
 
     /**

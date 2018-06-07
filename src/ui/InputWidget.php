@@ -9,7 +9,8 @@ abstract class InputWidget extends Widget
 {
     /**
      * @var \yii\widgets\ActiveField active input field, which triggers this widget rendering.
-     * This field will be automatically filled up in case widget instance is created via [[\yii\widgets\ActiveField::widget()]].
+     * This field will be automatically filled up in case widget instance is created
+     * via [[\yii\widgets\ActiveField::widget()]].
      * @since 2.0.11
      */
     public $field;
@@ -44,7 +45,9 @@ abstract class InputWidget extends Widget
         }
 
         if (!isset($this->options['id'])) {
-            $this->options['id'] = $this->hasModel() ? Html::getInputId($this->model, $this->attribute) : $this->getId();
+            $this->options['id'] = $this->hasModel() ?
+                Html::getInputId($this->model, $this->attribute) :
+                $this->getId();
         }
 
         parent::initIdentifiers();

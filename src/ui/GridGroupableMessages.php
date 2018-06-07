@@ -15,5 +15,4 @@ class GridGroupableMessages extends SerializableObject
     {
         return $this->setProperty('empty', $value);
     }
-
 }

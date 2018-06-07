@@ -4,14 +4,15 @@ namespace kendo\ui;
 
 use kendo\SerializableObject;
 
-class GridColumnMenuMessages extends SerializableObject {
-
+class GridColumnMenuMessages extends SerializableObject
+{
     /**
      * Set the text of the columns section in column header menu.
      * @param string $value
      * @return \kendo\ui\GridColumnMenuMessages
      */
-    public function columns($value) {
+    public function columns($value)
+    {
         return $this->setProperty('columns', $value);
     }
 
@@ -20,7 +21,8 @@ class GridColumnMenuMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridColumnMenuMessages
      */
-    public function filter($value) {
+    public function filter($value)
+    {
         return $this->setProperty('filter', $value);
     }
 
@@ -29,7 +31,8 @@ class GridColumnMenuMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridColumnMenuMessages
      */
-    public function sortAscending($value) {
+    public function sortAscending($value)
+    {
         return $this->setProperty('sortAscending', $value);
     }
 
@@ -38,8 +41,8 @@ class GridColumnMenuMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridColumnMenuMessages
      */
-    public function sortDescending($value) {
+    public function sortDescending($value)
+    {
         return $this->setProperty('sortDescending', $value);
     }
-
 }

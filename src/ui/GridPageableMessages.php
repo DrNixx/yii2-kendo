@@ -1,17 +1,18 @@
 <?php
-
 namespace kendo\ui;
 
 use kendo\SerializableObject;
 
-class GridPageableMessages extends SerializableObject {
+class GridPageableMessages extends SerializableObject
+{
 
     /**
      * Defines the info text.
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function display($value) {
+    public function display($value)
+    {
         return $this->setProperty('display', $value);
     }
 
@@ -20,7 +21,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function _empty($value) {
+    public function _empty($value)
+    {
         return $this->setProperty('empty', $value);
     }
 
@@ -29,7 +31,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function page($value) {
+    public function page($value)
+    {
         return $this->setProperty('page', $value);
     }
 
@@ -38,7 +41,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function of($value) {
+    public function of($value)
+    {
         return $this->setProperty('of', $value);
     }
 
@@ -47,7 +51,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function itemsPerPage($value) {
+    public function itemsPerPage($value)
+    {
         return $this->setProperty('itemsPerPage', $value);
     }
 
@@ -56,7 +61,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function first($value) {
+    public function first($value)
+    {
         return $this->setProperty('first', $value);
     }
 
@@ -65,7 +71,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function previous($value) {
+    public function previous($value)
+    {
         return $this->setProperty('previous', $value);
     }
 
@@ -74,7 +81,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function next($value) {
+    public function next($value)
+    {
         return $this->setProperty('next', $value);
     }
 
@@ -83,7 +91,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function last($value) {
+    public function last($value)
+    {
         return $this->setProperty('last', $value);
     }
 
@@ -92,8 +101,8 @@ class GridPageableMessages extends SerializableObject {
      * @param string $value
      * @return \kendo\ui\GridPageableMessages
      */
-    public function refresh($value) {
+    public function refresh($value)
+    {
         return $this->setProperty('refresh', $value);
     }
-
 }
