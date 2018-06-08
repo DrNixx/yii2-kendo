@@ -28,15 +28,13 @@ class KendoMobileAsset extends AssetBundle
     public function __construct(array $config = [])
     {
         parent::__construct($config);
-
-        if (empty($this->cdnPath)) {
-            $this->cdnPath = Yii::$app->params['kendoui.cdn'];
-        }
     }
 
     public function init()
     {
-        parent::init();
+        if (empty($this->cdnPath)) {
+            $this->cdnPath = Yii::$app->params['kendoui.cdn'];
+        }
 
         $this->js = [
             $this->cdnPath.'/js/kendo.mobile.js',
@@ -52,5 +50,7 @@ class KendoMobileAsset extends AssetBundle
             //'css/kendo.materialblack.min.css',
             //'css/kendo.materialblack.mobile.min.css',
         ];
+
+        parent::init();
     }
 }

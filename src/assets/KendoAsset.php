@@ -32,15 +32,14 @@ class KendoAsset extends AssetBundle
     public function __construct(array $config = [])
     {
         parent::__construct($config);
-
-        if (empty($this->cdnPath)) {
-            $this->cdnPath = Yii::$app->params['kendoui.cdn'];
-        }
     }
 
     public function init()
     {
-        parent::init();
+        if (empty($this->cdnPath)) {
+            $this->cdnPath = Yii::$app->params['kendoui.cdn'];
+        }
+
         $this->js = [
             $this->cdnPath.'/js/kendo.web.min.js',
             $this->cdnPath.'/js/kendo.timezones.min.js',
@@ -54,5 +53,7 @@ class KendoAsset extends AssetBundle
             $this->cdnPath.'/css/kendo.bootstrap.min.css',
             $this->cdnPath.'/css/kendo.bootstrap.mobile.min.css'
         ];
+
+        parent::init();
     }
 }
