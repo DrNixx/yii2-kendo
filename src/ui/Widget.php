@@ -1,6 +1,8 @@
 <?php
 namespace kendo\ui;
 
+use kendo\assets\KendoAsset;
+use kendo\assets\KendoMobileAsset;
 use yii\base\Widget as YiiWidget;
 use yii\web\View;
 use kendo\Html\Element;
@@ -11,6 +13,8 @@ use kendo\Serializer;
 abstract class Widget extends YiiWidget implements Serializable
 {
     use SerializableTrait;
+
+    public $mobile = false;
 
     public $options = [];
 
@@ -124,8 +128,16 @@ abstract class Widget extends YiiWidget implements Serializable
         $this->view->registerJs($this->getScript(), $position);
     }
 
+    /**
+     * @throws \yii\base\InvalidConfigException
+     */
     protected function registerAssets()
     {
+        if ($this->mobile) {
+            $this->getView()->registerAssetBundle(KendoMobileAsset::class);
+        } else {
+            $this->getView()->registerAssetBundle(KendoAsset::class);
+        }
     }
 
     private function escapeSelector($value)
