@@ -18,6 +18,7 @@ class KendoMobileAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'onix\assets\JQueryMigrateAsset',
     ];
 
     /**

@@ -22,6 +22,7 @@ class KendoAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'onix\assets\JQueryMigrateAsset',
     ];
 
     /**
