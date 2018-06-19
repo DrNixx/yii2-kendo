@@ -13,11 +13,9 @@ class KendoAsset extends AssetBundle
     public $basePath = null;
 
     public $js = [
-
     ];
 
     public $css = [
-
     ];
 
     public $depends = [

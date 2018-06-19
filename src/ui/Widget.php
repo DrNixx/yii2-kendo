@@ -35,6 +35,11 @@ abstract class Widget extends YiiWidget implements Serializable
         parent::init();
     }
 
+    /**
+     * @return string
+     *
+     * @throws \yii\base\InvalidConfigException
+     */
     public function run()
     {
         $this->registerJavascript();

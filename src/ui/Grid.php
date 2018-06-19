@@ -1,6 +1,7 @@
 <?php
 namespace kendo\ui;
 
+use kendo\assets\KendoGridAsset;
 use kendo\JavaScriptFunction;
 use kendo\Template;
 
@@ -536,5 +537,14 @@ class Grid extends Widget
     {
         $value = new Template($value);
         return $this->setProperty('toolbar', $value);
+    }
+
+    /**
+     * @throws \yii\base\InvalidConfigException
+     */
+    protected function registerAssets()
+    {
+        parent::registerAssets();
+        $this->getView()->registerAssetBundle(KendoGridAsset::class);
     }
 }
