@@ -36,6 +36,23 @@ abstract class InputWidget extends Widget
     public $inputValue;
 
     /**
+     * InputWidget constructor.
+     *
+     * @param array $config
+     */
+    public function __construct($config = [])
+    {
+        foreach (['field', 'model', 'attribute', 'inputName', 'inputValue', 'view'] as $key => $val) {
+            if (isset($config[$key])) {
+                $this->$key = $val;
+                unset($config[$key]);
+            }
+        }
+
+        parent::__construct($config);
+    }
+
+    /**
      * Define the value of the widget
      *
      * @param string $value
