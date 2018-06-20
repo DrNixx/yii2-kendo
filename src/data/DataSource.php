@@ -30,7 +30,9 @@ class DataSource extends SerializableObject
                 'data' => 'data',
                 'errors' => 'errors',
                 'total' => 'total',
-            ])
+            ]),
+            'serverFiltering' => true,
+            'serverGrouping' => true,
         ]);
 
         if (is_array($sort) && count($sort) > 0) {
