@@ -70,9 +70,13 @@ abstract class InputWidget extends Widget implements IInputWidget
     public function run()
     {
         if ($this->hasModel()) {
-            $name = !empty($this->inputName) ?
-                $this->inputName :
-                Html::getInputName($this->model, $this->attribute);
+            if (!empty($this->inputName)) {
+                $name = $this->inputName;
+            } elseif (!empty($this->options['name'])) {
+                $name = $this->options['name'];
+            } else {
+                $name = Html::getInputName($this->model, $this->attribute);
+            }
 
             $value = !empty($this->inputValue) ?
                 $this->inputValue :
@@ -82,7 +86,7 @@ abstract class InputWidget extends Widget implements IInputWidget
             $value = strval($this->inputValue);
         }
 
-        $this->setProperty('name', $name);
+        $this->options['name'] = $name;
         $this->value($value);
 
         return parent::run();
@@ -94,7 +98,9 @@ abstract class InputWidget extends Widget implements IInputWidget
     protected function initIdentifiers()
     {
         if (empty($this->inputName) && !$this->hasModel()) {
-            throw new InvalidConfigException("Either 'name', or 'model' and 'attribute' properties must be specified.");
+            throw new InvalidConfigException(
+                "Either 'inputName', or 'model' and 'attribute' properties must be specified."
+            );
         }
 
         if (!isset($this->options['id'])) {
