@@ -10,12 +10,14 @@ class DataSource extends SerializableObject
      * Make simple data source for reading from url
      *
      * @param string $url URL read from
+     * @param array $sort Dats source sorting
      *
      * @return DataSource
      */
-    public static function readFrom($url)
+    public static function readFrom($url, $sort = [])
     {
-        return static ::make([
+        /** @var DataSource $ds */
+        $ds = static ::make([
             'transport' => DataSourceTransport::make([
                 'read' => DataSourceTransportRead::make([
                     'url' => $url,
@@ -30,6 +32,25 @@ class DataSource extends SerializableObject
                 'total' => 'total',
             ])
         ]);
+
+        if (is_array($sort) && count($sort) > 0) {
+            $ds->serverSorting(true);
+
+            foreach ($sort as $field => $dir) {
+                if (is_string($dir)) {
+                    $kendoDir = $dir;
+                } else {
+                    $kendoDir = ($dir === SORT_DESC) ? 'desc' : 'asc';
+                }
+
+                $item = new DataSourceSortItem();
+                $item->field($field);
+                $item->dir($kendoDir);
+                $ds->addSortItem($item);
+            }
+        }
+
+        return $ds;
     }
 
     /**
