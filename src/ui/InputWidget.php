@@ -28,19 +28,54 @@ abstract class InputWidget extends Widget
     /**
      * @var string the input name. This must be set if [[model]] and [[attribute]] are not set.
      */
-    public $name;
+    public $inputName;
 
     /**
      * @var string the input value.
      */
-    public $value;
+    public $inputValue;
+
+    /**
+     * Define the value of the widget
+     *
+     * @param string $value
+     *
+     * @return static
+     */
+    abstract public function value($value);
+
+    /**
+     * @return string
+     *
+     * @throws \yii\base\InvalidConfigException
+     */
+    public function run()
+    {
+        if ($this->hasModel()) {
+            $name = !empty($this->inputName) ?
+                $this->inputName :
+                Html::getInputName($this->model, $this->attribute);
+
+            $value = !empty($this->inputValue) ?
+                $this->inputValue :
+                Html::getAttributeValue($this->model, $this->attribute);
+        } else {
+            $name = $this->inputName;
+            $value = strval($this->inputValue);
+        }
+
+        $this->setProperty('name', $name);
+        $this->value($value);
+
+        return parent::run();
+    }
 
     /**
      * @throws InvalidConfigException
      */
     protected function initIdentifiers()
     {
-        if ($this->name === null && !$this->hasModel()) {
+        if (empty($this->inputName) && !$this->hasModel()) {
             throw new InvalidConfigException("Either 'name', or 'model' and 'attribute' properties must be specified.");
         }
 

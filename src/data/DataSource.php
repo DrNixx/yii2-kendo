@@ -7,6 +7,32 @@ use kendo\SerializableObject;
 class DataSource extends SerializableObject
 {
     /**
+     * Make simple data source for reading from url
+     *
+     * @param string $url URL read from
+     *
+     * @return DataSource
+     */
+    public static function readFrom($url)
+    {
+        return static ::make([
+            'transport' => DataSourceTransport::make([
+                'read' => DataSourceTransportRead::make([
+                    'url' => $url,
+                    'dataType' => 'jsonp',
+                    'type' => 'GET',
+                ]),
+                'parameterMap' => 'function(data) { return { models: kendo.stringify(data) }; }'
+            ]),
+            'schema' => DataSourceSchema::make([
+                'data' => 'data',
+                'errors' => 'errors',
+                'total' => 'total',
+            ])
+        ]);
+    }
+
+    /**
      * Adds DataSourceAggregateItem to the DataSource.
      * @param DataSourceAggregateItem|array,... $value one or more DataSourceAggregateItem to add.
      * @return DataSource

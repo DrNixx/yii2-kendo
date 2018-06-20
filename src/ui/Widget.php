@@ -110,7 +110,9 @@ abstract class Widget extends YiiWidget implements Serializable
     protected function assignAttributes(Element $element)
     {
         if ($element->tagName() == 'textarea' || $element->tagName() == 'input') {
-            $this->options['name'] = $this->options['id'];
+            if (empty($this->options['name'])) {
+                $this->options['name'] = $this->options['id'];
+            }
         }
 
         foreach ($this->options as $key => $value) {

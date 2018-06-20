@@ -239,7 +239,9 @@ class DropDownList extends InputWidget
 
     /**
      * Define the value of the widget
+     *
      * @param string $value
+     *
      * @return \kendo\ui\DropDownList
      */
     public function value($value)
