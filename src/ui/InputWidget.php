@@ -1,11 +1,12 @@
 <?php
 namespace kendo\ui;
 
+use onix\widgets\IInputWidget;
 use yii\base\InvalidConfigException;
 use yii\base\Model;
 use yii\helpers\Html;
 
-abstract class InputWidget extends Widget
+abstract class InputWidget extends Widget implements IInputWidget
 {
     /**
      * @var \yii\widgets\ActiveField active input field, which triggers this widget rendering.
