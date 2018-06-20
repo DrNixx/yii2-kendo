@@ -29,7 +29,7 @@ abstract class InputWidget extends Widget implements IInputWidget
     /**
      * @var string the input name. This must be set if [[model]] and [[attribute]] are not set.
      */
-    public $inputName;
+    public $name;
 
     /**
      * @var string the input value.
@@ -43,7 +43,7 @@ abstract class InputWidget extends Widget implements IInputWidget
      */
     public function __construct($config = [])
     {
-        foreach (['field', 'model', 'attribute', 'inputName', 'inputValue', 'view'] as $key) {
+        foreach (['field', 'model', 'attribute', 'name', 'inputValue', 'view'] as $key) {
             if (isset($config[$key])) {
                 $this->$key = $config[$key];
                 unset($config[$key]);
@@ -70,8 +70,8 @@ abstract class InputWidget extends Widget implements IInputWidget
     public function run()
     {
         if ($this->hasModel()) {
-            if (!empty($this->inputName)) {
-                $name = $this->inputName;
+            if (!empty($this->name)) {
+                $name = $this->name;
             } elseif (!empty($this->options['name'])) {
                 $name = $this->options['name'];
             } else {
@@ -82,7 +82,7 @@ abstract class InputWidget extends Widget implements IInputWidget
                 $this->inputValue :
                 Html::getAttributeValue($this->model, $this->attribute);
         } else {
-            $name = $this->inputName;
+            $name = $this->name;
             $value = strval($this->inputValue);
         }
 
@@ -97,7 +97,7 @@ abstract class InputWidget extends Widget implements IInputWidget
      */
     protected function initIdentifiers()
     {
-        if (empty($this->inputName) && !$this->hasModel()) {
+        if (empty($this->name) && !$this->hasModel()) {
             throw new InvalidConfigException(
                 "Either 'inputName', or 'model' and 'attribute' properties must be specified."
             );
