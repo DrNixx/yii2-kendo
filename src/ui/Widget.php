@@ -43,8 +43,8 @@ abstract class Widget extends YiiWidget implements Serializable
      */
     public function run()
     {
-        $this->registerJavascript();
         $this->registerAssets();
+        $this->registerJavascript();
 
         return $this->html();
     }
