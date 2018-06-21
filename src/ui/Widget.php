@@ -150,7 +150,12 @@ abstract class Widget extends YiiWidget implements Serializable
         }
 
         $lang = Yii::$app->language;
-        $view->registerJs("kendo.culture('{$lang}');", View::POS_READY, "KendoUICultureInitialize");
+        $view->registerJs(<<<JS
+if (window.kendo) {
+    kendo.culture('{$lang}');    
+}
+JS
+        , View::POS_READY, "KendoUICultureInitialize");
     }
 
     private function escapeSelector($value)
