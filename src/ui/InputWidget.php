@@ -83,7 +83,7 @@ abstract class InputWidget extends Widget implements IInputWidget
                 Html::getAttributeValue($this->model, $this->attribute);
         } else {
             $name = $this->name;
-            $value = strval($this->inputValue);
+            $value = $this->inputValue;
         }
 
         $this->options['name'] = $name;
