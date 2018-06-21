@@ -63,11 +63,9 @@ abstract class InputWidget extends Widget implements IInputWidget
     abstract public function value($value);
 
     /**
-     * @return string
-     *
-     * @throws \yii\base\InvalidConfigException
+     * @inheritdoc
      */
-    public function run()
+    public function init()
     {
         if ($this->hasModel()) {
             if (!empty($this->name)) {
@@ -87,9 +85,10 @@ abstract class InputWidget extends Widget implements IInputWidget
         }
 
         $this->options['name'] = $name;
+        $this->inputValue = $value;
         $this->value($value);
 
-        return parent::run();
+        parent::init();
     }
 
     /**
