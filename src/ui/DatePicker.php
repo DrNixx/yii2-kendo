@@ -1,5 +1,4 @@
 <?php
-
 namespace kendo\ui;
 
 use kendo\Html\Element;
@@ -7,85 +6,125 @@ use kendo\JavaScriptFunction;
 
 class DatePicker extends InputWidget
 {
-    protected function kendoName() {
+    protected function kendoName()
+    {
         return 'DatePicker';
     }
 
-    protected function createElement() {
+    protected function createElement()
+    {
         return new Element('input', true);
     }
 
     /**
-     * The animation(s) used for opening and/or closing the pop-up. Setting this value to false
-will disable the animation(s).
+     * The animation(s) used for opening and/or closing the pop-up.
+     * Setting this value to false will disable the animation(s).
+     *
      * @param \kendo\ui\DatePickerAnimation|array $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function animation($value) {
+    public function animation($value)
+    {
         return $this->setProperty('animation', $value);
     }
 
     /**
      * Specifies the culture info used by the widget.
+     *
      * @param string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function culture($value) {
+    public function culture($value)
+    {
         return $this->setProperty('culture', $value);
     }
 
     /**
      * Specifies a list of dates, which will be passed to the month template.
+     *
      * @param array $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function dates($value) {
+    public function dates($value)
+    {
         return $this->setProperty('dates', $value);
     }
 
     /**
-     * Specifies the navigation depth. The following
-settings are available for the depth value:
+     * Specifies the navigation depth. The following settings are available for the depth value:
+     *
      * @param string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function depth($value) {
+    public function depth($value)
+    {
         return $this->setProperty('depth', $value);
     }
 
     /**
      * Template to be used for rendering the footer of the calendar.
+     *
      * @param string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function footer($value) {
+    public function footer($value)
+    {
         return $this->setProperty('footer', $value);
     }
 
     /**
-     * Specifies the format, which is used to format the value of the DatePicker displayed in the input. The format also will be used to parse the input.
+     * Specifies the format, which is used to format the value of the DatePicker displayed in the input.
+     * The format also will be used to parse the input.
+     *
      * @param string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function format($value) {
+    public function format($value)
+    {
         return $this->setProperty('format', $value);
     }
 
     /**
      * Specifies the maximum date, which the calendar can show.
-     * @param \DateTime $value
+     *
+     * @param \DateTime|string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function max($value) {
+    public function max($value)
+    {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('max', $value);
     }
 
     /**
      * Specifies the minimum date that the calendar can show.
-     * @param \DateTime $value
+     *
+     * @param \DateTime|string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function min($value) {
+    public function min($value)
+    {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('min', $value);
     }
 
@@ -94,45 +133,72 @@ settings are available for the depth value:
      * @param \kendo\ui\DatePickerMonth|array $value
      * @return \kendo\ui\DatePicker
      */
-    public function month($value) {
+    public function month($value)
+    {
         return $this->setProperty('month', $value);
     }
 
     /**
-     * Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the format will be used. Note that value of the format option is always used.
+     * Specifies the formats, which are used to parse the value set with value() method or by direct input.
+     * If not set the value of the format will be used. Note that value of the format option is always used.
+     *
      * @param array $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function parseFormats($value) {
+    public function parseFormats($value)
+    {
         return $this->setProperty('parseFormats', $value);
     }
 
     /**
-     * Specifies the start view.
-The following settings are available for the start value:
-     * @param string $value
+     * Specifies the start view. The following settings are available for the start value:
+     *
+     * @param \DateTime|string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function start($value) {
+    public function start($value)
+    {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('start', $value);
     }
 
     /**
      * Specifies the selected date.
-     * @param \DateTime $value
+     *
+     * @param \DateTime|string $value
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function value($value) {
+    public function value($value)
+    {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('value', $value);
     }
 
     /**
      * Sets the change event of the DatePicker.
      * Fires when the selected date is changed
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function change($value) {
+    public function change($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -143,10 +209,13 @@ The following settings are available for the start value:
     /**
      * Sets the close event of the DatePicker.
      * Fires when the calendar is closed
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function close($value) {
+    public function close($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -157,16 +226,17 @@ The following settings are available for the start value:
     /**
      * Sets the open event of the DatePicker.
      * Fires when the calendar is opened
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\DatePicker
      */
-    public function open($value) {
+    public function open($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
 
         return $this->setProperty('open', $value);
     }
-
-
 }

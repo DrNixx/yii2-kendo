@@ -109,24 +109,38 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the maximum date, which the calendar can show.
      *
-     * @param \DateTime $value
+     * @param \DateTime|string $value
      *
      * @return \kendo\ui\DateTimePicker
      */
     public function max($value)
     {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('max', $value);
     }
 
     /**
      * Specifies the minimum date that the calendar can show.
      *
-     * @param \DateTime $value
+     * @param \DateTime|string $value
      *
      * @return \kendo\ui\DateTimePicker
      */
     public function min($value)
     {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('min', $value);
     }
 
@@ -159,12 +173,19 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the start view of the calendar. The following settings are available for the start value:
      *
-     * @param string $value
+     * @param \DateTime|string $value
      *
      * @return \kendo\ui\DateTimePicker
      */
     public function start($value)
     {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('start', $value);
     }
 
@@ -183,12 +204,19 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the selected value.
      *
-     * @param \DateTime $value
+     * @param \DateTime|string $value
      *
      * @return \kendo\ui\DateTimePicker
      */
     public function value($value)
     {
+        if (!empty($value)) {
+            if (!($value instanceof \DateTime)) {
+                $value = new \DateTime(strval($value));
+                $value->setTimezone(new \DateTimeZone('GMT'));
+            }
+        }
+
         return $this->setProperty('value', $value);
     }
 
