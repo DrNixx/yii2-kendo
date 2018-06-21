@@ -3,6 +3,7 @@ namespace kendo\ui;
 
 use kendo\assets\KendoAsset;
 use kendo\assets\KendoMobileAsset;
+use Yii;
 use yii\base\Widget as YiiWidget;
 use yii\web\View;
 use kendo\Html\Element;
@@ -140,11 +141,16 @@ abstract class Widget extends YiiWidget implements Serializable
      */
     protected function registerAssets()
     {
+        $view = $this->getView();
+
         if ($this->mobile) {
-            $this->getView()->registerAssetBundle(KendoMobileAsset::class);
+            $view->registerAssetBundle(KendoMobileAsset::class);
         } else {
-            $this->getView()->registerAssetBundle(KendoAsset::class);
+            $view->registerAssetBundle(KendoAsset::class);
         }
+
+        $lang = Yii::$app->language;
+        $view->registerJs("kendo.culture('{$lang}');", View::POS_READY, "KendoUICultureInitialize");
     }
 
     private function escapeSelector($value)
