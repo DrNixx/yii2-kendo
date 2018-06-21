@@ -37,7 +37,7 @@ class GridToolbarBuilder
                         '<i class="fa fa-eye fa-lg"></i> '.Yii::t("common", "View"),
                         "javascript:;",
                         [
-                            'class' => "btn btn-success btn-sm btn-small m-r-5",
+                            'class' => "btn btn-primary btn-sm btn-small m-r-5",
                             'data-command' => "view",
                             'data-item' => 'true',
                             'data-href' => $value
@@ -53,7 +53,7 @@ class GridToolbarBuilder
                         '<i class="fa fa-edit fa-lg"></i> '.Yii::t("common", "Change"),
                         "javascript:;",
                         [
-                            'class' => "btn btn-success btn-sm btn-small m-r-5",
+                            'class' => "btn btn-primary btn-sm btn-small m-r-5",
                             'data-command' => "update",
                             'data-item' => 'true',
                             'data-href' => $value
