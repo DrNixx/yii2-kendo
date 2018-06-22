@@ -111,7 +111,7 @@ class GridToolbarBuilder
                         [
                             'class' => "btn btn-danger btn-sm btn-small m-r-5 pull-right",
                             'data-command' => "delete",
-                            'data-item' => true,
+                            'data-item' => 'true',
                             'data-href' => $value
                         ]
                     )
