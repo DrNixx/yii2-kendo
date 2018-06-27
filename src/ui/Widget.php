@@ -6,7 +6,7 @@ use kendo\assets\KendoMobileAsset;
 use Yii;
 use yii\base\Widget as YiiWidget;
 use yii\web\View;
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\Serializable;
 use kendo\SerializableTrait;
 use kendo\Serializer;

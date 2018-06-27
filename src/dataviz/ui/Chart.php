@@ -2,7 +2,7 @@
 namespace kendo\dataviz\ui;
 
 use kendo\JavaScriptFunction;
-use kendo\UI\Widget;
+use kendo\ui\Widget;
 
 class Chart extends Widget
 {

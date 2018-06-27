@@ -1,7 +1,7 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 use kendo\Template;
 
@@ -258,5 +258,17 @@ class AutoComplete extends InputWidget
         }
 
         return $this->setProperty('select', $value);
+    }
+
+    /**
+     * Define the value of the widget
+     *
+     * @param string $value
+     *
+     * @return static
+     */
+    public function value($value)
+    {
+        return $this->setProperty('value', $value);
     }
 }

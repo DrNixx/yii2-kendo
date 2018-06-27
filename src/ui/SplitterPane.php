@@ -1,7 +1,7 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\SerializableObject;
 
 class SplitterPane extends SerializableObject

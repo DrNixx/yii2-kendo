@@ -1,7 +1,7 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class PanelBar extends Widget

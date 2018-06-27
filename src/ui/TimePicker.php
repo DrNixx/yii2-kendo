@@ -2,88 +2,117 @@
 
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class TimePicker extends InputWidget
 {
-    protected function kendoName() {
+    protected function kendoName()
+    {
         return 'TimePicker';
     }
 
-    protected function createElement() {
+    protected function createElement()
+    {
         return new Element('input', true);
     }
 
     /**
      * Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+     *
      * @param \kendo\ui\TimePickerAnimation|array $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function animation($value) {
+    public function animation($value)
+    {
         return $this->setProperty('animation', $value);
     }
 
     /**
      * Specifies the culture info used by the widget.
+     *
      * @param string $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function culture($value) {
+    public function culture($value)
+    {
         return $this->setProperty('culture', $value);
     }
 
     /**
-     * Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
+     * Specifies a list of dates, which are shown in the time drop-down list.
+     * If not set, the DateTimePicker will auto-generate the available times.
+     *
      * @param array $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function dates($value) {
+    public function dates($value)
+    {
         return $this->setProperty('dates', $value);
     }
 
     /**
-     * Specifies the format, which is used to format the value of the TimePicker displayed in the input. The format also will be used to parse the input.
+     * Specifies the format, which is used to format the value of the TimePicker displayed in the input.
+     * The format also will be used to parse the input.
+     *
      * @param string $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function format($value) {
+    public function format($value)
+    {
         return $this->setProperty('format', $value);
     }
 
     /**
      * Specifies the interval, between values in the popup list, in minutes.
+     *
      * @param float $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function interval($value) {
+    public function interval($value)
+    {
         return $this->setProperty('interval', $value);
     }
 
     /**
      * Specifies the end value in the popup list.
+     *
      * @param \DateTime $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function max($value) {
+    public function max($value)
+    {
         return $this->setProperty('max', $value);
     }
 
     /**
      * Specifies the start value in the popup list.
+     *
      * @param \DateTime $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function min($value) {
+    public function min($value)
+    {
         return $this->setProperty('min', $value);
     }
 
     /**
-     * Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used. Note that value of the format option is always used.
+     * Specifies the formats, which are used to parse the value set with the value method or by direct input.
+     * If not set the value of the options.format will be used. Note that value of the format option is always used.
+     *
      * @param array $value
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function parseFormats($value) {
+    public function parseFormats($value)
+    {
         return $this->setProperty('parseFormats', $value);
     }
 
@@ -92,17 +121,21 @@ class TimePicker extends InputWidget
      * @param \DateTime $value
      * @return \kendo\ui\TimePicker
      */
-    public function value($value) {
+    public function value($value)
+    {
         return $this->setProperty('value', $value);
     }
 
     /**
      * Sets the change event of the TimePicker.
      * Triggered when the underlying value of a TimePicker is changed.
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function change($value) {
+    public function change($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -113,10 +146,13 @@ class TimePicker extends InputWidget
     /**
      * Sets the close event of the TimePicker.
      * Fires when the time drop-down list is closed
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function close($value) {
+    public function close($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -127,16 +163,17 @@ class TimePicker extends InputWidget
     /**
      * Sets the open event of the TimePicker.
      * Fires when the time drop-down list is opened
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\TimePicker
      */
-    public function open($value) {
+    public function open($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
 
         return $this->setProperty('open', $value);
     }
-
-
 }

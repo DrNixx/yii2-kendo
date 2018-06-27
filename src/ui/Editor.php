@@ -1,7 +1,7 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class Editor extends InputWidget
@@ -175,6 +175,18 @@ class Editor extends InputWidget
      * @return \kendo\ui\Editor
      */
     public function content($value)
+    {
+        return $this->setProperty('content', $value);
+    }
+
+    /**
+     * Define the value of the widget
+     *
+     * @param string $value
+     *
+     * @return static
+     */
+    public function value($value)
     {
         return $this->setProperty('content', $value);
     }

@@ -2,16 +2,18 @@
 
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class RangeSlider extends InputWidget
 {
-    protected function kendoName() {
+    protected function kendoName()
+    {
         return 'RangeSlider';
     }
 
-    protected function createElement() {
+    protected function createElement()
+    {
         $element = parent::createElement();
 
         $element->append($this->createInput("$this->id[0]", 'selectionStart'));
@@ -20,7 +22,8 @@ class RangeSlider extends InputWidget
         return $element;
     }
 
-    private function createInput($name, $propertyName) {
+    private function createInput($name, $propertyName)
+    {
         $element = new Element('input', true);
 
         $element->attr('name', $name);
@@ -46,12 +49,15 @@ class RangeSlider extends InputWidget
     }
 
     /**
-     * The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
-handle must be focused). Note: The allied largeStep will also set large tick for every large step.
+     * The delta with which the value will change when the user presses the Page Up or Page Down key
+     * (the drag handle must be focused). Note: The allied largeStep will also set large tick for every large step.
+     *
      * @param float $value
+     *
      * @return \kendo\ui\RangeSlider
      */
-    public function largeStep($value) {
+    public function largeStep($value)
+    {
         return $this->setProperty('largeStep', $value);
     }
 
@@ -60,7 +66,8 @@ handle must be focused). Note: The allied largeStep will also set large tick for
      * @param float $value
      * @return \kendo\ui\RangeSlider
      */
-    public function max($value) {
+    public function max($value)
+    {
         return $this->setProperty('max', $value);
     }
 
@@ -69,7 +76,8 @@ handle must be focused). Note: The allied largeStep will also set large tick for
      * @param float $value
      * @return \kendo\ui\RangeSlider
      */
-    public function min($value) {
+    public function min($value)
+    {
         return $this->setProperty('min', $value);
     }
 
@@ -80,7 +88,8 @@ The orientation of a RangeSlider; "horizontal" or
      * @param string $value
      * @return \kendo\ui\RangeSlider
      */
-    public function orientation($value) {
+    public function orientation($value)
+    {
         return $this->setProperty('orientation', $value);
     }
 
@@ -89,7 +98,8 @@ The orientation of a RangeSlider; "horizontal" or
      * @param float $value
      * @return \kendo\ui\RangeSlider
      */
-    public function selectionEnd($value) {
+    public function selectionEnd($value)
+    {
         return $this->setProperty('selectionEnd', $value);
     }
 
@@ -98,7 +108,8 @@ The orientation of a RangeSlider; "horizontal" or
      * @param float $value
      * @return \kendo\ui\RangeSlider
      */
-    public function selectionStart($value) {
+    public function selectionStart($value)
+    {
         return $this->setProperty('selectionStart', $value);
     }
 
@@ -109,7 +120,8 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * @param float $value
      * @return \kendo\ui\RangeSlider
      */
-    public function smallStep($value) {
+    public function smallStep($value)
+    {
         return $this->setProperty('smallStep', $value);
     }
 
@@ -118,7 +130,8 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * @param string $value
      * @return \kendo\ui\RangeSlider
      */
-    public function tickPlacement($value) {
+    public function tickPlacement($value)
+    {
         return $this->setProperty('tickPlacement', $value);
     }
 
@@ -127,17 +140,22 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * @param \kendo\ui\RangeSliderTooltip|array $value
      * @return \kendo\ui\RangeSlider
      */
-    public function tooltip($value) {
+    public function tooltip($value)
+    {
         return $this->setProperty('tooltip', $value);
     }
 
     /**
      * Sets the change event of the RangeSlider.
-     * Fires when the rangeSlider value changes as a result of selecting a new value with one of the drag handles or the keyboard.
+     * Fires when the rangeSlider value changes as a result of selecting a new value
+     * with one of the drag handles or the keyboard.
+     *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
+     *
      * @return \kendo\ui\RangeSlider
      */
-    public function change($value) {
+    public function change($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -151,7 +169,8 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      * @return \kendo\ui\RangeSlider
      */
-    public function slide($value) {
+    public function slide($value)
+    {
         if (is_string($value)) {
             $value = new JavaScriptFunction($value);
         }
@@ -159,5 +178,15 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
         return $this->setProperty('slide', $value);
     }
 
-
+    /**
+     * Define the value of the widget
+     *
+     * @param string $value
+     *
+     * @return static
+     */
+    public function value($value)
+    {
+        return $this->setProperty('value', $value);
+    }
 }

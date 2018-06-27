@@ -1,12 +1,13 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 
 class MenuItem extends NavigationalItem
 {
     public function __construct($text = null)
     {
+        parent::__construct();
         $this->text($text);
     }
 
@@ -25,7 +26,8 @@ class MenuItem extends NavigationalItem
         }
     }
 
-    public function createElement() {
+    public function createElement()
+    {
         $element = parent::createElement();
 
         $enabled = $this->getProperty('enabled') !== false;
@@ -45,7 +47,8 @@ class MenuItem extends NavigationalItem
      * @param string $value
      * @return \kendo\ui\MenuItem
      */
-    public function text($value) {
+    public function text($value)
+    {
         return $this->setProperty('text', $value);
     }
 
@@ -54,7 +57,8 @@ class MenuItem extends NavigationalItem
      * @param string $value
      * @return \kendo\ui\MenuItem
      */
-    public function imageUrl($value) {
+    public function imageUrl($value)
+    {
         return $this->setProperty('imageUrl', $value);
     }
 
@@ -63,7 +67,8 @@ class MenuItem extends NavigationalItem
      * @param string $value
      * @return \kendo\ui\MenuItem
      */
-    public function spriteCssClass($value) {
+    public function spriteCssClass($value)
+    {
         return $this->setProperty('spriteCssClass', $value);
     }
 
@@ -72,7 +77,8 @@ class MenuItem extends NavigationalItem
      * @param boolean $value
      * @return \kendo\ui\MenuItem
      */
-    public function enabled($value) {
+    public function enabled($value)
+    {
         return $this->setProperty('enabled', $value);
     }
 
@@ -81,36 +87,45 @@ class MenuItem extends NavigationalItem
      * @param boolean $value
      * @return \kendo\ui\MenuItem
      */
-    public function selected($value) {
+    public function selected($value)
+    {
         return $this->setProperty('selected', $value);
     }
 
     /**
      * Sets the HTML content of the MenuItem.
      * @param string $value
-     * @return \kendo\ui\MenuItem    */
-    public function content($value) {
+     * @return \kendo\ui\MenuItem
+     */
+    public function content($value)
+    {
         return $this->setProperty('content', $value);
     }
 
     /**
      * Starts output bufferring. Any following markup will be set as the content of the MenuItem.
      */
-    public function startContent() {
+    public function startContent()
+    {
         ob_start();
     }
 
     /**
      * Stops output bufferring and sets the preceding markup as the content of the MenuItem.
      */
-    public function endContent() {
+    public function endContent()
+    {
         $this->content(ob_get_clean());
     }
     /**
      * Adds one or more \kendo\ui\MenuItem.
+     *
      * @param \kendo\ui\MenuItem|array,... $value
-     * @return \kendo\ui\Menu    */
-    public function addItem($value) {
+     *
+     * @return \kendo\ui\Menu
+     */
+    public function addItem($value)
+    {
         return $this->add('items', func_get_args());
     }
 }

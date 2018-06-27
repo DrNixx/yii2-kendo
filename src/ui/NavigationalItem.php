@@ -1,13 +1,12 @@
 <?php
 namespace kendo\ui;
 
-use kendo\Html\Element;
-use kendo\Html\Text;
+use kendo\html\Element;
+use kendo\html\Text;
 use kendo\SerializableObject;
 
 abstract class NavigationalItem extends SerializableObject
 {
-
     /**
      * @param Element $element
      */

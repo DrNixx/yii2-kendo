@@ -2,7 +2,7 @@
 
 namespace kendo\ui;
 
-use kendo\Html\Element;
+use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class ColorPicker extends InputWidget
