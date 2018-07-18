@@ -4,7 +4,7 @@ namespace kendo\ui;
 use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
-class Upload extends Widget
+class Upload extends InputWidget
 {
     protected function kendoName()
     {
@@ -18,6 +18,12 @@ class Upload extends Widget
         $element->attr('type', 'file');
 
         return $element;
+    }
+
+
+    public function value($value)
+    {
+        // Nothing
     }
 
     /**
