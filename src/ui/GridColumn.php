@@ -277,6 +277,16 @@ class GridColumn extends SerializableObject
     }
 
     /**
+     * Dummy methods for model link
+     *
+     * @return \kendo\ui\GridColumn
+     */
+    public function model()
+    {
+        return $this;
+    }
+
+    /**
      * The text that will be displayed in the column header.
      * @param string $value
      * @return \kendo\ui\GridColumn
