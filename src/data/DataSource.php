@@ -147,6 +147,22 @@ class DataSource extends SerializableObject
     public function schema($value)
     {
         if (is_array($value)) {
+            if (!isset($value['data'])) {
+                $value['data'] = 'data';
+            }
+
+            if (!isset($value['errors'])) {
+                $value['errors'] = 'errors';
+            }
+
+            if (!isset($value['total'])) {
+                $value['total'] = 'total';
+            }
+
+            if (!isset($value['groups'])) {
+                $value['groups'] = 'groups';
+            }
+
             return $this->setProperty('schema', DataSourceSchema::make($value));
         } else {
             return $this->setProperty('schema', $value);
@@ -245,6 +261,10 @@ class DataSource extends SerializableObject
     public function transport($value)
     {
         if (is_array($value)) {
+            if (!isset($value['parameterMap'])) {
+                $value['parameterMap'] = 'function(data) { return { models: kendo.stringify(data) }; }';
+            }
+
             return $this->setProperty('transport', DataSourceTransport::make($value));
         } else {
             return $this->setProperty('transport', $value);

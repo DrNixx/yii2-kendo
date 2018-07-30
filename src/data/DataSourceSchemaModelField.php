@@ -8,11 +8,20 @@ class DataSourceSchemaModelField extends SerializableObject
     public static function make($args = null)
     {
         if (is_array($args)) {
-            $field = array_shift($args);
-            $obj = new static($field);
-            foreach ($args as $key => $value) {
-                $obj->$key($value);
+            $keys = array_keys($args);
+
+            if ($keys[0] === 0) {
+                $field = array_shift($args);
+            } else {
+                // First element is 'field' => 'datatype'
+                $field = $keys[0];
+                $type = $args[$field];
+                unset($args[$field]);
+
+                $args['type'] = $type;
             }
+
+            $obj = new static($field, $args);
 
             return $obj;
         } else {
@@ -20,10 +29,12 @@ class DataSourceSchemaModelField extends SerializableObject
         }
     }
 
-    public function __construct($field)
+    public function __construct($field, $args = [])
     {
         $this->field($field);
         $this->from($field);
+
+        parent::__construct($args);
     }
 
     public function field($value)

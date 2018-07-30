@@ -4,9 +4,28 @@ namespace kendo\ui;
 use kendo\JavaScriptFunction;
 use kendo\SerializableObject;
 use kendo\Template;
+use yii\base\Model;
 
 class GridColumn extends SerializableObject
 {
+    public static function make($args = null)
+    {
+        if (is_array($args)) {
+            if (!isset($args['title']) && isset($args['model']) && isset($args['field'])) {
+                $model = $args['model'];
+                $field = $args['field'];
+                if ($model instanceof Model) {
+                    $labels = $model->attributeLabels();
+                    if (isset($labels[$field])) {
+                        $args['title'] = $labels[$field];
+                    }
+                }
+            }
+        }
+
+        return parent::make($args);
+    }
+
     /**
      * Definition of column cells' HTML attributes.
      * Reserved words in Javascript should be enclosed in quotation marks.
