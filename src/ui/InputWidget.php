@@ -43,7 +43,7 @@ abstract class InputWidget extends Widget implements IInputWidget
      */
     public function __construct($config = [])
     {
-        foreach (['field', 'model', 'attribute', 'name', 'inputValue', 'view'] as $key) {
+        foreach (['field', 'model', 'attribute', 'name', 'inputValue', 'view', 'options'] as $key) {
             if (isset($config[$key])) {
                 $this->$key = $config[$key];
                 unset($config[$key]);
