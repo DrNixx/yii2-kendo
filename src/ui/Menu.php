@@ -20,7 +20,7 @@ class Menu extends Widget
         if ($items) {
             $element = new Element('ul');
 
-            /** @var \kendo\ui\MenuItem $item */
+            /** @var MenuItem $item */
             foreach ($items as $item) {
                 $element->append($item->createElement());
             }
@@ -34,7 +34,7 @@ class Menu extends Widget
     /**
      * Sets the data of the Menu.
      * @param array $value
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function dataSource(array $value)
     {
@@ -50,9 +50,9 @@ class Menu extends Widget
      * the close effect by default, but can be over-ridden by setting the close animation.
      * Each animation also has a direction which can be set off the animation (i.e. slideIn:Down).
      *
-     * @param \kendo\ui\MenuAnimation|array $value
+     * @param MenuAnimation|array $value
      *
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function animation($value)
     {
@@ -62,7 +62,7 @@ class Menu extends Widget
     /**
      * Specifies that sub menus should close after item selection (provided they won't navigate).
      * @param boolean $value
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function closeOnClick($value)
     {
@@ -76,7 +76,7 @@ class Menu extends Widget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function direction($value)
     {
@@ -86,7 +86,7 @@ class Menu extends Widget
     /**
      * Specifies the delay in ms before the menu is opened/closed - used to avoid accidental closure on leaving.
      * @param float $value
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function hoverDelay($value)
     {
@@ -96,7 +96,7 @@ class Menu extends Widget
     /**
      * Specifies that the root sub menus will be opened on item click.
      * @param boolean $value
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function openOnClick($value)
     {
@@ -106,7 +106,7 @@ class Menu extends Widget
     /**
      * Root menu orientation. Could be horizontal or vertical.
      * @param string $value
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function orientation($value)
     {
@@ -122,7 +122,7 @@ class Menu extends Widget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function popupCollision($value)
     {
@@ -131,8 +131,8 @@ class Menu extends Widget
 
     /**
      * Adds MenuItem to the Menu.
-     * @param \kendo\ui\MenuItem|array,... $value one or more MenuItem to add.
-     * @return \kendo\ui\Menu
+     * @param MenuItem|array,... $value one or more MenuItem to add.
+     * @return Menu
      */
     public function addItem($value)
     {
@@ -143,7 +143,7 @@ class Menu extends Widget
      * Sets the close event of the Menu.
      * Fires after a sub menu gets closed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function close($value)
     {
@@ -158,7 +158,7 @@ class Menu extends Widget
      * Sets the open event of the Menu.
      * Fires before a sub menu gets opened.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function open($value)
     {
@@ -173,7 +173,7 @@ class Menu extends Widget
      * Sets the activate event of the Menu.
      * Fires when a sub menu gets opened and its animation finished.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function activate($value)
     {
@@ -188,7 +188,7 @@ class Menu extends Widget
      * Sets the deactivate event of the Menu.
      * Fires when a sub menu gets closed and its animation finished.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function deactivate($value)
     {
@@ -203,7 +203,7 @@ class Menu extends Widget
      * Sets the select event of the Menu.
      * Fires when a menu item gets selected.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Menu
+     * @return Menu
      */
     public function select($value)
     {

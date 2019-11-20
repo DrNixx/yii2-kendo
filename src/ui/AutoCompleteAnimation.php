@@ -7,8 +7,8 @@ class AutoCompleteAnimation extends SerializableObject
 {
     /**
      * The animation played when the suggestion popup is closed.
-     * @param \kendo\ui\AutoCompleteAnimationClose|array $value
-     * @return \kendo\ui\AutoCompleteAnimation
+     * @param AutoCompleteAnimationClose|array $value
+     * @return AutoCompleteAnimation
      */
     public function close($value)
     {
@@ -17,8 +17,8 @@ class AutoCompleteAnimation extends SerializableObject
 
     /**
      * The animation played when the suggestion popup is opened.
-     * @param \kendo\ui\AutoCompleteAnimationOpen|array $value
-     * @return \kendo\ui\AutoCompleteAnimation
+     * @param AutoCompleteAnimationOpen|array $value
+     * @return AutoCompleteAnimation
      */
     public function open($value)
     {

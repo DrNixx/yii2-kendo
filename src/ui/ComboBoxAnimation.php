@@ -7,8 +7,8 @@ class ComboBoxAnimation extends SerializableObject
 {
     /**
      * Animation to be used for closing of the popup.
-     * @param \kendo\ui\ComboBoxAnimationClose|array $value
-     * @return \kendo\ui\ComboBoxAnimation
+     * @param ComboBoxAnimationClose|array $value
+     * @return ComboBoxAnimation
      */
     public function close($value)
     {
@@ -17,8 +17,8 @@ class ComboBoxAnimation extends SerializableObject
 
     /**
      * Animation to be used for opening of the popup.
-     * @param \kendo\ui\ComboBoxAnimationOpen|array $value
-     * @return \kendo\ui\ComboBoxAnimation
+     * @param ComboBoxAnimationOpen|array $value
+     * @return ComboBoxAnimation
      */
     public function open($value)
     {

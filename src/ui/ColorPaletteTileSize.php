@@ -8,7 +8,7 @@ class ColorPaletteTileSize extends SerializableObject
     /**
      * The width of the color cell.
      * @param float $value
-     * @return \kendo\ui\ColorPaletteTileSize
+     * @return ColorPaletteTileSize
      */
     public function width($value)
     {
@@ -18,7 +18,7 @@ class ColorPaletteTileSize extends SerializableObject
     /**
      * The height of the color cell.
      * @param float $value
-     * @return \kendo\ui\ColorPaletteTileSize
+     * @return ColorPaletteTileSize
      */
     public function height($value)
     {

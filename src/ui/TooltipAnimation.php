@@ -8,8 +8,8 @@ class TooltipAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when a Tooltip closes.
-     * @param \kendo\ui\TooltipAnimationClose|array $value
-     * @return \kendo\ui\TooltipAnimation
+     * @param TooltipAnimationClose|array $value
+     * @return TooltipAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class TooltipAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when a Tooltip opens.
-     * @param \kendo\ui\TooltipAnimationOpen|array $value
-     * @return \kendo\ui\TooltipAnimation
+     * @param TooltipAnimationOpen|array $value
+     * @return TooltipAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

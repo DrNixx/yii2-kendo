@@ -2,6 +2,7 @@
 
 namespace kendo\ui;
 
+use DateTime;
 use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
@@ -20,9 +21,9 @@ class TimePicker extends InputWidget
     /**
      * Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
      *
-     * @param \kendo\ui\TimePickerAnimation|array $value
+     * @param TimePickerAnimation|array $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function animation($value)
     {
@@ -34,7 +35,7 @@ class TimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function culture($value)
     {
@@ -47,7 +48,7 @@ class TimePicker extends InputWidget
      *
      * @param array $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function dates($value)
     {
@@ -60,7 +61,7 @@ class TimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function format($value)
     {
@@ -72,7 +73,7 @@ class TimePicker extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function interval($value)
     {
@@ -82,9 +83,9 @@ class TimePicker extends InputWidget
     /**
      * Specifies the end value in the popup list.
      *
-     * @param \DateTime $value
+     * @param DateTime $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function max($value)
     {
@@ -94,9 +95,9 @@ class TimePicker extends InputWidget
     /**
      * Specifies the start value in the popup list.
      *
-     * @param \DateTime $value
+     * @param DateTime $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function min($value)
     {
@@ -109,7 +110,7 @@ class TimePicker extends InputWidget
      *
      * @param array $value
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function parseFormats($value)
     {
@@ -118,8 +119,8 @@ class TimePicker extends InputWidget
 
     /**
      * Specifies the selected time.
-     * @param \DateTime $value
-     * @return \kendo\ui\TimePicker
+     * @param DateTime $value
+     * @return TimePicker
      */
     public function value($value)
     {
@@ -132,7 +133,7 @@ class TimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function change($value)
     {
@@ -149,7 +150,7 @@ class TimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function close($value)
     {
@@ -166,7 +167,7 @@ class TimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\TimePicker
+     * @return TimePicker
      */
     public function open($value)
     {

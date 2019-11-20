@@ -1,6 +1,7 @@
 <?php
 namespace kendo\ui;
 
+use kendo\data\DataSource;
 use kendo\JavaScriptFunction;
 use kendo\Template;
 
@@ -14,7 +15,7 @@ class Pager extends Widget
     /**
      * Indicates whether the pager refresh method will be called within its initialization.
      * @param boolean $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function autoBind($value)
     {
@@ -24,7 +25,7 @@ class Pager extends Widget
     /**
      * Defines the number of buttons displayed in the numeric pager.
      * @param float $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function buttonCount($value)
     {
@@ -33,8 +34,8 @@ class Pager extends Widget
 
     /**
      * Sets the data source of the Pager.
-     * @param array|\kendo\data\DataSource $value
-     * @return \kendo\ui\Pager
+     * @param array|DataSource $value
+     * @return Pager
      */
     public function dataSource($value)
     {
@@ -45,7 +46,7 @@ class Pager extends Widget
      * Sets the selectTemplate option of the Pager.
      * The template for selectbox with predefined page sizes.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function selectTemplateId($value)
     {
@@ -58,7 +59,7 @@ class Pager extends Widget
      * Sets the selectTemplate option of the Pager.
      * The template for selectbox with predefined page sizes.
      * @param string $value The template content.
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function selectTemplate($value)
     {
@@ -69,7 +70,7 @@ class Pager extends Widget
      * Sets the linkTemplate option of the Pager.
      * The template for page number links.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function linkTemplateId($value)
     {
@@ -82,7 +83,7 @@ class Pager extends Widget
      * Sets the linkTemplate option of the Pager.
      * The template for page number links.
      * @param string $value The template content.
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function linkTemplate($value)
     {
@@ -92,7 +93,7 @@ class Pager extends Widget
     /**
      * Defines if a label showing current paging information will be displayed.
      * @param boolean $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function info($value)
     {
@@ -102,7 +103,7 @@ class Pager extends Widget
     /**
      * Defines if an input element which allows the user to navigate to given page will be displayed.
      * @param boolean $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function input($value)
     {
@@ -112,7 +113,7 @@ class Pager extends Widget
     /**
      * Defines if numeric portion of the pager will be shown.
      * @param boolean $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function numeric($value)
     {
@@ -127,7 +128,7 @@ class Pager extends Widget
      *
      * @param boolean|array $value
      *
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function pageSizes($value)
     {
@@ -137,7 +138,7 @@ class Pager extends Widget
     /**
      * Defines if buttons for navigating to the first, last, previous and next pages will be shown.
      * @param boolean $value
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function previousNext($value)
     {
@@ -150,7 +151,7 @@ class Pager extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function refresh($value)
     {
@@ -159,8 +160,8 @@ class Pager extends Widget
 
     /**
      * Defines texts shown within the pager.
-     * @param \kendo\ui\PagerMessages|array $value
-     * @return \kendo\ui\Pager
+     * @param PagerMessages|array $value
+     * @return Pager
      */
     public function messages($value)
     {
@@ -171,7 +172,7 @@ class Pager extends Widget
      * Sets the change event of the Pager.
      * Fires when the current page has changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Pager
+     * @return Pager
      */
     public function change($value)
     {

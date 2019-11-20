@@ -14,6 +14,7 @@ class PanelBarItem extends SerializableObject
      */
     function __construct($text = null)
     {
+        parent::__construct();
         $this->text($text);
     }
 
@@ -35,7 +36,7 @@ class PanelBarItem extends SerializableObject
     }
 
     /**
-     * @param \kendo\html\Element $element
+     * @param Element $element
      */
     protected function createSubGroup($element)
     {
@@ -186,7 +187,8 @@ class PanelBarItem extends SerializableObject
      *
      * @param PanelBarItem|array,... $value
      *
-     * @return \kendo\ui\PanelBar    */
+     * @return PanelBarItem
+     */
     public function addItem($value)
     {
         return $this->add('items', func_get_args());

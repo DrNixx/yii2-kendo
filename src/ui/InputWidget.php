@@ -5,11 +5,12 @@ use onix\widgets\IInputWidget;
 use yii\base\InvalidConfigException;
 use yii\base\Model;
 use yii\helpers\Html;
+use yii\widgets\ActiveField;
 
 abstract class InputWidget extends Widget implements IInputWidget
 {
     /**
-     * @var \yii\widgets\ActiveField active input field, which triggers this widget rendering.
+     * @var ActiveField active input field, which triggers this widget rendering.
      * This field will be automatically filled up in case widget instance is created
      * via [[\yii\widgets\ActiveField::widget()]].
      * @since 2.0.11

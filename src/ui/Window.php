@@ -36,7 +36,7 @@ class Window extends Widget
      *
      * @param array $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function actions($value)
     {
@@ -47,9 +47,9 @@ class Window extends Widget
      * A collection of {Animation} objects, used to change default animations.
      * A value of false will disable all animations in the widget.
      *
-     * @param \kendo\ui\WindowAnimation|array $value
+     * @param WindowAnimation|array $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function animation($value)
     {
@@ -62,7 +62,7 @@ class Window extends Widget
      *
      * @param |string $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function appendTo($value)
     {
@@ -74,7 +74,7 @@ class Window extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function draggable($value)
     {
@@ -86,7 +86,7 @@ class Window extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function iframe($value)
     {
@@ -98,7 +98,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function maxHeight($value)
     {
@@ -110,7 +110,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function maxWidth($value)
     {
@@ -122,7 +122,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function minHeight($value)
     {
@@ -134,7 +134,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function minWidth($value)
     {
@@ -146,7 +146,7 @@ class Window extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function modal($value)
     {
@@ -158,7 +158,7 @@ class Window extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function resizable($value)
     {
@@ -171,7 +171,7 @@ class Window extends Widget
      *
      * @param string|boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function title($value)
     {
@@ -183,7 +183,7 @@ class Window extends Widget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function visible($value)
     {
@@ -195,7 +195,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function width($value)
     {
@@ -207,7 +207,7 @@ class Window extends Widget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function height($value)
     {
@@ -220,7 +220,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function activate($value)
     {
@@ -237,7 +237,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function close($value)
     {
@@ -254,7 +254,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function deactivate($value)
     {
@@ -271,7 +271,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function dragend($value)
     {
@@ -288,7 +288,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function dragstart($value)
     {
@@ -305,7 +305,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function error($value)
     {
@@ -322,7 +322,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function open($value)
     {
@@ -341,7 +341,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function refresh($value)
     {
@@ -358,7 +358,7 @@ class Window extends Widget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function resize($value)
     {
@@ -375,7 +375,7 @@ class Window extends Widget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Window
+     * @return Window
      */
     public function content($value)
     {

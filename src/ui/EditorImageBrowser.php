@@ -8,7 +8,7 @@ class EditorImageBrowser extends SerializableObject
     /**
      * Defines the allowed file extensions.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowser
+     * @return EditorImageBrowser
      */
     public function fileTypes($value)
     {
@@ -18,7 +18,7 @@ class EditorImageBrowser extends SerializableObject
     /**
      * Defines the initial folder to display, relative to the root.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowser
+     * @return EditorImageBrowser
      */
     public function path($value)
     {
@@ -36,8 +36,8 @@ class EditorImageBrowser extends SerializableObject
 
     /**
      * Specifies the settings for loading and saving data.
-     * @param \kendo\ui\EditorImageBrowserTransport|array $value
-     * @return \kendo\ui\EditorImageBrowser
+     * @param EditorImageBrowserTransport|array $value
+     * @return EditorImageBrowser
      */
     public function transport($value)
     {
@@ -50,8 +50,8 @@ class EditorImageBrowser extends SerializableObject
 
     /**
      * Set the object responsible for describing the image raw data format.
-     * @param \kendo\ui\EditorImageBrowserSchema|array $value
-     * @return \kendo\ui\EditorImageBrowser
+     * @param EditorImageBrowserSchema|array $value
+     * @return EditorImageBrowser
      */
     public function schema($value)
     {
@@ -64,8 +64,8 @@ class EditorImageBrowser extends SerializableObject
 
     /**
      * Defines texts shown within the pager.
-     * @param \kendo\ui\EditorImageBrowserMessages|array $value
-     * @return \kendo\ui\EditorImageBrowser
+     * @param EditorImageBrowserMessages|array $value
+     * @return EditorImageBrowser
      */
     public function messages($value)
     {

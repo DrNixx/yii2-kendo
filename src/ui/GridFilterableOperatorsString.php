@@ -8,7 +8,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is equal to" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function eq($value)
     {
@@ -18,7 +18,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is not equal to" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function neq($value)
     {
@@ -28,7 +28,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Starts with" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function startswith($value)
     {
@@ -38,7 +38,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Contains" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function contains($value)
     {
@@ -48,7 +48,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Does not contain" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function doesnotcontain($value)
     {
@@ -58,7 +58,7 @@ class GridFilterableOperatorsString extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Ends with" filter option for columns with string values.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsString
+     * @return GridFilterableOperatorsString
      */
     public function endswith($value)
     {

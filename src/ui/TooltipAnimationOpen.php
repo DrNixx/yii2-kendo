@@ -9,7 +9,7 @@ class TooltipAnimationOpen extends SerializableObject {
     /**
      * Effect to be used for opening of the Tooltip.
      * @param string $value
-     * @return \kendo\ui\TooltipAnimationOpen
+     * @return TooltipAnimationOpen
      */
     public function effects($value) {
         return $this->setProperty('effects', $value);
@@ -18,7 +18,7 @@ class TooltipAnimationOpen extends SerializableObject {
     /**
      * Difines the animation duration.
      * @param float $value
-     * @return \kendo\ui\TooltipAnimationOpen
+     * @return TooltipAnimationOpen
      */
     public function duration($value) {
         return $this->setProperty('duration', $value);

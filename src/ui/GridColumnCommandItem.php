@@ -10,7 +10,7 @@ class GridColumnCommandItem extends SerializableObject
      * The unique name of the command.
      * The supported built-in commands are: "create", "cancel", "save", "destroy".
      * @param string $value
-     * @return \kendo\ui\GridColumnCommandItem
+     * @return GridColumnCommandItem
      */
     public function name($value)
     {
@@ -20,7 +20,7 @@ class GridColumnCommandItem extends SerializableObject
     /**
      * The text displayed by the command.
      * @param string $value
-     * @return \kendo\ui\GridColumnCommandItem
+     * @return GridColumnCommandItem
      */
     public function text($value)
     {
@@ -30,7 +30,7 @@ class GridColumnCommandItem extends SerializableObject
     /**
      * The CSS class of the command.
      * @param string $value
-     * @return \kendo\ui\GridColumnCommandItem
+     * @return GridColumnCommandItem
      */
     public function className($value)
     {
@@ -41,7 +41,7 @@ class GridColumnCommandItem extends SerializableObject
      * Sets the click option of the GridColumnCommandItem.
      * The JavaScript function executed when the user clicks the command button.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\GridColumnCommandItem
+     * @return GridColumnCommandItem
      */
     public function click($value)
     {

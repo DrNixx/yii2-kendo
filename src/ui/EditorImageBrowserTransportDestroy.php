@@ -12,7 +12,7 @@ class EditorImageBrowserTransportDestroy extends SerializableObject
      * Use "application/json" if the content is JSON.
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserTransportDestroy
+     * @return EditorImageBrowserTransportDestroy
      */
     public function contentType($value)
     {
@@ -22,8 +22,8 @@ class EditorImageBrowserTransportDestroy extends SerializableObject
     /**
      * Data to be send to the server.
      * Refer to the jQuery.ajax documentation for further info.
-     * @param |string|\Kendo\JavaScriptFunction $value
-     * @return \kendo\ui\EditorImageBrowserTransportDestroy
+     * @param |string|\kendo\JavaScriptFunction $value
+     * @return EditorImageBrowserTransportDestroy
      */
     public function data($value)
     {
@@ -35,7 +35,7 @@ class EditorImageBrowserTransportDestroy extends SerializableObject
      * Commonly used values are "json" and "jsonp".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserTransportDestroy
+     * @return EditorImageBrowserTransportDestroy
      */
     public function dataType($value)
     {
@@ -46,7 +46,7 @@ class EditorImageBrowserTransportDestroy extends SerializableObject
      * The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET".
      * Refer to the jQuery.ajax documentation for further info.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserTransportDestroy
+     * @return EditorImageBrowserTransportDestroy
      */
     public function type($value) {
         return $this->setProperty('type', $value);
@@ -55,7 +55,7 @@ class EditorImageBrowserTransportDestroy extends SerializableObject
     /**
      * The remote url to call when creating a new record.
      * @param string|JavaScriptFunction $value
-     * @return \kendo\ui\EditorImageBrowserTransportDestroy
+     * @return EditorImageBrowserTransportDestroy
      */
     public function url($value)
     {

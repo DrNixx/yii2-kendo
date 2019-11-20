@@ -54,7 +54,7 @@ class RangeSlider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function largeStep($value)
     {
@@ -64,7 +64,7 @@ class RangeSlider extends InputWidget
     /**
      * The maximum value of the RangeSlider.
      * @param float $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function max($value)
     {
@@ -74,7 +74,7 @@ class RangeSlider extends InputWidget
     /**
      * The minimum value of the RangeSlider.
      * @param float $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function min($value)
     {
@@ -83,10 +83,10 @@ class RangeSlider extends InputWidget
 
     /**
      * F
-The orientation of a RangeSlider; "horizontal" or
-"vertical".
+* The orientation of a RangeSlider; "horizontal" or
+* "vertical".
      * @param string $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function orientation($value)
     {
@@ -96,7 +96,7 @@ The orientation of a RangeSlider; "horizontal" or
     /**
      * The selection end value of the RangeSlider.
      * @param float $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function selectionEnd($value)
     {
@@ -106,7 +106,7 @@ The orientation of a RangeSlider; "horizontal" or
     /**
      * The selection start value of the RangeSlider.
      * @param float $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function selectionStart($value)
     {
@@ -115,10 +115,10 @@ The orientation of a RangeSlider; "horizontal" or
 
     /**
      * The small step value of the RangeSlider. The underlying value will be changed when the end
-user (1) clicks on the increase or decrease buttons of the RangeSlider, (2) presses the
-arrow keys (the drag handle must be focused), or (3) drags the drag handle.
+* user (1) clicks on the increase or decrease buttons of the RangeSlider, (2) presses the
+* arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * @param float $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function smallStep($value)
     {
@@ -128,7 +128,7 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
     /**
      * Denotes the location of the tick marks in the RangeSlider. The available options are:
      * @param string $value
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function tickPlacement($value)
     {
@@ -137,8 +137,8 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
 
     /**
      * Configuration of the RangeSlider tooltip.
-     * @param \kendo\ui\RangeSliderTooltip|array $value
-     * @return \kendo\ui\RangeSlider
+     * @param RangeSliderTooltip|array $value
+     * @return RangeSlider
      */
     public function tooltip($value)
     {
@@ -152,7 +152,7 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function change($value)
     {
@@ -167,7 +167,7 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
      * Sets the slide event of the RangeSlider.
      * Fires when the user drags the drag handle to a new position.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\RangeSlider
+     * @return RangeSlider
      */
     public function slide($value)
     {

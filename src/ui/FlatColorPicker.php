@@ -12,9 +12,9 @@ class FlatColorPicker extends InputWidget
 
     /**
      * Specifies whether we should display the opacity slider to allow
-selection of transparency.
+* selection of transparency.
      * @param boolean $value
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function opacity($value) {
         return $this->setProperty('opacity', $value);
@@ -23,7 +23,7 @@ selection of transparency.
     /**
      * Specifies whether we should display the Apply / Cancel buttons.
      * @param boolean $value
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function buttons($value) {
         return $this->setProperty('buttons', $value);
@@ -32,7 +32,7 @@ selection of transparency.
     /**
      * Specifies the initially selected color.
      * @param string $value
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function value($value) {
         return $this->setProperty('value', $value);
@@ -40,9 +40,9 @@ selection of transparency.
 
     /**
      * Specifies whether we should display the preview bar which displays the
-current color and the input field.
+* current color and the input field.
      * @param boolean $value
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function preview($value) {
         return $this->setProperty('preview', $value);
@@ -51,7 +51,7 @@ current color and the input field.
     /**
      * Allows customization of "Apply" / "Cancel" labels.
      * @param  $value
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function messages($value) {
         return $this->setProperty('messages', $value);
@@ -61,7 +61,7 @@ current color and the input field.
      * Sets the change event of the FlatColorPicker.
      * Triggers when a new color has been selected.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\FlatColorPicker
+     * @return FlatColorPicker
      */
     public function change($value) {
         if (is_string($value)) {

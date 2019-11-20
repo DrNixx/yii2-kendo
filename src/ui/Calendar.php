@@ -1,6 +1,7 @@
 <?php
 namespace kendo\ui;
 
+use DateTime;
 use kendo\JavaScriptFunction;
 
 class Calendar extends InputWidget
@@ -23,7 +24,7 @@ class Calendar extends InputWidget
     /**
      * Specifies a list of dates, which will be passed to the month template.
      * @param array $value
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function dates($value)
     {
@@ -33,7 +34,7 @@ class Calendar extends InputWidget
     /**
      * Specifies the navigation depth.
      * @param string $value
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function depth($value)
     {
@@ -43,7 +44,7 @@ class Calendar extends InputWidget
     /**
      * Template to be used for rendering the footer. If false, the footer will not be rendered.
      * @param string $value
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function footer($value)
     {
@@ -53,7 +54,7 @@ class Calendar extends InputWidget
     /**
      * Specifies the format, which is used to parse value set with value() method.
      * @param string $value
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function format($value)
     {
@@ -62,8 +63,8 @@ class Calendar extends InputWidget
 
     /**
      * Specifies the maximum date, which the calendar can show.
-     * @param \DateTime $value
-     * @return \kendo\ui\Calendar
+     * @param DateTime $value
+     * @return Calendar
      */
     public function max($value)
     {
@@ -72,8 +73,8 @@ class Calendar extends InputWidget
 
     /**
      * Specifies the minimum date, which the calendar can show.
-     * @param \DateTime $value
-     * @return \kendo\ui\Calendar
+     * @param DateTime $value
+     * @return Calendar
      */
     public function min($value)
     {
@@ -82,8 +83,8 @@ class Calendar extends InputWidget
 
     /**
      * Templates for the cells rendered in the "month" view.
-     * @param \kendo\ui\CalendarMonth|array $value
-     * @return \kendo\ui\Calendar
+     * @param CalendarMonth|array $value
+     * @return Calendar
      */
     public function month($value)
     {
@@ -93,7 +94,7 @@ class Calendar extends InputWidget
     /**
      * Specifies the start view.
      * @param string $value
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function start($value)
     {
@@ -102,8 +103,8 @@ class Calendar extends InputWidget
 
     /**
      * Specifies the selected date.
-     * @param \DateTime $value
-     * @return \kendo\ui\Calendar
+     * @param DateTime $value
+     * @return Calendar
      */
     public function value($value)
     {
@@ -114,7 +115,7 @@ class Calendar extends InputWidget
      * Sets the change event of the Calendar.
      * Fires when the selected date is changed
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function change($value)
     {
@@ -129,7 +130,7 @@ class Calendar extends InputWidget
      * Sets the navigate event of the Calendar.
      * Fires when navigate
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Calendar
+     * @return Calendar
      */
     public function navigate($value)
     {

@@ -9,7 +9,7 @@ class RangeSliderTooltip extends SerializableObject
     /**
      * Disables (false) or enables (true) the tooltip of the RangeSlider.
      * @param boolean $value
-     * @return \kendo\ui\RangeSliderTooltip
+     * @return RangeSliderTooltip
      */
     public function enabled($value)
     {
@@ -22,7 +22,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\RangeSliderTooltip
+     * @return RangeSliderTooltip
      */
     public function format($value)
     {
@@ -35,7 +35,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value The id of the element which represents the kendo template.
      *
-     * @return \kendo\ui\RangeSliderTooltip
+     * @return RangeSliderTooltip
      */
     public function templateId($value)
     {
@@ -50,7 +50,7 @@ class RangeSliderTooltip extends SerializableObject
      *
      * @param string $value The template content.
      *
-     * @return \kendo\ui\RangeSliderTooltip
+     * @return RangeSliderTooltip
      */
     public function template($value)
     {

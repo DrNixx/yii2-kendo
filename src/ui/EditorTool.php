@@ -13,7 +13,7 @@ class EditorTool extends SerializableObject
      * "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent",
      * "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
      * @param string $value
-     * @return \kendo\ui\EditorTool
+     * @return EditorTool
      */
     public function name($value)
     {
@@ -23,7 +23,7 @@ class EditorTool extends SerializableObject
     /**
      * The text which will be displayed when the end-user hovers the tool button with the mouse.
      * @param string $value
-     * @return \kendo\ui\EditorTool
+     * @return EditorTool
      */
     public function tooltip($value)
     {
@@ -34,7 +34,7 @@ class EditorTool extends SerializableObject
      * Sets the exec option of the EditorTool.
      * The JavaScript function which will be executed when the end-user clicks the tool button.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\EditorTool
+     * @return EditorTool
      */
     public function exec($value)
     {
@@ -47,8 +47,8 @@ class EditorTool extends SerializableObject
 
     /**
      * Adds EditorToolItem to the EditorTool.
-     * @param \kendo\ui\EditorToolItem|array,... $value one or more EditorToolItem to add.
-     * @return \kendo\ui\EditorTool
+     * @param EditorToolItem|array,... $value one or more EditorToolItem to add.
+     * @return EditorTool
      */
     public function addItem($value)
     {
@@ -59,7 +59,7 @@ class EditorTool extends SerializableObject
      * Sets the template option of the EditorTool.
      * The kendo template that will be used for rendering the given tool.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\EditorTool
+     * @return EditorTool
      */
     public function templateId($value)
     {
@@ -72,7 +72,7 @@ class EditorTool extends SerializableObject
      * Sets the template option of the EditorTool.
      * The kendo template that will be used for rendering the given tool.
      * @param string $value The template content.
-     * @return \kendo\ui\EditorTool
+     * @return EditorTool
      */
     public function template($value)
     {

@@ -29,7 +29,7 @@ class Tooltip extends Widget
      * Specifies if the tooltip will be hidden when mouse leaves the target element.
      * If set to false a close button will be shown within tooltip.
      * @param boolean $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function autoHide($value)
     {
@@ -38,9 +38,9 @@ class Tooltip extends Widget
 
     /**
      * A collection of {Animation} objects, used to change default animations. A value of false
-will disable all animations in the widget.
-     * @param \kendo\ui\TooltipAnimation|array $value
-     * @return \kendo\ui\Tooltip
+* will disable all animations in the widget.
+     * @param TooltipAnimation|array $value
+     * @return Tooltip
      */
     public function animation($value)
     {
@@ -50,7 +50,7 @@ will disable all animations in the widget.
     /**
      * Specifies if the tooltip callout will be displayed.
      * @param boolean $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function callout($value)
     {
@@ -60,7 +60,7 @@ will disable all animations in the widget.
     /**
      * Specifies a selector for elements, within the container, for which the tooltip will be displayed.
      * @param string $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function filter($value)
     {
@@ -70,7 +70,7 @@ will disable all animations in the widget.
     /**
      * Explicitly states whether content iframe should be created.
      * @param boolean $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function iframe($value)
     {
@@ -80,7 +80,7 @@ will disable all animations in the widget.
     /**
      * The height (in pixels) of the tooltip.
      * @param float $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function height($value)
     {
@@ -90,7 +90,7 @@ will disable all animations in the widget.
     /**
      * The width (in pixels) of the tooltip.
      * @param float $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function width($value)
     {
@@ -101,7 +101,7 @@ will disable all animations in the widget.
      * The position relative to the target element, at which the tooltip will be shown.
      * Predefined values are "bottom", "top", "left", "right", "center".
      * @param string $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function position($value)
     {
@@ -112,7 +112,7 @@ will disable all animations in the widget.
      * Specify the delay in milliseconds before the tooltip is shown.
      * This option is ignored if showOn is set to "click" or "focus".
      * @param float $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function showAfter($value)
     {
@@ -122,7 +122,7 @@ will disable all animations in the widget.
     /**
      * The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
      * @param string $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function showOn($value)
     {
@@ -133,7 +133,7 @@ will disable all animations in the widget.
      * Sets the contentLoad event of the Tooltip.
      * Triggered when an AJAX request for content completes.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function contentLoad($value)
     {
@@ -148,7 +148,7 @@ will disable all animations in the widget.
      * Sets the show event of the Tooltip.
      * Triggered when a Tooltip is shown.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function show($value)
     {
@@ -163,7 +163,7 @@ will disable all animations in the widget.
      * Sets the hide event of the Tooltip.
      * Triggered when a Tooltip is hidden
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function hide($value)
     {
@@ -178,7 +178,7 @@ will disable all animations in the widget.
      * Sets the requestStart event of the Tooltip.
      * Triggered before an AJAX request started.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function requestStart($value)
     {
@@ -193,7 +193,7 @@ will disable all animations in the widget.
      * Sets the error event of the Tooltip.
      * Triggered when an AJAX request for content fails.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function error($value)
     {
@@ -208,7 +208,7 @@ will disable all animations in the widget.
     /**
      * Sets the HTML content of the Tooltip.
      * @param string $value
-     * @return \kendo\ui\Tooltip
+     * @return Tooltip
      */
     public function content($value)
     {

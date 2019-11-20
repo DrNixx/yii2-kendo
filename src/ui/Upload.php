@@ -29,8 +29,8 @@ class Upload extends InputWidget
     /**
      * Configures the ability to upload a file(s) in an asynchronous manner.
      * Please refer to the async mode help topic for more details.
-     * @param \kendo\ui\UploadAsync|array $value
-     * @return \kendo\ui\Upload
+     * @param UploadAsync|array $value
+     * @return Upload
      */
     public function async($value)
     {
@@ -40,7 +40,7 @@ class Upload extends InputWidget
     /**
      * Enables (true) or disables (false) an Upload. A disabled Upload may be re-enabled via enable().
      * @param boolean $value
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function enabled($value)
     {
@@ -49,8 +49,8 @@ class Upload extends InputWidget
 
     /**
      * Sets the strings rendered by the Upload.
-     * @param \kendo\ui\UploadLocalization|array $value
-     * @return \kendo\ui\Upload
+     * @param UploadLocalization|array $value
+     * @return Upload
      */
     public function localization($value)
     {
@@ -62,7 +62,7 @@ class Upload extends InputWidget
      * If false, users will be able to select only one file at a time.
      * Note: This option does not limit the total number of uploaded files in an asynchronous configuration.
      * @param boolean $value
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function multiple($value)
     {
@@ -74,7 +74,7 @@ class Upload extends InputWidget
      * Disabling a file listing may be useful you wish to customize the UI; use the client-side events
      * to build your own UI.
      * @param boolean $value
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function showFileList($value)
     {
@@ -86,7 +86,7 @@ class Upload extends InputWidget
      * Fires when the upload has been cancelled while in progress.
      * Note: The cancel event fires only when the upload is in async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function cancel($value)
     {
@@ -102,7 +102,7 @@ class Upload extends InputWidget
      * Fires when all active uploads have completed either successfully or with errors.
      * Note: The complete event fires only when the upload is in async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function complete($value)
     {
@@ -118,7 +118,7 @@ class Upload extends InputWidget
      * Fires when an upload / remove operation has failed.
      * Note: The error event fires only when the upload is in async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function error($value)
     {
@@ -134,7 +134,7 @@ class Upload extends InputWidget
      * Fires when upload progress data is available.
      * Note: The progress event fires only when the upload is in async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function progress($value)
     {
@@ -150,7 +150,7 @@ class Upload extends InputWidget
      * Fires when an uploaded file is about to be removed.
      * Cancelling the event will prevent the remove.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function remove($value)
     {
@@ -166,7 +166,7 @@ class Upload extends InputWidget
      * Triggered when a file(s) is selected.
      * Note: Cancelling this event will prevent the selection from occurring.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function select($value)
     {
@@ -182,7 +182,7 @@ class Upload extends InputWidget
      * Fires when an upload / remove operation has been completed successfully.
      * Note: The success event fires only when the upload is in async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function success($value)
     {
@@ -199,7 +199,7 @@ class Upload extends InputWidget
      * Cancelling the event will prevent the upload.Note: The upload event fires only when the upload is in
      * async mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Upload
+     * @return Upload
      */
     public function upload($value)
     {

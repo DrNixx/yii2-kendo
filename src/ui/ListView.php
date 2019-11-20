@@ -1,6 +1,7 @@
 <?php
 namespace kendo\ui;
 
+use kendo\data\DataSource;
 use kendo\html\Element;
 use kendo\JavaScriptFunction;
 use kendo\Template;
@@ -60,7 +61,7 @@ class ListView extends Widget
     /**
      * Indicates whether the list view will call read on the DataSource initially.
      * @param boolean $value
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function autoBind($value)
     {
@@ -69,8 +70,8 @@ class ListView extends Widget
 
     /**
      * Sets the data source of the ListView.
-     * @param array|\kendo\data\DataSource $value
-     * @return \kendo\ui\ListView
+     * @param array|DataSource $value
+     * @return ListView
      */
     public function dataSource($value)
     {
@@ -80,7 +81,7 @@ class ListView extends Widget
     /**
      * Indicates whether keyboard navigation is enabled/disabled.
      * @param boolean $value
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function navigatable($value)
     {
@@ -90,7 +91,7 @@ class ListView extends Widget
     /**
      * Indicates whether selection is enabled/disabled. Possible values:
      * @param string $value
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function selectable($value)
     {
@@ -101,7 +102,7 @@ class ListView extends Widget
      * Sets the template option of the ListView.
      * The id of the template used for rendering the items in the listview.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function templateId($value)
     {
@@ -113,7 +114,7 @@ class ListView extends Widget
      * Sets the template option of the ListView.
      * The id of the template used for rendering the items in the listview.
      * @param string $value The template content.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function template($value)
     {
@@ -124,7 +125,7 @@ class ListView extends Widget
      * Sets the editTemplate option of the ListView.
      * Specifies ListView item template in edit mode.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function editTemplateId($value)
     {
@@ -136,7 +137,7 @@ class ListView extends Widget
      * Sets the editTemplate option of the ListView.
      * Specifies ListView item template in edit mode.
      * @param string $value The template content.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function editTemplate($value)
     {
@@ -147,7 +148,7 @@ class ListView extends Widget
      * Sets the altTemplate option of the ListView.
      * Template to be used for rendering the alternate items in the listview.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function altTemplateId($value)
     {
@@ -159,7 +160,7 @@ class ListView extends Widget
      * Sets the altTemplate option of the ListView.
      * Template to be used for rendering the alternate items in the listview.
      * @param string $value The template content.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function altTemplate($value)
     {
@@ -168,8 +169,8 @@ class ListView extends Widget
 
     /**
      * Indicates whether paging is enabled/disabled.
-     * @param boolean|\kendo\ui\ListViewPageable|array $value
-     * @return \kendo\ui\ListView
+     * @param boolean|ListViewPageable|array $value
+     * @return ListView
      */
     public function pageable($value)
     {
@@ -179,7 +180,7 @@ class ListView extends Widget
     /**
      * Specifies ListView wrapper element tag name.
      * @param string $value
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function tagName($value)
     {
@@ -190,7 +191,7 @@ class ListView extends Widget
      * Sets the cancel event of the ListView.
      * Raised when the user clicks the "cancel" button.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function cancel($value)
     {
@@ -205,7 +206,7 @@ class ListView extends Widget
      * Sets the change event of the ListView.
      * Fires when the list view selection has changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function change($value)
     {
@@ -221,7 +222,7 @@ class ListView extends Widget
      * Fires when the list view has received data from the data source.
      * and is about to render it.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function dataBound($value)
     {
@@ -236,7 +237,7 @@ class ListView extends Widget
      * Sets the dataBinding event of the ListView.
      * Fires when the grid is about to be rendered.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function dataBinding($value)
     {
@@ -251,7 +252,7 @@ class ListView extends Widget
      * Sets the edit event of the ListView.
      * Fires when the list view enters edit mode.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function edit($value)
     {
@@ -266,7 +267,7 @@ class ListView extends Widget
      * Sets the remove event of the ListView.
      * Fires before the list view item is removed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\ListView
+     * @return ListView
      */
     public function remove($value)
     {

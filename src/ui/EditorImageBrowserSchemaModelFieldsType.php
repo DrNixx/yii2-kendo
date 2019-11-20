@@ -10,7 +10,7 @@ class EditorImageBrowserSchemaModelFieldsType extends SerializableObject
      * Sets the parse option of the EditorImageBrowserSchemaModelFieldsType.
      * Specifies the function which will parse the field value. If not set default parsers will be used.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsType
+     * @return EditorImageBrowserSchemaModelFieldsType
      */
     public function parse($value)
     {
@@ -24,7 +24,7 @@ class EditorImageBrowserSchemaModelFieldsType extends SerializableObject
     /**
      * The name of the field.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsType
+     * @return EditorImageBrowserSchemaModelFieldsType
      */
     public function field($value)
     {

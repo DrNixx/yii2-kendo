@@ -12,7 +12,7 @@ class TooltipContent extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TooltipContent
+     * @return TooltipContent
      */
     public function url($value)
     {

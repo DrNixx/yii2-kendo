@@ -19,7 +19,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the culture info used by the NumericTextBox widget.
      * @param string $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function culture($value)
     {
@@ -29,7 +29,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the number precision. If not set precision defined by current culture is used.
      * @param float $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function decimals($value)
     {
@@ -39,7 +39,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the text of the tooltip on the down arrow.
      * @param string $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function downArrowText($value)
     {
@@ -49,7 +49,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the format of the number. Any valid number format is allowed.
      * @param string $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function format($value)
     {
@@ -59,7 +59,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the largest value the user can enter.
      * @param float $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function max($value)
     {
@@ -69,7 +69,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the smallest value the user can enter.
      * @param float $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function min($value)
     {
@@ -79,7 +79,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the text displayed when the input is empty.
      * @param string $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function placeholder($value)
     {
@@ -89,7 +89,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies whether the up/down spin buttons should be rendered
      * @param boolean $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function spinners($value)
     {
@@ -99,7 +99,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the increment/decrement step.
      * @param float $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function step($value)
     {
@@ -109,7 +109,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the text of the tooltip on the up arrow.
      * @param string $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function upArrowText($value)
     {
@@ -119,7 +119,7 @@ class NumericTextBox extends InputWidget
     /**
      * Specifies the value of the NumericTextBox widget.
      * @param float $value
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function value($value)
     {
@@ -130,7 +130,7 @@ class NumericTextBox extends InputWidget
      * Sets the change event of the NumericTextBox.
      * Fires when the value is changed
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function change($value)
     {
@@ -145,7 +145,7 @@ class NumericTextBox extends InputWidget
      * Sets the spin event of the NumericTextBox.
      * Fires when the value is changed from the spin buttons
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\NumericTextBox
+     * @return NumericTextBox
      */
     public function spin($value)
     {

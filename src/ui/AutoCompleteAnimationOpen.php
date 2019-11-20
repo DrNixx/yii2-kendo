@@ -8,7 +8,7 @@ class AutoCompleteAnimationOpen extends SerializableObject
     /**
      * The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
      * @param string $value
-     * @return \kendo\ui\AutoCompleteAnimationOpen
+     * @return AutoCompleteAnimationOpen
      */
     public function effects($value)
     {
@@ -18,7 +18,7 @@ class AutoCompleteAnimationOpen extends SerializableObject
     /**
      * The duration of the open animation in milliseconds.
      * @param float $value
-     * @return \kendo\ui\AutoCompleteAnimationOpen
+     * @return AutoCompleteAnimationOpen
      */
     public function duration($value)
     {

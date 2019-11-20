@@ -8,7 +8,7 @@ class AutoCompleteAnimationClose extends SerializableObject
     /**
      * The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
      * @param string $value
-     * @return \kendo\ui\AutoCompleteAnimationClose
+     * @return AutoCompleteAnimationClose
      */
     public function effects($value)
     {
@@ -18,7 +18,7 @@ class AutoCompleteAnimationClose extends SerializableObject
     /**
      * The duration of the close animation in milliseconds.
      * @param float $value
-     * @return \kendo\ui\AutoCompleteAnimationClose
+     * @return AutoCompleteAnimationClose
      */
     public function duration($value)
     {

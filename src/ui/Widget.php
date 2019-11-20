@@ -4,6 +4,7 @@ namespace kendo\ui;
 use kendo\assets\KendoAsset;
 use kendo\assets\KendoMobileAsset;
 use Yii;
+use yii\base\InvalidConfigException;
 use yii\base\Widget as YiiWidget;
 use yii\web\View;
 use kendo\html\Element;
@@ -39,7 +40,7 @@ abstract class Widget extends YiiWidget implements Serializable
     /**
      * @return string
      *
-     * @throws \yii\base\InvalidConfigException
+     * @throws InvalidConfigException
      */
     public function run()
     {
@@ -137,7 +138,7 @@ abstract class Widget extends YiiWidget implements Serializable
     }
 
     /**
-     * @throws \yii\base\InvalidConfigException
+     * @throws InvalidConfigException
      */
     protected function registerAssets()
     {

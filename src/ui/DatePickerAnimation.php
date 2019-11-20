@@ -8,8 +8,8 @@ class DatePickerAnimation extends SerializableObject {
 
     /**
      * The animation(s) used for hiding of the pop-up.
-     * @param \kendo\ui\DatePickerAnimationClose|array $value
-     * @return \kendo\ui\DatePickerAnimation
+     * @param DatePickerAnimationClose|array $value
+     * @return DatePickerAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class DatePickerAnimation extends SerializableObject {
 
     /**
      * The animation(s) used for displaying of the pop-up.
-     * @param \kendo\ui\DatePickerAnimationOpen|array $value
-     * @return \kendo\ui\DatePickerAnimation
+     * @param DatePickerAnimationOpen|array $value
+     * @return DatePickerAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

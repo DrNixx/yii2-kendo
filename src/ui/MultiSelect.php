@@ -1,6 +1,7 @@
 <?php
 namespace kendo\ui;
 
+use kendo\data\DataSource;
 use kendo\html\Element;
 use kendo\JavaScriptFunction;
 use kendo\Template;
@@ -19,8 +20,8 @@ class MultiSelect extends InputWidget
 
     /**
      * Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
-     * @param \kendo\ui\MultiSelectAnimation|array $value
-     * @return \kendo\ui\MultiSelect
+     * @param MultiSelectAnimation|array $value
+     * @return MultiSelect
      */
     public function animation($value)
     {
@@ -30,7 +31,7 @@ class MultiSelect extends InputWidget
     /**
      * Controls whether to bind the widget to the DataSource on initialization.
      * @param boolean $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function autoBind($value)
     {
@@ -39,8 +40,8 @@ class MultiSelect extends InputWidget
 
     /**
      * Sets the data source of the MultiSelect.
-     * @param array|\kendo\data\DataSource $value
-     * @return \kendo\ui\MultiSelect
+     * @param array|DataSource $value
+     * @return MultiSelect
      */
     public function dataSource($value)
     {
@@ -50,7 +51,7 @@ class MultiSelect extends InputWidget
     /**
      * Sets the field of the data item that provides the text content of the list items.
      * @param string $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function dataTextField($value)
     {
@@ -60,7 +61,7 @@ class MultiSelect extends InputWidget
     /**
      * Sets the field of the data item that provides the value content of the list items.
      * @param string $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function dataValueField($value)
     {
@@ -70,7 +71,7 @@ class MultiSelect extends InputWidget
     /**
      * Specifies the delay in ms after which the multiselect will start filtering dataSource.
      * @param float $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function delay($value)
     {
@@ -80,7 +81,7 @@ class MultiSelect extends InputWidget
     /**
      * Controls whether the multiselect should be initially enabled.
      * @param boolean $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function enable($value)
     {
@@ -90,7 +91,7 @@ class MultiSelect extends InputWidget
     /**
      * Defines the type of filtration.
      * @param string $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function filter($value)
     {
@@ -100,7 +101,7 @@ class MultiSelect extends InputWidget
     /**
      * Define the height of the drop-down list in pixels.
      * @param float $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function height($value)
     {
@@ -110,7 +111,7 @@ class MultiSelect extends InputWidget
     /**
      * Controls whether the first item will be automatically highlighted.
      * @param boolean $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function highlightFirst($value)
     {
@@ -120,7 +121,7 @@ class MultiSelect extends InputWidget
     /**
      * Defines whether the filtration should be case sensitive.
      * @param string $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function ignoreCase($value)
     {
@@ -130,7 +131,7 @@ class MultiSelect extends InputWidget
     /**
      * Specifies the minimum characters that should be typed before the multiselect activates
      * @param float $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function minLength($value)
     {
@@ -140,7 +141,7 @@ class MultiSelect extends InputWidget
     /**
      * Defines the limit of the selected items. If set to null widget will not limit number of the selected items.
      * @param float $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function maxSelectedItems($value)
     {
@@ -150,7 +151,7 @@ class MultiSelect extends InputWidget
     /**
      * A string that appears in the textbox when the multiselect has no value.
      * @param string $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function placeholder($value)
     {
@@ -160,7 +161,7 @@ class MultiSelect extends InputWidget
     /**
      * Sets the headerTemplateTemplate option of the MultiSelect.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function headerTemplateId($value)
     {
@@ -172,7 +173,7 @@ class MultiSelect extends InputWidget
     /**
      * Sets the headerTemplateTemplate option of the MultiSelect.
      * @param string $value The template content.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function headerTemplate($value)
     {
@@ -183,7 +184,7 @@ class MultiSelect extends InputWidget
      * Sets the itemTemplate option of the MultiSelect.
      * Template to be used for rendering the items in the list.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function itemTemplateId($value)
     {
@@ -196,7 +197,7 @@ class MultiSelect extends InputWidget
      * Sets the itemTemplate option of the MultiSelect.
      * Template to be used for rendering the items in the list.
      * @param string $value The template content.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function itemTemplate($value)
     {
@@ -207,7 +208,7 @@ class MultiSelect extends InputWidget
      * Sets the tagTemplate option of the MultiSelect.
      * Template to be used for rendering the tags of the selected items.
      * @param string $value The id of the element which represents the kendo template.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function tagTemplateId($value)
     {
@@ -220,7 +221,7 @@ class MultiSelect extends InputWidget
      * Sets the tagTemplate option of the MultiSelect.
      * Template to be used for rendering the tags of the selected items.
      * @param string $value The template content.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function tagTemplate($value)
     {
@@ -230,7 +231,7 @@ class MultiSelect extends InputWidget
     /**
      * Define the value of the widget
      * @param array $value
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function value($value)
     {
@@ -241,7 +242,7 @@ class MultiSelect extends InputWidget
      * Sets the change event of the MultiSelect.
      * Fires when the value has been changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function change($value)
     {
@@ -256,7 +257,7 @@ class MultiSelect extends InputWidget
      * Sets the close event of the MultiSelect.
      * Fires when the drop-down list is closed
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function close($value)
     {
@@ -271,7 +272,7 @@ class MultiSelect extends InputWidget
      * Sets the dataBound event of the MultiSelect.
      * Fires when the multiselect has received data from the data source.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function dataBound($value)
     {
@@ -286,7 +287,7 @@ class MultiSelect extends InputWidget
      * Sets the open event of the MultiSelect.
      * Fires when the drop-down list is opened
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function open($value)
     {
@@ -301,7 +302,7 @@ class MultiSelect extends InputWidget
      * Sets the select event of the MultiSelect.
      * Triggered when a Li element is selected.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\MultiSelect
+     * @return MultiSelect
      */
     public function select($value)
     {

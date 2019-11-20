@@ -8,8 +8,8 @@ class MultiSelectAnimation extends SerializableObject {
 
     /**
      * Animation to be used for closing of the popup.
-     * @param \kendo\ui\MultiSelectAnimationClose|array $value
-     * @return \kendo\ui\MultiSelectAnimation
+     * @param MultiSelectAnimationClose|array $value
+     * @return MultiSelectAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class MultiSelectAnimation extends SerializableObject {
 
     /**
      * Animation to be used for opening of the popup.
-     * @param \kendo\ui\MultiSelectAnimationOpen|array $value
-     * @return \kendo\ui\MultiSelectAnimation
+     * @param MultiSelectAnimationOpen|array $value
+     * @return MultiSelectAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

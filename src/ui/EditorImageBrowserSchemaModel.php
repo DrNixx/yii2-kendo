@@ -8,7 +8,7 @@ class EditorImageBrowserSchemaModel extends SerializableObject
     /**
      * The name of the field which acts as an identifier.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserSchemaModel
+     * @return EditorImageBrowserSchemaModel
      */
     public function id($value)
     {
@@ -17,8 +17,8 @@ class EditorImageBrowserSchemaModel extends SerializableObject
 
     /**
      *
-     * @param \kendo\ui\EditorImageBrowserSchemaModelFields|array $value
-     * @return \kendo\ui\EditorImageBrowserSchemaModel
+     * @param EditorImageBrowserSchemaModelFields|array $value
+     * @return EditorImageBrowserSchemaModel
      */
     public function fields($value)
     {

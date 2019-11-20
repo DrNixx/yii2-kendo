@@ -8,8 +8,8 @@ class WindowAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when a Window closes.
-     * @param \kendo\ui\WindowAnimationClose|array $value
-     * @return \kendo\ui\WindowAnimation
+     * @param WindowAnimationClose|array $value
+     * @return WindowAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class WindowAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when a Window opens.
-     * @param \kendo\ui\WindowAnimationOpen|array $value
-     * @return \kendo\ui\WindowAnimation
+     * @param WindowAnimationOpen|array $value
+     * @return WindowAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

@@ -49,7 +49,7 @@ class TabStripItem extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function text($value)
     {
@@ -61,7 +61,7 @@ class TabStripItem extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function imageUrl($value)
     {
@@ -73,7 +73,7 @@ class TabStripItem extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function spriteCssClass($value)
     {
@@ -85,7 +85,7 @@ class TabStripItem extends SerializableObject
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function enabled($value)
     {
@@ -97,7 +97,7 @@ class TabStripItem extends SerializableObject
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function selected($value)
     {
@@ -109,7 +109,7 @@ class TabStripItem extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TabStripItem
+     * @return TabStripItem
      */
     public function contentUrl($value)
     {
@@ -121,7 +121,8 @@ class TabStripItem extends SerializableObject
      *
      * @param string $value
      *
-     * @return \kendo\ui\TabStripItem    */
+     * @return TabStripItem
+     */
     public function content($value)
     {
         return $this->setProperty('content', $value);
@@ -145,9 +146,9 @@ class TabStripItem extends SerializableObject
     /**
      * Adds one or more \kendo\ui\TabStripItem.
      *
-     * @param \kendo\ui\TabStripItem|array,... $value
+     * @param TabStripItem|array,... $value
      *
-     * @return \kendo\ui\TabStrip
+     * @return TabStripItem
      */
     public function addItem($value)
     {

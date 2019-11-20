@@ -8,7 +8,7 @@ class GridFilterableOperatorsEnums extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is equal to" filter option for foreign key columns.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsEnums
+     * @return GridFilterableOperatorsEnums
      */
     public function eq($value)
     {
@@ -18,7 +18,7 @@ class GridFilterableOperatorsEnums extends SerializableObject
     /**
      * Enable/Disable and set the text of the "Is not equal to" filter option for foreign key columns.
      * @param string $value
-     * @return \kendo\ui\GridFilterableOperatorsEnums
+     * @return GridFilterableOperatorsEnums
      */
     public function neq($value)
     {

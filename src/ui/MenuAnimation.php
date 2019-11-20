@@ -8,8 +8,8 @@ class MenuAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when closing sub menus.
-     * @param \kendo\ui\MenuAnimationClose|array $value
-     * @return \kendo\ui\MenuAnimation
+     * @param MenuAnimationClose|array $value
+     * @return MenuAnimation
      */
     public function close($value) {
         return $this->setProperty('close', $value);
@@ -17,8 +17,8 @@ class MenuAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when opening sub menus.
-     * @param \kendo\ui\MenuAnimationOpen|array $value
-     * @return \kendo\ui\MenuAnimation
+     * @param MenuAnimationOpen|array $value
+     * @return MenuAnimation
      */
     public function open($value) {
         return $this->setProperty('open', $value);

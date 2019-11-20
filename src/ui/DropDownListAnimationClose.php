@@ -9,7 +9,7 @@ class DropDownListAnimationClose extends SerializableObject {
     /**
      * Effect to be used for closing of the popup.
      * @param string $value
-     * @return \kendo\ui\DropDownListAnimationClose
+     * @return DropDownListAnimationClose
      */
     public function effects($value)
     {
@@ -19,7 +19,7 @@ class DropDownListAnimationClose extends SerializableObject {
     /**
      * Difines the animation duration.
      * @param float $value
-     * @return \kendo\ui\DropDownListAnimationClose
+     * @return DropDownListAnimationClose
      */
     public function duration($value)
     {

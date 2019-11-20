@@ -9,7 +9,7 @@ class EditorImageBrowserSchemaModelFieldsName extends SerializableObject
     /**
      * The name of the field.
      * @param string $value
-     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsName
+     * @return EditorImageBrowserSchemaModelFieldsName
      */
     public function field($value)
     {
@@ -20,7 +20,7 @@ class EditorImageBrowserSchemaModelFieldsName extends SerializableObject
      * Sets the parse option of the EditorImageBrowserSchemaModelFieldsName.
      * Specifies the function which will parse the field value. If not set default parsers will be used.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\EditorImageBrowserSchemaModelFieldsName
+     * @return EditorImageBrowserSchemaModelFieldsName
      */
     public function parse($value)
     {

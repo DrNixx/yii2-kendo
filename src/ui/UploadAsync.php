@@ -8,9 +8,9 @@ class UploadAsync extends SerializableObject {
 
     /**
      * The selected files will be uploaded immediately by default. You can change this behavior by setting
-autoUpload to false.
+* autoUpload to false.
      * @param boolean $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function autoUpload($value) {
         return $this->setProperty('autoUpload', $value);
@@ -18,9 +18,9 @@ autoUpload to false.
 
     /**
      * The selected files will be uploaded in separate requests, if this is supported by the browser.
-You can change this behavior by setting batch to true.
+* You can change this behavior by setting batch to true.
      * @param boolean $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function batch($value) {
         return $this->setProperty('batch', $value);
@@ -29,7 +29,7 @@ You can change this behavior by setting batch to true.
     /**
      * The name of the form field submitted to the Remove URL.
      * @param string $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function removeField($value) {
         return $this->setProperty('removeField', $value);
@@ -37,9 +37,9 @@ You can change this behavior by setting batch to true.
 
     /**
      * The URL of the handler responsible for removing uploaded files (if any). The handler must accept POST
-requests containing one or more "fileNames" fields specifying the files to be deleted.
+* requests containing one or more "fileNames" fields specifying the files to be deleted.
      * @param string $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function removeUrl($value) {
         return $this->setProperty('removeUrl', $value);
@@ -48,7 +48,7 @@ requests containing one or more "fileNames" fields specifying the files to be de
     /**
      * The HTTP verb to be used by the remove action.
      * @param string $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function removeVerb($value) {
         return $this->setProperty('removeVerb', $value);
@@ -57,7 +57,7 @@ requests containing one or more "fileNames" fields specifying the files to be de
     /**
      * The name of the form field submitted to the save URL. The default value is the input name.
      * @param string $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function saveField($value) {
         return $this->setProperty('saveField', $value);
@@ -65,9 +65,9 @@ requests containing one or more "fileNames" fields specifying the files to be de
 
     /**
      * The URL of the handler that will receive the submitted files. The handler must accept POST requests
-containing one or more fields with the same name as the original input name.
+* containing one or more fields with the same name as the original input name.
      * @param string $value
-     * @return \kendo\ui\UploadAsync
+     * @return UploadAsync
      */
     public function saveUrl($value) {
         return $this->setProperty('saveUrl', $value);

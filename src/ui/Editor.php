@@ -27,7 +27,7 @@ class Editor extends InputWidget
     /**
      * Indicates whether the Editor should submit encoded HTML tags.
      * @param boolean $value
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function encoded($value)
     {
@@ -37,7 +37,7 @@ class Editor extends InputWidget
     /**
      * Defines the text of the labels that are shown within the editor. Used primarily for localization.
      * @param  $value
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function messages($value)
     {
@@ -47,7 +47,7 @@ class Editor extends InputWidget
     /**
      * Allows custom stylesheets to be included within the editing area.
      * @param array $value
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function stylesheets($value)
     {
@@ -56,8 +56,8 @@ class Editor extends InputWidget
 
     /**
      * Adds EditorTool to the Editor.
-     * @param \kendo\ui\EditorTool|array,... $value one or more EditorTool to add.
-     * @return \kendo\ui\Editor
+     * @param EditorTool|array,... $value one or more EditorTool to add.
+     * @return Editor
      */
     public function addTool($value)
     {
@@ -70,8 +70,8 @@ class Editor extends InputWidget
 
     /**
      * Configuration for image browser dialog.
-     * @param \kendo\ui\EditorImageBrowser|array $value
-     * @return \kendo\ui\Editor
+     * @param EditorImageBrowser|array $value
+     * @return Editor
      */
     public function imageBrowser($value)
     {
@@ -82,7 +82,7 @@ class Editor extends InputWidget
      * Sets the change event of the Editor.
      * Fires when Editor is blurred and its content has changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function change($value)
     {
@@ -97,7 +97,7 @@ class Editor extends InputWidget
      * Sets the execute event of the Editor.
      * Fires when an Editor command is executed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function execute($value)
     {
@@ -112,7 +112,7 @@ class Editor extends InputWidget
      * Sets the keydown event of the Editor.
      * Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function keydown($value)
     {
@@ -127,7 +127,7 @@ class Editor extends InputWidget
      * Sets the keyup event of the Editor.
      * Fires when the user releases a keyboard key.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function keyup($value)
     {
@@ -142,7 +142,7 @@ class Editor extends InputWidget
      * Sets the paste event of the Editor.
      * Fires before when content is pasted in the Editor.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function paste($value)
     {
@@ -157,7 +157,7 @@ class Editor extends InputWidget
      * Sets the select event of the Editor.
      * Fires when the Editor selection has changed.
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function select($value)
     {
@@ -172,7 +172,7 @@ class Editor extends InputWidget
     /**
      * Sets the HTML content of the Editor.
      * @param string $value
-     * @return \kendo\ui\Editor
+     * @return Editor
      */
     public function content($value)
     {

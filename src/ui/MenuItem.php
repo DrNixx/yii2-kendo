@@ -12,7 +12,7 @@ class MenuItem extends NavigationalItem
     }
 
     /**
-     * @param \kendo\html\Element $element
+     * @param Element $element
      */
     protected function renderContent($element)
     {
@@ -45,7 +45,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the text displayed by the item
      * @param string $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function text($value)
     {
@@ -55,7 +55,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the URL of the image displayed by the item
      * @param string $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function imageUrl($value)
     {
@@ -65,7 +65,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies the class name for the sprite image displayed by the item
      * @param string $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function spriteCssClass($value)
     {
@@ -75,7 +75,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies whether the item is initially enabled
      * @param boolean $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function enabled($value)
     {
@@ -85,7 +85,7 @@ class MenuItem extends NavigationalItem
     /**
      * Specifies whether the item is initially selected
      * @param boolean $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function selected($value)
     {
@@ -95,7 +95,7 @@ class MenuItem extends NavigationalItem
     /**
      * Sets the HTML content of the MenuItem.
      * @param string $value
-     * @return \kendo\ui\MenuItem
+     * @return MenuItem
      */
     public function content($value)
     {
@@ -120,9 +120,9 @@ class MenuItem extends NavigationalItem
     /**
      * Adds one or more \kendo\ui\MenuItem.
      *
-     * @param \kendo\ui\MenuItem|array,... $value
+     * @param MenuItem|array,... $value
      *
-     * @return \kendo\ui\Menu
+     * @return MenuItem
      */
     public function addItem($value)
     {

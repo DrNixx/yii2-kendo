@@ -1,11 +1,15 @@
 <?php
 namespace kendo\ui;
 
+use DateTimeInterface;
+use kendo\DateChecker;
 use kendo\html\Element;
 use kendo\JavaScriptFunction;
 
 class DateTimePicker extends InputWidget
 {
+    use DateChecker;
+
     protected function kendoName()
     {
         return 'DateTimePicker';
@@ -23,9 +27,9 @@ class DateTimePicker extends InputWidget
      * The animation(s) used for opening and/or closing the pop-ups. Setting this value to false
      * will disable the animation(s).
      *
-     * @param \kendo\ui\DateTimePickerAnimation|array $value
+     * @param DateTimePickerAnimation|array $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function animation($value)
     {
@@ -37,7 +41,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function culture($value)
     {
@@ -50,7 +54,7 @@ class DateTimePicker extends InputWidget
      *
      * @param array $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function dates($value)
     {
@@ -62,7 +66,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function depth($value)
     {
@@ -74,7 +78,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function footer($value)
     {
@@ -87,7 +91,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function format($value)
     {
@@ -99,7 +103,7 @@ class DateTimePicker extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function interval($value)
     {
@@ -109,18 +113,13 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the maximum date, which the calendar can show.
      *
-     * @param \DateTime|string $value
+     * @param DateTimeInterface|string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function max($value)
     {
-        if (!empty($value)) {
-            if (!($value instanceof \DateTime)) {
-                $value = new \DateTime(strval($value));
-                $value->setTimezone(new \DateTimeZone('GMT'));
-            }
-        }
+        $value = $this->fixDate($value);
 
         return $this->setProperty('max', $value);
     }
@@ -128,18 +127,13 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the minimum date that the calendar can show.
      *
-     * @param \DateTime|string $value
+     * @param DateTimeInterface|string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function min($value)
     {
-        if (!empty($value)) {
-            if (!($value instanceof \DateTime)) {
-                $value = new \DateTime(strval($value));
-                $value->setTimezone(new \DateTimeZone('GMT'));
-            }
-        }
+        $value = $this->fixDate($value);
 
         return $this->setProperty('min', $value);
     }
@@ -147,9 +141,9 @@ class DateTimePicker extends InputWidget
     /**
      * Templates for the cells rendered in the calendar "month" view.
      *
-     * @param \kendo\ui\DateTimePickerMonth|array $value
+     * @param DateTimePickerMonth|array $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function month($value)
     {
@@ -163,7 +157,7 @@ class DateTimePicker extends InputWidget
      *
      * @param array $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function parseFormats($value)
     {
@@ -173,19 +167,13 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the start view of the calendar. The following settings are available for the start value:
      *
-     * @param \DateTime|string $value
+     * @param DateTimeInterface|string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function start($value)
     {
-        if (!empty($value)) {
-            if (!($value instanceof \DateTime)) {
-                $value = new \DateTime(strval($value));
-                $value->setTimezone(new \DateTimeZone('GMT'));
-            }
-        }
-
+        $value = $this->fixDate($value);
         return $this->setProperty('start', $value);
     }
 
@@ -194,7 +182,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function timeFormat($value)
     {
@@ -204,19 +192,13 @@ class DateTimePicker extends InputWidget
     /**
      * Specifies the selected value.
      *
-     * @param \DateTime|string $value
+     * @param DateTimeInterface|string $value
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function value($value)
     {
-        if (!empty($value)) {
-            if (!($value instanceof \DateTime)) {
-                $value = new \DateTime(strval($value));
-                $value->setTimezone(new \DateTimeZone('GMT'));
-            }
-        }
-
+        $value = $this->fixDate($value);
         return $this->setProperty('value', $value);
     }
 
@@ -226,7 +208,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function change($value)
     {
@@ -243,7 +225,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function close($value)
     {
@@ -260,7 +242,7 @@ class DateTimePicker extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\DateTimePicker
+     * @return DateTimePicker
      */
     public function open($value)
     {

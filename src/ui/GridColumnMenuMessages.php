@@ -9,7 +9,7 @@ class GridColumnMenuMessages extends SerializableObject
     /**
      * Set the text of the columns section in column header menu.
      * @param string $value
-     * @return \kendo\ui\GridColumnMenuMessages
+     * @return GridColumnMenuMessages
      */
     public function columns($value)
     {
@@ -19,7 +19,7 @@ class GridColumnMenuMessages extends SerializableObject
     /**
      * Set the text of the filter section in column header menu.
      * @param string $value
-     * @return \kendo\ui\GridColumnMenuMessages
+     * @return GridColumnMenuMessages
      */
     public function filter($value)
     {
@@ -29,7 +29,7 @@ class GridColumnMenuMessages extends SerializableObject
     /**
      * Set the text of the sortAscending section in column header menu.
      * @param string $value
-     * @return \kendo\ui\GridColumnMenuMessages
+     * @return GridColumnMenuMessages
      */
     public function sortAscending($value)
     {
@@ -39,7 +39,7 @@ class GridColumnMenuMessages extends SerializableObject
     /**
      * Set the text of the sortDescending section in column header menu.
      * @param string $value
-     * @return \kendo\ui\GridColumnMenuMessages
+     * @return GridColumnMenuMessages
      */
     public function sortDescending($value)
     {

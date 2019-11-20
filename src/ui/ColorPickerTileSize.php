@@ -9,7 +9,7 @@ class ColorPickerTileSize extends SerializableObject {
     /**
      * The width of the color cell.
      * @param float $value
-     * @return \kendo\ui\ColorPickerTileSize
+     * @return ColorPickerTileSize
      */
     public function width($value) {
         return $this->setProperty('width', $value);
@@ -18,7 +18,7 @@ class ColorPickerTileSize extends SerializableObject {
     /**
      * The height of the color cell.
      * @param float $value
-     * @return \kendo\ui\ColorPickerTileSize
+     * @return ColorPickerTileSize
      */
     public function height($value) {
         return $this->setProperty('height', $value);

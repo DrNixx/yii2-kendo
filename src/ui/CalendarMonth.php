@@ -8,7 +8,7 @@ class CalendarMonth extends SerializableObject
     /**
      * Template to be used for rendering the cells in the "month" view, which are in range.
      * @param string $value
-     * @return \kendo\ui\CalendarMonth
+     * @return CalendarMonth
      */
     public function content($value)
     {
@@ -18,7 +18,7 @@ class CalendarMonth extends SerializableObject
     /**
      * Template to be used for rendering the cells in the "month" view, which are not in the min/max range.
      * @param string $value
-     * @return \kendo\ui\CalendarMonth
+     * @return CalendarMonth
      */
     public function _empty($value)
     {

@@ -9,7 +9,7 @@ class GridColumnFilterable extends SerializableObject
     /**
      * Role of the widget shown as column filter menu input element.
      * @param string|JavaScriptFunction $value
-     * @return \kendo\ui\GridColumnFilterable
+     * @return GridColumnFilterable
      */
     public function ui($value)
     {

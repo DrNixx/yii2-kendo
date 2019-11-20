@@ -8,8 +8,8 @@ class GridGroupable extends SerializableObject
 
     /**
      * Sets the messages displayed during grouping.
-     * @param \kendo\ui\GridGroupableMessages|array $value
-     * @return \kendo\ui\GridGroupable
+     * @param GridGroupableMessages|array $value
+     * @return GridGroupable
      */
     public function messages($value)
     {

@@ -10,7 +10,7 @@ class GridColumnMenu extends SerializableObject
     /**
      * Enable/disable columns section in column header menu.
      * @param boolean $value
-     * @return \kendo\ui\GridColumnMenu
+     * @return GridColumnMenu
      */
     public function columns($value)
     {
@@ -20,7 +20,7 @@ class GridColumnMenu extends SerializableObject
     /**
      * Enable/disable filter section in column header menu.
      * @param boolean $value
-     * @return \kendo\ui\GridColumnMenu
+     * @return GridColumnMenu
      */
     public function filterable($value)
     {
@@ -30,7 +30,7 @@ class GridColumnMenu extends SerializableObject
     /**
      * Enable/disable sorting section in column header menu.
      * @param boolean $value
-     * @return \kendo\ui\GridColumnMenu
+     * @return GridColumnMenu
      */
     public function sortable($value)
     {
@@ -39,8 +39,8 @@ class GridColumnMenu extends SerializableObject
 
     /**
      * Sets the columnMenu messages.
-     * @param \kendo\ui\GridColumnMenuMessages|array $value
-     * @return \kendo\ui\GridColumnMenu
+     * @param GridColumnMenuMessages|array $value
+     * @return GridColumnMenu
      */
     public function messages($value)
     {

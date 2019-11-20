@@ -8,8 +8,8 @@ class TreeViewAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when collapsing items.
-     * @param \kendo\ui\TreeViewAnimationCollapse|array $value
-     * @return \kendo\ui\TreeViewAnimation
+     * @param TreeViewAnimationCollapse|array $value
+     * @return TreeViewAnimation
      */
     public function collapse($value) {
         return $this->setProperty('collapse', $value);
@@ -17,8 +17,8 @@ class TreeViewAnimation extends SerializableObject {
 
     /**
      * The animation that will be used when expanding items.
-     * @param \kendo\ui\TreeViewAnimationExpand|array $value
-     * @return \kendo\ui\TreeViewAnimation
+     * @param TreeViewAnimationExpand|array $value
+     * @return TreeViewAnimation
      */
     public function expand($value) {
         return $this->setProperty('expand', $value);

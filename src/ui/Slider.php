@@ -23,7 +23,7 @@ class Slider extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function decreaseButtonTitle($value)
     {
@@ -35,7 +35,7 @@ class Slider extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function increaseButtonTitle($value)
     {
@@ -48,7 +48,7 @@ class Slider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function largeStep($value)
     {
@@ -60,7 +60,7 @@ class Slider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function max($value)
     {
@@ -72,7 +72,7 @@ class Slider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function min($value)
     {
@@ -84,7 +84,7 @@ class Slider extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function orientation($value)
     {
@@ -96,7 +96,7 @@ class Slider extends InputWidget
      *
      * @param boolean $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function showButtons($value)
     {
@@ -110,7 +110,7 @@ class Slider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function smallStep($value)
     {
@@ -122,7 +122,7 @@ class Slider extends InputWidget
      *
      * @param string $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function tickPlacement($value)
     {
@@ -132,9 +132,9 @@ class Slider extends InputWidget
     /**
      * Configuration of the Slider tooltip.
      *
-     * @param \kendo\ui\SliderTooltip|array $value
+     * @param SliderTooltip|array $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function tooltip($value)
     {
@@ -146,7 +146,7 @@ class Slider extends InputWidget
      *
      * @param float $value
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function value($value)
     {
@@ -160,7 +160,7 @@ class Slider extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function change($value)
     {
@@ -177,7 +177,7 @@ class Slider extends InputWidget
      *
      * @param string|JavaScriptFunction $value Can be a JavaScript function definition or name.
      *
-     * @return \kendo\ui\Slider
+     * @return Slider
      */
     public function slide($value)
     {

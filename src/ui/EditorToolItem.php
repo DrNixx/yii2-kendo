@@ -8,7 +8,7 @@ class EditorToolItem extends SerializableObject
     /**
      * The string that the popup item will show.
      * @param string $value
-     * @return \kendo\ui\EditorToolItem
+     * @return EditorToolItem
      */
     public function text($value)
     {
@@ -18,7 +18,7 @@ class EditorToolItem extends SerializableObject
     /**
      * The value that will be applied by the tool when this item is selected.
      * @param string $value
-     * @return \kendo\ui\EditorToolItem
+     * @return EditorToolItem
      */
     public function value($value)
     {
