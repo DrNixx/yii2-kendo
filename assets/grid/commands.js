@@ -6,7 +6,7 @@ function gridSelectionChange(e) {
             dataItem = this.dataItem(selectedRows[0]);
             if (dataItem) {
                 btns = e.sender.element.find('[data-item="true"]');
-                btns.css('display','inline-block');
+                btns.css('display','inline-flex');
                 btns.each(function(i, item) {
                     var btn = $(item);
                     var htpl = btn.data("href");
@@ -15,7 +15,7 @@ function gridSelectionChange(e) {
                 });
 
                 btns = e.sender.element.find('[data-item="multi"]');
-                btns.css('display','inline-block');
+                btns.css('display','inline-flex');
                 btns.each(function(i, item) {
                     var btn = $(item);
                     var htpl = btn.data("href");
@@ -37,7 +37,7 @@ function gridSelectionChange(e) {
 
             e.sender.element.find('[data-item="true"]').css('display','none');
             btns = e.sender.element.find('[data-item="multi"]');
-            btns.css('display','inline-block');
+            btns.css('display','inline-flex');
             btns.each(function(i, item) {
                 var btn = $(item);
                 var htpl = btn.data("href");
